@@ -1,0 +1,10 @@
+--- Makefile2
++++ Makefile
+@@ -1,6 +1,6 @@
+ BIN		=	cNibbles
+ OBJ		=	main.o misc.o screen.o options.o highscore.o replay.o intro.o
+-LDFLAGS		=	-lncurses 
++LDFLAGS		=	-lncursesw 
+ CC		=	gcc 
+ CFLAGS		=	-O0 -Wall -g
+ HEADERS 	=	misc.h config.h screen.h options.h highscore.h replay.h intro.h
