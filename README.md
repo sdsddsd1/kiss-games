@@ -1,7 +1,7 @@
-# gamerepository compatible with kisslinux.
+## gamerepository compatible with kisslinux.
 
 
-## sdsddsd' personal repo.
+# sdsddsd's personal repo.
 
 > This repo is under construction. Use on own risk. May brake your system. Read the buildfiles.
 
