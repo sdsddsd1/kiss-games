@@ -1,6 +1,0 @@
-#!/bin/sh -e
-
-
-make
-make \
-       	install
