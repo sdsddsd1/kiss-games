@@ -1,0 +1,11 @@
+--- Makefile2
++++ Makefile
+@@ -54,7 +54,7 @@
+ else
+  OBJS += $(OBJS_NCURSES)
+  HDRS += $(HDRS_NCURSES)
+- LDLIBS += -lncurses
++ LDLIBS += -lncursesw
+  EXEC = $(EXEC_NCURSES)
+  # Version-specific
+  INSTALL_OPTIONAL = install-manpage install-changelog
