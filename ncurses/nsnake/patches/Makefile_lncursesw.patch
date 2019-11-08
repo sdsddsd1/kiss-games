@@ -1,0 +1,11 @@
+--- Makefile_new
++++ Makefile
+@@ -65,7 +65,7 @@
+ EXE         = $(PACKAGE)
+ CDEBUG      = -O2
+ CXXFLAGS    = $(CDEBUG) -Wall -Wextra $(CFLAGS_PLATFORM)
+-LDFLAGS     = -lncurses $(LDFLAGS_PLATFORM)
++LDFLAGS     = -lncursesw $(LDFLAGS_PLATFORM)
+ INCLUDESDIR = -I"src/" -I"deps/"
+ LIBSDIR     =
+ 

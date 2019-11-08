@@ -1,0 +1,11 @@
+--- Makefile_new
++++ Makefile
+@@ -36,7 +36,7 @@
+ 
+ 
+ $(PROGRAM):	$(OBJECTS)
+-	$(CC) -g -Wall -lncurses -o $(PROGRAM) $(OBJECTS) 
++	$(CC) -g -Wall -lncursesw -o $(PROGRAM) $(OBJECTS) 
+ 
+ clean:
+ 	$(RM) *.o

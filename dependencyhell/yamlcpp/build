@@ -1,0 +1,12 @@
+
+#!/bin/sh -e
+
+mkdir build
+
+cmake -DYAML_BUILD_SHARED_LIBS=ON -B build/
+
+cd build
+
+make
+
+make DESTDIR="$1" install

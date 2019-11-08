@@ -1,0 +1,10 @@
+#!/bin/sh -e
+
+patch -p1 < prboom-2.5.0-libpng-1.4.patch
+
+./configure \
+	--prefix=/usr
+make
+
+make DESTDIR="$1" install-strip
+

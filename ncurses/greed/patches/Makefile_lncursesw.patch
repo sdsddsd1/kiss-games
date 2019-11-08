@@ -1,0 +1,11 @@
+--- Makefile_new
++++ Makefile
+@@ -7,7 +7,7 @@
+ BIN=/usr/games
+ 
+ greed: greed.c
+-	$(CC) $(CPPFLAGS) $(CFLAGS) $(LDFLAGS) -DSCOREFILE=\"$(SFILE)\" -DRELEASE=\"$(VERS)\" -o greed greed.c -O3 -lcurses
++	$(CC) $(CPPFLAGS) $(CFLAGS) $(LDFLAGS) -DSCOREFILE=\"$(SFILE)\" -DRELEASE=\"$(VERS)\" -o greed greed.c -O3 -lcursesw
+ 
+ greed.6: greed.xml
+ 	xmlto man greed.xml

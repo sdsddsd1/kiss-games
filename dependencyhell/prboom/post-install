@@ -1,0 +1,6 @@
+#!/bin/sh -e
+
+ln -s /usr/local/games/prboom /usr/local/bin/
+
+ln -s /usr/local/games/prboom-game-server /usr/local/bin
+

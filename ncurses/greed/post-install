@@ -1,0 +1,4 @@
+#!/bin/sh -e
+
+ln -s /usr/games/greed /usr/local/bin/
+

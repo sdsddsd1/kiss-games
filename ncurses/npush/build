@@ -1,0 +1,5 @@
+#!/bin/sh -e
+
+patch -p1 < Makefile_lncursesw.patch
+make 
+make DESTDIR="$1" install

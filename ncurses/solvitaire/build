@@ -1,0 +1,8 @@
+#!/bin/sh -e
+
+
+make 
+
+cp sol 		/usr/local/bin
+cp spider 	/usr/local/bin
+cp freecell	/usr/local/bin

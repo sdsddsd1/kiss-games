@@ -1,0 +1,9 @@
+--- Makefile_new
++++ Makefile
+@@ -1,5 +1,5 @@
+ 
+-LDFLAGS = -lncurses
++LDFLAGS = -lncursesw
+ 
+ aop: aop.c
+ 
