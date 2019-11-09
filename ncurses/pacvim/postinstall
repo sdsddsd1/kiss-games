@@ -1,0 +1,3 @@
+#!/bin/sh -e
+
+ln -s /usr/include/curses.h /usr/include/cursesw.h

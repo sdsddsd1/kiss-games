@@ -1,0 +1,11 @@
+--- Makefile1
++++ Makefile
+@@ -8,7 +8,7 @@
+ 
+ CXX    = g++
+ CFLAGS = -std=c++11 -DMAPS_LOCATION='"$(MAPDIR)"'
+-LFLAGS = -lncurses
++LFLAGS = -lncursesw
+ 
+ TARGET = pacvim
+ MAPS   = maps
