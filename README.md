@@ -1,8 +1,7 @@
-## sdsddsd's personal 
+## sdsddsd's personal
+with kisslinux compatible
 
-#### with kisslinux compatible
-
-## game repository
+game repository
 
 #### currently features:
 
