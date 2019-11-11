@@ -3,13 +3,13 @@
 ### currently features:
 
 
-##### terminalgames with only ncurses dependency:
+- terminalgames with only ncurses dependency:
 ```
 2048, aop, cnibbles, curseofwar, greed, npush, nsnake, pacvim, solvitaire and tetris
 ```
 
 
-##### other stuff
+- other stuff
 ```
 dopewars, xmahjong, gzdoom, prboom and mednafen + frontend
 ```
