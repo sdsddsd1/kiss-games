@@ -1,0 +1,12 @@
+#!/bin/sh -e
+
+./bootstrap.sh
+
+./configure \
+    --prefix=/usr \
+    --disable-dbus \
+    --disable-static \
+    --disable-ibus
+    
+make
+make DESTDIR="$1" install

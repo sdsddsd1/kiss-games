@@ -1,0 +1,14 @@
+#!/bin/sh -e
+
+cd build/
+
+cmake \
+      -DALSOFT_EXAMPLES=OFF \
+      -DCMAKE_INSTALL_PREFIX=/usr \
+        ..
+
+
+
+make 
+
+make DESTDIR="$1" install
