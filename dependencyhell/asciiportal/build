@@ -1,8 +1,0 @@
-#!/bin/sh -e
-
-
-
-
-make nosdl
-
-make DESTDIR="$1" install
