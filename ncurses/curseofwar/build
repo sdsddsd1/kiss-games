@@ -2,6 +2,6 @@
 
 patch -p1 < Makefile_lncursesw.patch
 
-make
+make PREFIX=/usr
 
-make DESTDIR="$1" install
+make DESTDIR="$1" PREFIX=/usr install

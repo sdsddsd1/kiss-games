@@ -10,6 +10,6 @@ f="-DFMOD_LIBRARY=../fmodapi44464linux/api/lib/libfmodex${a}-4.44.64.so \
 -DFMOD_INCLUDE_DIR=../fmodapi44464linux/api/inc"; else
 f='-UFMOD_LIBRARY -UFMOD_INCLUDE_DIR'; fi &&
 cmake .. -DCMAKE_BUILD_TYPE=Release $f &&
-make -j$c
+make -j$c PREFIX=/usr
 
-make DESTDIR="$1" install
+make DESTDIR="$1" PREFIX=/usr install

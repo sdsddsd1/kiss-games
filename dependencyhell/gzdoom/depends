@@ -1,5 +1,8 @@
 libopenal
 muslfts
-libjeg-turbo
+libjpeg-turbo
 sdl2
 mpg123
+bzip2
+zlib
+

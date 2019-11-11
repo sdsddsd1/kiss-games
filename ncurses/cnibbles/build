@@ -6,5 +6,7 @@ tar -xvjf cNibbles-2.0.1.tbz --strip-components 1
 
 patch -p1 < Makefile_lncursesw.patch
 
-make
+make PREFIX=/usr
+
+make DESTDIR="$1" PREFIX=/usr install
 
