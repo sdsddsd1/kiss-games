@@ -14,11 +14,7 @@
 dopewars, xmahjong, gzdoom, prboom and mednafen + frontend
 ```
 
-
-
-
-
-
+---
 
 > This repo is under construction. Use on own risk. May brake your system. Read the buildfiles.
 
