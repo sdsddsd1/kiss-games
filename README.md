@@ -1,4 +1,4 @@
-# sdsddsd's personal with kisslinux compatible game repository.
+# sdsddsd's personal kisslinux compatible game repository.
 
 ### currently features:
 
@@ -9,7 +9,7 @@
 ```
 
 
-- other stuff
+- other stuff:
 ```
 dopewars, xmahjong, gzdoom, prboom and mednafen + frontend
 ```
