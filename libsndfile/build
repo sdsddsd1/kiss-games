@@ -2,7 +2,8 @@
 
 
 ./configure \
-	--prefix=/usr
+	--prefix=/usr \
+	--disable-full-suite
 make
 
 make DESTDIR="$1" install
