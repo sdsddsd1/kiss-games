@@ -1,0 +1,10 @@
+!#/bin/sh
+
+./configure \
+	--prefix=/usr \
+	--disable-dbus \
+        --disable-ibus
+
+make
+
+make DESTDIR="$1" install
