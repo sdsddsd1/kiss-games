@@ -1,8 +1,9 @@
 #!/bin/sh -e
 
 
+
 make 
 
-cp sol 		/usr/local/bin
-cp spider 	/usr/local/bin
-cp freecell	/usr/local/bin
+install -D sol 		$1/usr/local/bin/sol
+install -D spider 	$1/usr/local/bin/spider
+install -D freecell	$1/usr/local/bin/freecell

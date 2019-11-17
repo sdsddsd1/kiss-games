@@ -4,4 +4,4 @@ patch -p1 < Makefile_lncursesw.patch
 
 make 
 
-cp npush /usr/local/bin/
+install -D npush $1/usr/local/bin/npush

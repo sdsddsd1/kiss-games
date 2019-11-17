@@ -2,6 +2,6 @@
 
 patch -p1 < Makefile_lncursesw.patch
 
-make PREFIX=/usr
+make 
 
-make DESTDIR="$1" PREFIX=/usr install
+install -D greed $1/usr/local/bin/greed

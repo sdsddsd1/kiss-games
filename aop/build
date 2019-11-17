@@ -2,6 +2,6 @@
 
 patch -p1 < Makefile_lncursesw.patch
 
-make PREFIX=/usr
+make
 
-make DESTDIR="$1" install
+install -D  aop $1/usr/local/bin/aop
