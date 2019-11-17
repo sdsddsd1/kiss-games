@@ -1,4 +1,4 @@
 #!/bin/sh -e
 
 
-cp bash2048.sh /usr/local/bin/2048
+install -Dm755 bash2048.sh $1/usr/local/bin/2048
