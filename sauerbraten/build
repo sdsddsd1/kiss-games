@@ -1,19 +1,19 @@
 #!/bin/sh
 
 
-install -d /usr/share/sauerbraten/bin
-install -Dm755 sauerbraten-client /usr/bin/sauerbraten-client
-cp -pr data/ /usr/share/sauerbraten
-cp -pr packages/ /usr/share/sauerbraten
+install -d $1/usr/share/sauerbraten/bin
+install -Dm755 $1sauerbraten-client /usr/bin/sauerbraten-client
+cp -pr data/ $1/usr/share/sauerbraten
+cp -pr packages/ $1/usr/share/sauerbraten
 
 
 cd src
 
 make PREFIX=/usr client
 
-make install
+make DESTDIR="$1" install
 
 cd ..
 
-install -D bin_unix/native_client /usr/share/sauerbraten/bin/linux_client
+install -D bin_unix/native_client $1/usr/share/sauerbraten/bin/linux_client
 
