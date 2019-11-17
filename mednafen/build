@@ -2,7 +2,12 @@
 
 
 ./configure \
-	--prefix=/usr
+	 --disable-sdltest \
+	 --disable-alsatest \
+	 --disable-jack \
+	 --disable-debugger \
+	 --enable-threads=posix \
+	 --prefix=/usr
 make
 
 make DESTDIR="$1" install
