@@ -2,7 +2,7 @@
 
 
 install -d $1/usr/share/sauerbraten/bin
-install -Dm755 $1sauerbraten-client /usr/bin/sauerbraten-client
+install -Dm755 sauerbraten-client $1/usr/bin/sauerbraten-client
 cp -pr data/ $1/usr/share/sauerbraten
 cp -pr packages/ $1/usr/share/sauerbraten
 
