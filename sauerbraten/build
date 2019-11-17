@@ -1,0 +1,19 @@
+#!/bin/sh
+
+
+install -d /usr/share/sauerbraten/bin
+install -Dm755 sauerbraten-client /usr/bin/sauerbraten-client
+cp -pr data/ /usr/share/sauerbraten
+cp -pr packages/ /usr/share/sauerbraten
+
+
+cd src
+
+make PREFIX=/usr client
+
+make install
+
+cd ..
+
+install -D bin_unix/native_client /usr/share/sauerbraten/bin/linux_client
+

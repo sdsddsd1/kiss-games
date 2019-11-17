@@ -1,0 +1,9 @@
+#!/bin/sh
+
+cd /usr/share/sauerbraten
+if [ -f /usr/bin/aoss ]; then
+	aoss bin/linux_client -q${HOME}/.config/sauerbraten -r
+else
+	bin/linux_client -q${HOME}/.config/sauerbraten -r
+fi
+
