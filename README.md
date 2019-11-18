@@ -2,12 +2,12 @@
 
 - Terminalgames with only ncurses dependency.
 ```
-2048, Aop, cNibbles, CurseofWar, greed, nPush, nSnake, PacVim, solVItaire and vitetris
+2048, Aop, cNibbles, CurseofWar, greed, nPush, nSnake, PacVim, solVItaire vitetris
 ```
 
 - Other stuff.
 ```
-UrbanTerror, dopewars, Xmahjongg, Sauerbraten, GZDoom, PrBoom and Mednafen + Mednaffe
+dopewars, GZDoom, Mednafen Mednaffe PrBoom Sauerbraten, UrbanTerror, Xmahjongg, Xonotic
 ```
 
 - Games known to work with libs from this repo but you may setup yourself.
