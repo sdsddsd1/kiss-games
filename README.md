@@ -7,7 +7,7 @@
 
 - Other stuff.
 ```
-dopewars, GZDoom, Mednafen, Mednaffe, OpenTyrian, PrBoom, Sauerbraten, UrbanTerror, Xmahjongg, Xonotic
+dopewars, GZDoom, Mednafen, Mednaffe, OpenTyrian, PrBoom, Sauerbraten, Taisei, UrbanTerror, Xmahjongg, Xonotic
 ```
 
 - Games known to work with libs from this repo but you may setup yourself.

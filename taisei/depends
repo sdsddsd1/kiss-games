@@ -1,0 +1,13 @@
+bzip2
+freetype-harfbuzz
+glib
+libogg
+libpng
+libressl
+libwebp
+opus
+opusfile
+sdl2
+sdl2_mixer
+zlib
+

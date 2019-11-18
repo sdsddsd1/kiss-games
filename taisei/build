@@ -1,0 +1,19 @@
+#!/bin/sh -e
+
+install -d $1/usr/local/share/taisei/
+
+cp -pr resources/00-taisei.pkgdir/* $1/usr/local/share/taisei
+
+
+
+mkdir build/
+
+cd build
+
+meson -Ddocs=false ..
+
+samu
+
+install -Dm755 src/taisei $1/usr/bin/taisei
+
+
