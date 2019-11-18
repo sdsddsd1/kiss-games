@@ -1,0 +1,8 @@
+#!/bin/sh -e
+
+install -d $1/usr/share/urbanterror
+
+unzip UrbanTerror434_full.zip
+ 
+cp -pr UrbanTerror43/q3ut4/ $1/usr/share/urbanterror
+

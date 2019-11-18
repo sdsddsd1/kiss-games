@@ -1,0 +1,21 @@
+#!/bin/sh -e
+
+
+
+patch -p1 < musl.patch code/unix/unix_main.c
+
+
+make USE_OPENAL=yes USE_CURL=1 USE_CODEC_VORBIS=1 DEFAULT_BASEDIR="/usr/share/urbanterror"
+
+#make install
+
+mv build/release-linux-x86_64/Quake3-UrT.x86_64 build/release-linux-x86_64/urbanterror
+
+mv build/release-linux-x86_64/Quake3-UrT-Ded.x86_64 build/release-linux-x86_64/urbanterror.ded
+
+install -d $1/usr/share/urbanterror
+
+cp -pr build/release-linux-x86_64/* $1/usr/share/urbanterror
+
+install -Dm755 urbanterror $1/usr/bin/urbanterror
+install -Dm755 urbanterror-ded $1/usr/bin/urbanterror-ded
