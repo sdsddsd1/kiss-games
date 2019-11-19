@@ -1,11 +1,11 @@
---- Makefile_new
+--- Makefile2
 +++ Makefile
-@@ -65,7 +65,7 @@
+@@ -64,7 +64,7 @@
  EXE         = $(PACKAGE)
  CDEBUG      = -O2
  CXXFLAGS    = $(CDEBUG) -Wall -Wextra $(CFLAGS_PLATFORM)
--LDFLAGS     = -lncurses $(LDFLAGS_PLATFORM)
-+LDFLAGS     = -lncursesw $(LDFLAGS_PLATFORM)
+-LDFLAGS     = -lncurses -lyaml-cpp $(LDFLAGS_PLATFORM)
++LDFLAGS     = -lncursesw -lyaml-cpp $(LDFLAGS_PLATFORM)
  INCLUDESDIR = -I"src/" -I"deps/"
  LIBSDIR     =
  
