@@ -2,7 +2,7 @@
 
 - Terminalgames with only ncurses dependency.
 ```
-2048, Aop, cNibbles, CurseofWar, greed, nPush, nSnake, PacVim, solVItaire, vitetris
+2048, Aop, cNibbles, CurseofWar, greed, nPush, nSnake, solVItaire, vitetris
 ```
 
 - Other stuff.
