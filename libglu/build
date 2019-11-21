@@ -1,9 +1,5 @@
 #!/bin/sh -e
 
-./autogen.sh
-
-./autogen.sh
-
 ./configure \
 	--prefix=/usr
 
