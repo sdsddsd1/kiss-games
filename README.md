@@ -1,13 +1,13 @@
 # sdsddsd's personal, KISSlinux compatible game repository.
 
-- Terminalgames with only ncurses dependency.
+- Terminalgames.
 ```
 2048, Aop, cNibbles, CurseofWar, greed, nPush, nSnake, solVItaire, vitetris
 ```
 
 - Other stuff.
 ```
-dopewars, GZDoom, Mednafen, OpenTyrian, PrBoom, Sauerbraten, Taisei, UrbanTerror, Xmahjongg, Xonotic
+Cave Story, dopewars, GZDoom, Mednafen, OpenTyrian, PrBoom, Sauerbraten, Taisei, UrbanTerror, Xmahjongg, Xonotic
 ```
 
 ---
