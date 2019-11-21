@@ -7,13 +7,9 @@ cp -pr data/ $1/usr/share/sauerbraten
 cp -pr packages/ $1/usr/share/sauerbraten
 
 
-cd src
+make -C src/ PREFIX=/usr client
 
-make PREFIX=/usr client
-
-make DESTDIR="$1" install
-
-cd ..
+make  -C src/ DESTDIR="$1" install
 
 install -D bin_unix/native_client $1/usr/share/sauerbraten/bin/linux_client
 
