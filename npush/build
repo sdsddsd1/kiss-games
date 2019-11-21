@@ -2,6 +2,9 @@
 
 patch -p1 < Makefile_lncursesw.patch
 
-make 
+make
 
-install -D npush $1/usr/local/bin/npush
+install -d $1/usr/local/share/npush/
+install -Dm755 npush $1/usr/local/share/npush/npush
+cp -r levels/ $1/usr/local/share/npush/
+install -Dm755 npush-launcher $1/usr/local/bin/npush

@@ -1,0 +1,4 @@
+#!/bin/sh -e
+
+cd  /usr/local/share/npush/
+exec ./npush
