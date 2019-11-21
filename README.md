@@ -7,7 +7,7 @@
 
 - Other stuff.
 ```
-Cave Story, dopewars, GZDoom, Mednafen, OpenTyrian, PrBoom, Sauerbraten, Taisei, UrbanTerror, Xmahjongg, Xonotic
+CaveStory, dopewars, GZDoom, Mednafen, OpenTyrian, PrBoom, Sauerbraten, Taisei, UrbanTerror, Xmahjongg, Xonotic
 ```
 
 ---
