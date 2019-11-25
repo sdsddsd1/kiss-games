@@ -1,0 +1,11 @@
+#!/bin/sh
+
+cat <<EOF
+
+!!!IMPORTANT!!!
+
+You have to manually create a symlink in order to get this working.
+"ln -fs libluajit-5.1.so.2.0.5 libluajit-5.1.so.2"
+Somehow the cmake routine is not picking up the right libaries.
+
+EOF

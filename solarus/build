@@ -1,0 +1,27 @@
+#!/bin/sh -e
+
+mkdir build/
+
+cd build/
+
+cmake -D SOLARUS_GUI=OFF ..
+
+sed -i 's/libluajit-5.1.a/libluajit-5.1.so.2.0.5/' CMakeCache.txt
+
+
+make
+
+make DESTDIR="$1" install
+
+rm -rf "$1/usr/local/share/man/man6/solarus-run.6"
+
+cat <<EOF
+
+!!!IMPORTANT!!!
+
+You have to manually create a symlink in order to get this working.
+"ln -fs /usr/lib/libluajit-5.1.so.2.0.5 /usr/lib/libluajit-5.1.so.2"
+Somehow the cmake routine is not picking up the right libaries.
+
+!!!IMPORTANT!!!
+EOF
