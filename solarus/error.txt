@@ -1,1 +1,0 @@
-[Solarus] [0] Error: No quest was found in the directory '.'
