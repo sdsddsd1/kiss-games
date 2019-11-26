@@ -7,9 +7,11 @@
 
 - Other stuff.
 ```
-CaveStory, dopewars, GZDoom, Mednafen, OpenTyrian, PrBoom, Sauerbraten, Solarus, Taisei, UrbanTerror, Xmahjongg, Xonotic
+CaveStory, dopewars, Mednafen, OpenTyrian, Solarus, Taisei, Xmahjongg
 ```
-
+```
+GZDoom, PrBoom, Sauerbraten, UrbanTerror, Xonotic
+```
 ---
 
 > This repo is under construction. Use on own risk. May brake your system. Read the buildfiles.
