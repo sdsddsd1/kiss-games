@@ -1,0 +1,9 @@
+!#/bin/sh
+
+cd src/
+
+cmake ..
+
+make PREFIX=/usr
+
+make DESTDIR="$1" install
