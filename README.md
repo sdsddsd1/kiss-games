@@ -8,8 +8,6 @@
 - Other stuff.
 ```
 CaveStory, dopewars, Mednafen, OpenTyrian, Solarus, Taisei, Xmahjongg
-```
-```
 GZDoom, PrBoom, Sauerbraten, UrbanTerror, Xonotic
 ```
 ---
