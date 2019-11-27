@@ -1,4 +1,4 @@
-# sdsddsd's personal, KISSlinux compatible game repository.
+# KISSlinux compatible game repository.
 
 - Terminalgames.
 ```
@@ -8,7 +8,10 @@
 - Other stuff.
 ```
 CaveStory, dopewars, Mednafen, OpenTyrian, Solarus, Taisei, Xmahjongg
+```
 
+- FPS.
+```
 GZDoom, PrBoom, Sauerbraten, UrbanTerror, Xonotic
 ```
 ---
