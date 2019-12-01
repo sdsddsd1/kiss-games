@@ -1,0 +1,14 @@
+#!/bin/sh -e
+
+
+make -C src/
+
+install -d $1/usr/share/sdlpop
+
+cp -pr data/ $1/usr/share/sdlpop
+
+cp -pr mods/ $1/usr/share/sdlpop
+
+install -D prince $1/usr/share/sdlpop/prince
+
+install -D sdlpoplauncher.sh $1/usr/bin/princeofpersia
