@@ -1,0 +1,5 @@
+#!/bin/sh -e
+
+cd  /usr/share/hurrican/
+
+./hurricanlinux

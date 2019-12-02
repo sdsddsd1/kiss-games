@@ -7,7 +7,7 @@
 
 - Other stuff.
 ```
-CaveStory, dopewars, Mednafen, OpenTyrian, SDLPoP, Solarus, Taisei, Xmahjongg
+CaveStory, dopewars, Hurrican, Mednafen, OpenTyrian, SDLPoP, Solarus, Taisei, Xmahjongg
 ```
 
 - FPS.
@@ -16,7 +16,7 @@ GZDoom, PrBoom, Sauerbraten, UrbanTerror, Xonotic
 ```
 ---
 
-> This repo is under construction. Use on own risk. May brake your system. Read the buildfiles.
+> Use on own risk. Read the buildfiles.
 
 
 * [getkiss.org](https://getkiss.org/)

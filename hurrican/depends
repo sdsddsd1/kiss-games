@@ -1,0 +1,10 @@
+expat
+libX11
+libXau
+sdl
+sdl_image
+sdl_mixer
+libdrm
+libmodplug
+libxcb
+libxshmfence
