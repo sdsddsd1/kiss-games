@@ -12,7 +12,7 @@ CaveStory, dopewars, Hurrican, Mednafen, OpenTyrian, SDLPoP, Solarus, Taisei, Xm
 
 - FPS.
 ```
-GZDoom, PrBoom, Sauerbraten, UrbanTerror, Xonotic
+GZDoom, PrBoom, Redeclipse, Sauerbraten, UrbanTerror, Xonotic
 ```
 ---
 

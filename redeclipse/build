@@ -1,0 +1,23 @@
+#!/bin/sh -e
+
+make -C src/
+
+
+install -d $1/usr/share/redeclipse
+
+cp -pr bin/ $1/usr/share/redeclipse
+
+cp -pr config/ $1/usr/share/redeclipse
+
+cp -pr data/ $1/usr/share/redeclipse
+
+cp -pr sql/ $1/usr/share/redeclipse
+
+cp -pr doc/ $1/usr/share/redeclipse
+
+install -D src/redeclipse_linux $1/usr/share/redeclipse
+
+
+install -Dm755 redeclipse_launcher $1/usr/bin/redeclipse
+
+
