@@ -5,4 +5,5 @@ sdl2
 mpg123
 bzip2
 zlib
-
+libexecinfo
+libsndfile
