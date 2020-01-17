@@ -9,3 +9,4 @@ libexecinfo
 libsndfile
 libgme
 libglu
+alsa-lib

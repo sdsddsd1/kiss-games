@@ -1,15 +1,21 @@
 #!/bin/sh -e
 
 mkdir build
-a='' && [ "$(uname -m)" = x86_64 ] && a=64
-c="$(lscpu -p | grep -v '#' | sort -u -t , -k 2,4 | wc -l)" ; [ "$c" -eq 0 ] && c=1
+sed -i 's|#define SHARE_DIR.*|#define SHARE_DIR "/usr/share/gzdoom/"|' src/posix/i_system.h
+sed -i 's|/usr/share/games/doom|/usr/share/gzdoom|g' src/gameconfigfile.cpp
 cd build &&
 rm -f output_sdl/liboutput_sdl.so &&
-if [ -d ../fmodapi44464linux ]; then
-f="-DFMOD_LIBRARY=../fmodapi44464linux/api/lib/libfmodex${a}-4.44.64.so \
--DFMOD_INCLUDE_DIR=../fmodapi44464linux/api/inc"; else
-f='-UFMOD_LIBRARY -UFMOD_INCLUDE_DIR'; fi &&
-cmake .. -DCMAKE_BUILD_TYPE=Release -DNO_FMOD=ON -DNO_GTK=ON $f &&
-make -j$c PREFIX=/usr
+cmake \
+	-DCMAKE_BUILD_TYPE=Release \
+	-DNO_FMOD=ON \
+	-DNO_GTK=ON \
+	-DCMAKE_INSTALL_PREFIX=/usr/ \
+        -DINSTALL_PATH=bin/ \
+        -DINSTALL_PK3_PATH=share/gzdoom/ \
+	-DSHARE_DIR=/usr/share/gzdoom/ \
+	-DINSTALL_DOCS_PATH=/usr/share/gzdoom/ \
+	..
 
-make DESTDIR="$1" PREFIX=/usr install
+make 
+
+make DESTDIR="$1" install
