@@ -8,4 +8,4 @@ patch -p1 < Makefile_lncursesw.patch
 
 make
 
-install -D cNibbles $1/usr/local/bin/cNibbles
+install -D cNibbles $1/usr/bin/cNibbles

@@ -4,4 +4,4 @@ patch -p1 < Makefile_lncursesw.patch
 
 make
 
-install -D  aop $1/usr/local/bin/aop
+install -D  aop $1/usr/bin/aop

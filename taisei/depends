@@ -10,4 +10,4 @@ opusfile
 sdl2
 sdl2_mixer
 zlib
-
+libvorbis
