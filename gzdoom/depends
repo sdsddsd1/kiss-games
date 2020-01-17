@@ -7,3 +7,5 @@ bzip2
 zlib
 libexecinfo
 libsndfile
+libgme
+libglu
