@@ -7,7 +7,7 @@
 
 - Other stuff.
 ```
-CaveStory, dopewars, Hurrican, Mednafen, OpenTyrian, SDLPoP, Solarus, Taisei,Tinytris, Xmahjongg
+CaveStory, dopewars, Hurrican, Mednafen, OpenTyrian, SDLPoP, Solarus, Taisei, Tinytris, Xmahjongg
 ```
 
 - FPS.
