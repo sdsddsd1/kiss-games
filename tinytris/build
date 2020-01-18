@@ -1,0 +1,19 @@
+#!/bin/sh
+
+unzip *.zip
+
+install -Dm755 tinytris-launcher $1/usr/bin/tinytris
+
+cd Tiny\ Tris\ PC\ v2.2
+
+sed -i '323 s/Eternam2.mp3/Eternam2.ogg/g' Source/tinytrisPC.c
+
+(cd Source; gcc -o tinytrisPC tinytrisPC.c Widjet.c  -lSDL_mixer  `sdl-config --libs --cflags`; mv tinytrisPC ..)
+
+(cd SND; ffmpeg -i Eternam2.mp3 Eternam2.ogg)
+
+install -d $1/usr/share/tinytris
+cp -r SND/ $1/usr/share/tinytris
+cp CONTROL.bmp $1/usr/share/tinytris
+cp Config.ini $1/usr/share/tinytris
+cp tinytrisPC $1/usr/share/tinytris
