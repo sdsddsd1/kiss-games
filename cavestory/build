@@ -6,19 +6,18 @@ mkdir build/
 cmake -DCMAKE_BUILD_TYPE=Release -B build/
 
 make -C build/
-ls
+
 unzip cavestoryen.zip
-ls
-#cp bin/nx CaveStory/
-#cp bin/extract CaveStory/
-#cp -r data/ CaveStory/
+
+mv bin/* CaveStory/
+
+mv data/* CaveStory/data/
+
+(cd CaveStory; ./extract)
 
 
 install -d $1/usr/share/cavestory
 
-cp -pr CaveStory/* $1/usr/share/cavestory
+cp -r CaveStory/* $1/usr/share/cavestory/
 
-install -Dm755 bin/nx $1/usr/share/cavestory/nx
-install -Dm755 bin/extract $1/usr/share/cavestory/extract
-cp -r data/ $1/usr/share/cavestory/
-install -Dm755 cavestory $1/usr/bin/cavestory
+install -Dm755 cavestory-launcher $1/usr/bin/cavestory

@@ -1,3 +1,6 @@
 libpng
 sdl2
 zlib
+sdl2_ttf
+sdl_mixer
+sdl2_mixer
