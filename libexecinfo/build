@@ -1,6 +1,16 @@
-#!/bin/sh -e
+#!/bin/sh
 
+for patch in *.patch; do
+    patch -p1 < "$patch"
+done
 
-make PREFIX=/usr
+sed -e "/Version:/s@version@1.1@" -i libexecinfo.pc
 
-make DESTDIR="$1" PREFIX=/usr install
+make
+
+install -Dm644 execinfo.h $1/usr/include/execinfo.h
+install -Dm644 stacktraverse.h $1/usr/include/stacktraverse.h
+install -Dm755 libexecinfo.a $1/usr/lib/libexecinfo.a
+install -Dm755 libexecinfo.so.1 $1/usr/lib/libexecinfo.so.1
+install -Dm644 libexecinfo.pc $1/usr/lib/pkgconfig/libexecinfo.pc
+ln -s /usr/lib/libexecinfo.so1 $1/usr/lib/libexecinfo.so
