@@ -2,6 +2,8 @@
 
 cd gme
 
-cmake ..
+cmake \
+	-DCMAKE_INSTALL_PREFIX=/usr \
+	..
 
 make DESTDIR="$1" install
