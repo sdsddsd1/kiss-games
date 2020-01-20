@@ -5,4 +5,4 @@ patch -p1 < Makefile_lncursesw.patch
 
 make 
 
-install -D bin/nsnake $1/usr/local/bin/nsnake
+install -D bin/nsnake $1/usr/bin/nsnake
