@@ -15,7 +15,7 @@ CaveStory, dopewars, Hurrican, Mednafen, OpenTyrian, SDLPoP, Solarus, Taisei, Ti
 GZDoom, PrBoom, Redeclipse, Sauerbraten, UrbanTerror, Xonotic
 ```
 
-<img src=“screenshots/busy.jpeg" height="400" alt="Screenshot"/>
+![screen](screenshots/busy.jpeg)
 ---
 
 > Use on own risk. Read the buildfiles.
