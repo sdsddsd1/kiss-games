@@ -1,0 +1,9 @@
+#!/bin/sh -e
+
+./configure \
+    --prefix=/usr \
+    --disable-examples \
+    --disable-doc
+
+make
+make DESTDIR="$1" install
