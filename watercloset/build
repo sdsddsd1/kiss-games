@@ -1,0 +1,7 @@
+#!/bin/sh -e
+
+sed -i '28s/$/ -Wno-aggressive-loop-optimizations/' makefile
+
+make DATA_DIR=/usr/share/watercloset
+
+make DATA_DIR=/usr/share/watercloset  DESTDIR="$1" install
