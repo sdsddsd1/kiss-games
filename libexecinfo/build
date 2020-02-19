@@ -1,5 +1,5 @@
 #!/bin/sh
-
+#export CFLAGS="-fno-omit-frame-pointer"
 for patch in *.patch; do
     patch -p1 < "$patch"
 done
@@ -13,4 +13,4 @@ install -Dm644 stacktraverse.h $1/usr/include/stacktraverse.h
 install -Dm755 libexecinfo.a $1/usr/lib/libexecinfo.a
 install -Dm755 libexecinfo.so.1 $1/usr/lib/libexecinfo.so.1
 install -Dm644 libexecinfo.pc $1/usr/lib/pkgconfig/libexecinfo.pc
-ln -s /usr/lib/libexecinfo.so1 $1/usr/lib/libexecinfo.so
+ln -s /usr/lib/libexecinfo.so.1 $1/usr/lib/libexecinfo.so
