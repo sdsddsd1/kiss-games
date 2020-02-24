@@ -13,6 +13,8 @@ make
 
 make DESTDIR="$1" install
 
+ln -fs /usr/lib/libluajit-5.1.so.2.0.5 "$1/usr/lib/libluajit-5.1.so.2"
+
 rm -rf "$1/usr/local/share/man/man6/solarus-run.6"
 
 cat <<EOF
