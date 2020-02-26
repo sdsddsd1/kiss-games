@@ -1,10 +1,14 @@
 #!/bin/sh -e
 
 patch -p1 < prboom-2.5.0-libpng-1.4.patch
-
+sed -i 's|^gamesdir = $(prefix)/games|gamesdir = ${bindir}|g' src/Makefile.in
 ./configure \
-	--prefix=/usr
+	--prefix=/usr \
+	--exec-prefix=/usr/bin \
+	--bindir=/usr/bin \
+	--with-waddir=/usr/share/prboom
+
 make
 
-make DESTDIR="$1" install-strip
+make DESTDIR="$1" install
 
