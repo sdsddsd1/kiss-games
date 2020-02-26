@@ -2,10 +2,6 @@
 
 export DESTDIR="$1"
 
-#mkdir build/
-
-#cd build
-
 meson \
 	--prefix=/usr \
 	-Ddocs=false \
