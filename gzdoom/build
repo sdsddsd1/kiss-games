@@ -1,11 +1,12 @@
 #!/bin/sh -e
 
-mkdir build
+export DESTDIR="$1"
+
 sed -i 's|#define SHARE_DIR.*|#define SHARE_DIR "/usr/share/gzdoom/"|' src/posix/i_system.h
 sed -i 's|/usr/share/games/doom|/usr/share/gzdoom|g' src/gameconfigfile.cpp
-cd build &&
 rm -f output_sdl/liboutput_sdl.so &&
-cmake \
+
+cmake -B build \
 	-DCMAKE_BUILD_TYPE=Release \
 	-DNO_FMOD=ON \
 	-DNO_GTK=ON \
@@ -15,9 +16,7 @@ cmake \
 	-DSHARE_DIR=/usr/share/gzdoom/ \
 	-DINSTALL_DOCS_PATH=/usr/share/gzdoom/ \
 	-DCMAKE_EXE_LINKER_FLAGS=-lfts \
-	-DCMAKE_CXX_FLAGS=-Wl,-lexecinfo \
-	..
+	-DCMAKE_CXX_FLAGS=-Wl,-lexecinfo 
 
-make 
-
-make DESTDIR="$1" install
+cmake --build   build
+cmake --install build
