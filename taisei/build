@@ -2,16 +2,16 @@
 
 export DESTDIR="$1"
 
-mkdir build/
+#mkdir build/
 
-cd build
+#cd build
 
 meson \
-	-Ddocs=false \
 	--prefix=/usr \
-	 ..
+	-Ddocs=false \
+	. output 
 
-ninja
+ninja -C output
 
-ninja install
+ninja -C output install
 
