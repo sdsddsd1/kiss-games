@@ -3,8 +3,15 @@
 ./autogen.sh
 
 ./configure \
-	--prefix=/usr
+	--prefix=/usr \
+	--enable-truecolor
 
 make
 
 make DESTDIR="$1" install 
+
+rm -rf "$1/usr/share/doc/crispy-doom/"
+rm -rf "$1/usr/share/applications/screensavers/io.github.fabiangreffrath.Doom_Screensaver.desktop"
+rm -rf "$1/usr/share/applications/io.github.fabiangreffrath.Setup.desktop"
+rm -rf "$1/usr/share/applications/io.github.fabiangreffrath.Doom.desktop"
+rm -rf "$1/usr/share/metainfo/io.github.fabiangreffrath.Doom.metainfo.xml"

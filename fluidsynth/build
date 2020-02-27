@@ -1,0 +1,20 @@
+#!/bin/sh -e
+
+export DESTDIR="$1"
+
+cmake -B build \
+        -DCMAKE_INSTALL_PREFIX=/usr
+
+cmake --build   build
+cmake --install build
+
+cat <<EOF
+#### IMPORTANT ####
+#### IMPORTANT ####
+
+In order for sdl to pick up the right soundfont.
+-> export SDL_SOUNDFONTS=/usr/share/soundfonts/default.sf2
+
+#### IMPORTANT ####
+#### IMPORTANT ####
+EOF

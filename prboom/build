@@ -1,0 +1,15 @@
+#!/bin/sh -e
+
+sed -i 's|^gamesdir = $(prefix)/games|gamesdir = ${bindir}|g' src/Makefile.in
+
+./configure \
+ 	--prefix=/usr \
+ 	--exec-prefix=/usr/bin \
+ 	--bindir=/usr/bin \
+ 	--with-waddir=/usr/share/prboom
+
+make
+
+make DESTDIR="$1" install
+
+rm -rf "$1/usr/share/doc/prboom-plus-2.5.1.4/"
