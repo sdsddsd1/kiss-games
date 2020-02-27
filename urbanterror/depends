@@ -1,4 +1,6 @@
+curl
 libogg
+libopenal
 libvorbis
 sdl
 urbanterror-data
