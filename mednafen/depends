@@ -1,5 +1,5 @@
+alsa-lib
+libsndfile
 sdl
 sdl2
-libsndfile
 zlib
-alsa-lib

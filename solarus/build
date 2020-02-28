@@ -1,19 +1,12 @@
 #!/bin/sh -e
 
-mkdir build/
+export DESTDIR="$1"
 
-cd build/
+cmake -B build \
+        -DCMAKE_INSTALL_PREFIX=/usr \
+	-D SOLARUS_GUI=OFF
 
-cmake -D SOLARUS_GUI=OFF ..
-
-sed -i 's/libluajit-5.1.a/libluajit-5.1.so.2.0.5/' CMakeCache.txt
-
-
-make
-
-make DESTDIR="$1" install
-
-ln -fs /usr/lib/libluajit-5.1.so.2.0.5 "$1/usr/lib/libluajit-5.1.so.2"
+cmake --build   build
+cmake --install build
 
 rm -rf "$1/usr/local/share/man/man6/solarus-run.6"
-
