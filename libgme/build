@@ -1,9 +1,9 @@
-#!/bin/sh
+#!/bin/sh -e
 
-cd gme
+export DESTDIR="$1"
 
-cmake \
-	-DCMAKE_INSTALL_PREFIX=/usr \
-	..
+cmake -B build \
+	-DCMAKE_INSTALL_PREFIX=/usr
 
-make DESTDIR="$1" install
+cmake --build 	build
+cmake --install build

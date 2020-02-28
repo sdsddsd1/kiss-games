@@ -1,14 +1,11 @@
 #!/bin/sh -e
 
-cd build/
+export DESTDIR="$1"
 
-cmake \
-      -DALSOFT_EXAMPLES=OFF \
-      -DCMAKE_INSTALL_PREFIX=/usr \
-        ..
+cmake -B build \
+        -DCMAKE_INSTALL_PREFIX=/usr \
+	-DALSOFT_EXAMPLES=OFF
 
+cmake --build   build
+cmake --install build
 
-
-make PREFIX=/usr
-
-make DESTDIR="$1" PREFIX=/usr install
