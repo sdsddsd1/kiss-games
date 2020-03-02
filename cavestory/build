@@ -1,23 +1,16 @@
 #!/bin/sh -e
 
-mkdir build/
+cmake -B build \
+	-DCMAKE_BUILD_TYPE=Release
 
-
-cmake -DCMAKE_BUILD_TYPE=Release -B build/
-
-make -C build/
+cmake --build   build
 
 unzip cavestoryen.zip
-
 mv bin/* CaveStory/
-
 mv data/* CaveStory/data/
 
 (cd CaveStory; ./extract)
 
-
-install -d $1/usr/share/cavestory
-
-cp -r CaveStory/* $1/usr/share/cavestory/
-
-install -Dm755 cavestory-launcher $1/usr/bin/cavestory
+install -d 				"$1/usr/share/cavestory"
+cp -r CaveStory/.			"$1/usr/share/cavestory"
+install -Dm755 cavestory-launcher 	"$1/usr/bin/cavestory"

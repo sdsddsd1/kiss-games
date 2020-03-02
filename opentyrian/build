@@ -3,14 +3,9 @@
 unzip 6b46ca6fa8f7.zip
 unzip tyrian21.zip
 
-install -d $1/usr/share/opentyrian/
-cp -pr tyrian21/* $1/usr/share/opentyrian/
-install -Dm755 opentyrian $1/usr/bin/opentyrian
+make -C opentyrian-opentyrian-6b46ca6fa8f7/
 
-
-cd opentyrian-opentyrian-6b46ca6fa8f7/
-
-make 
-
-install -Dm755 opentyrian $1/usr/share/opentyrian/opentyrian
-
+install -d 								"$1/usr/share/opentyrian"
+install -Dm755 opentyrian-opentyrian-6b46ca6fa8f7/opentyrian 		"$1/usr/share/opentyrian/opentyrian"
+cp -r tyrian21/. 							"$1/usr/share/opentyrian"
+install -Dm755 opentyrian-launcher					"$1/usr/bin/opentyrian"

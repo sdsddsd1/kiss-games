@@ -1,23 +1,16 @@
 #!/bin/sh -e
 
-install -d $1/usr/share/hurrican
+sed -r "s/-DUSE_PVRTC|-DUSE_ETC1//g" -i Hurrican/src/Makefile
 
-install -Dm755 hurricanlauncher $1/usr/bin/hurrican
+make TARGET=linux -C Hurrican/src/
 
+rm -rf Hurrican/src/
+rm Hurrican/*.exe
+rm Hurrican/*.dll
 
-cd Hurrican
-
-sed -r "s/-DUSE_PVRTC|-DUSE_ETC1//g" -i src/Makefile
-
-make TARGET=linux -C src/
-
-rm -rf src/
-
-rm *.exe
-
-rm *.dll
-
-cp -pr * $1/usr/share/hurrican
+install -d 			"$1/usr/share/hurrican"
+install -Dm755 hurricanlauncher "$1/usr/bin/hurrican"
+cp -r Hurrican/. 		"$1/usr/share/hurrican"
 
 
 
