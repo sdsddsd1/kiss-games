@@ -14,6 +14,6 @@ mv build/release-linux-x86_64/Quake3-UrT-Ded.x86_64	build/release-linux-x86_64/u
 
 install -d				"$1/usr/share/urbanterror"
 cp -r build/release-linux-x86_64/. 	"$1/usr/share/urbanterror"
-cp -r UrbanTerror43/q3ut4/     	"$1/usr/share/urbanterror"
+cp -r UrbanTerror43/q3ut4/ 	    	"$1/usr/share/urbanterror"
 install -Dm755 urbanterror 		"$1/usr/bin/urbanterror"
 install -Dm755 urbanterror-ded 		"$1/usr/bin/urbanterror-ded"
