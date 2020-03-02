@@ -1,5 +1,5 @@
 fluidsynth
-libglu
+glu
 sdl
 sdl2_image
 sdl2_net

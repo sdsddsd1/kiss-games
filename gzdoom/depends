@@ -1,7 +1,7 @@
 alsa-lib
 bzip2
+glu
 libexecinfo
-libglu
 libgme
 libjpeg-turbo
 libopenal
@@ -10,4 +10,3 @@ libtool
 mpg123
 muslfts
 sdl2
-zlib
