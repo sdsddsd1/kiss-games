@@ -1,16 +1,16 @@
-# KISSlinux compatible game repository.
+# KISSlinux compatible game repository
 
-- Terminalgames.
+- Terminalgames
 ```
 2048, Aop, cNibbles, CurseofWar, greed, nPush, nSnake, solVItaire, vitetris
 ```
 
-- Other stuff.
+- Other stuff
 ```
 CaveStory, dopewars, Hurrican, LÖVE, Mednafen, OpenTyrian, SDLPoP, Solarus, Taisei, Tinytris, waterCloset, Xmahjongg 
 ```
 
-- FPS.
+- FPS
 ```
 Crispy Doom, DOOM Retro, GZDoom, PrBoom+, Redeclipse, Sauerbraten, UrbanTerror, Xonotic
 ```
@@ -21,5 +21,5 @@ Crispy Doom, DOOM Retro, GZDoom, PrBoom+, Redeclipse, Sauerbraten, UrbanTerror, 
 > Use on own risk. Read the buildfiles.
 
 
-* [getkiss.org](https://getkiss.org/)
+* [k1ss.org](https://k1ss.org/)
 * [kiss github](https://github.com/kisslinux)
