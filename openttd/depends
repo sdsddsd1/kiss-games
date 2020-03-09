@@ -1,2 +1,5 @@
-sdl
+fontconfig
+icu
+libpng
 lzo
+sdl
