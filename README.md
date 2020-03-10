@@ -5,15 +5,26 @@
 2048, Aop, cNibbles, CurseofWar, greed, nPush, nSnake, solVItaire, vitetris
 ```
 
-- Other stuff
+- Action
 ```
-CaveStory, dopewars, Hurrican, LÖVE, Mednafen, OpenTyrian, SDLPoP, Solarus, Taisei, Tinytris, waterCloset, Xmahjongg 
+CaveStory, Hurrican, OpenTyrian, SDLPoP, Taisei, waterCloset
 ```
 
 - FPS
 ```
 Crispy Doom, DOOM Retro, GZDoom, PrBoom+, Redeclipse, Sauerbraten, UrbanTerror, Xonotic
 ```
+
+- Emulator, engine
+```
+LÖVE, Mednafen, Solarus
+```
+
+- Other stuff
+```
+dopewars, OpenTTD, Tinytris, Xmahjongg 
+```
+
 
 ![screen](screenshots/busy.jpeg)
 ---
