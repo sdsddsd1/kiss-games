@@ -1,0 +1,9 @@
+cmake make
+curl
+glu
+libjpeg-turbo
+libogg
+libopenal
+libvorbis
+mesa make
+sqlite

@@ -1,0 +1,21 @@
+#!/bin/sh -e
+
+./autogen.sh
+
+./configure \
+	--prefix=/usr \
+	--enable-truecolor
+
+make
+
+make DESTDIR="$1" install 
+
+rm -rf	"$1/usr/share/doc/crispy-doom/"
+rm 	"$1/usr/share/applications/screensavers/io.github.fabiangreffrath.Doom_Screensaver.desktop"
+rm 	"$1/usr/share/applications/io.github.fabiangreffrath.Setup.desktop"
+rm 	"$1/usr/share/applications/io.github.fabiangreffrath.Doom.desktop"
+rm 	"$1/usr/share/metainfo/io.github.fabiangreffrath.Doom.metainfo.xml"
+rm 	"$1/usr/share/icons/hicolor/128x128/apps/crispy-setup.png"
+rm 	"$1/usr/share/icons/hicolor/128x128/apps/crispy-doom.png"
+rm 	"$1/usr/share/bash-completion/completions/crispy-doom"
+

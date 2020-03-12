@@ -1,0 +1,17 @@
+#!/bin/sh -e
+
+export DESTDIR="$1"
+
+cmake -B build \
+	-DCMAKE_INSTALL_PREFIX=/usr \
+	-DCMAKE_INSTALL_LIBDIR=lib \
+	-DCMAKE_BUILD_TYPE=Release \
+	-DUSE_WIIUSE=OFF \
+	-DBUILD_RECORDER=0 
+
+cmake --build 	build
+cmake --install build
+
+rm -rf "$1/usr/share/applications"
+rm -rf "$1/usr/share/icons"
+rm -rf "$1/usr/share/metainfo"
