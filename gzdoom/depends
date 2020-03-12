@@ -4,9 +4,9 @@ glu
 libexecinfo
 libgme
 libjpeg-turbo
-libopenal
+openal
 libsndfile
 libtool
 mpg123
-muslfts
+musl-fts
 sdl2

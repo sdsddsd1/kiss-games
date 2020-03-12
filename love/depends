@@ -1,6 +1,6 @@
 hicolor-icon-theme
 libmodplug
-libopenal
+openal
 libtheora
 libvorbis
 luajit
