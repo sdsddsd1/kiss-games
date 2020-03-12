@@ -3,7 +3,7 @@ curl
 glu
 libjpeg-turbo
 libogg
-openal
 libvorbis
 mesa make
+openal
 sqlite

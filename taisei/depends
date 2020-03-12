@@ -8,6 +8,6 @@ libwebp
 opus
 opusfile
 sdl2
-sdl2_mixer
+sdl2-mixer
 zlib
 libvorbis

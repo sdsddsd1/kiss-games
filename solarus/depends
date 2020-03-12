@@ -7,5 +7,5 @@ libvorbis
 luajit
 physfs
 sdl2
-sdl2_image
-sdl2_ttf
+sdl2-image
+sdl2-ttf

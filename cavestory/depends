@@ -1,5 +1,5 @@
 libpng
 sdl2
-sdl2_mixer
-sdl2_ttf
-sdl_mixer
+sdl2-mixer
+sdl2-ttf
+sdl-mixer

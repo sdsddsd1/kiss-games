@@ -1,6 +1,6 @@
 fluidsynth
 glu
 sdl
-sdl2_image
-sdl2_net
-sdl2_mixer
+sdl2-image
+sdl2-net
+sdl2-mixer
