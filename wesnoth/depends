@@ -6,6 +6,6 @@ libvorbis
 lua
 pango
 sdl2
-sdl2-imagge
+sdl2-image
 sdl2-mixer
 sdl2-ttf
