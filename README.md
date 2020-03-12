@@ -22,7 +22,7 @@ LÖVE, Mednafen, Solarus
 
 - Other stuff
 ```
-dopewars, OpenTTD, Tinytris, Xmahjongg 
+dopewars, OpenTTD, SuperTuxKart, Tinytris, Xmahjongg, The Battle for Wesnoth
 ```
 
 
