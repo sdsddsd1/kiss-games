@@ -6,8 +6,6 @@ install -d		 		"$1/usr/share/redeclipse"
 cp -r bin/			 	"$1/usr/share/redeclipse"
 cp -r config/				"$1/usr/share/redeclipse"
 cp -r data/				"$1/usr/share/redeclipse"
-#cp -r sql/				"$1/usr/share/redeclipse"
-#cp -r doc/				"$1/usr/share/redeclipse"
 install -D src/redeclipse_linux		"$1/usr/share/redeclipse"
 install -Dm755 redeclipse_launcher	"$1/usr/bin/redeclipse"
 
