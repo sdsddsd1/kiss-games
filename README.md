@@ -29,6 +29,7 @@ dopewars, OpenTTD, SDLPoP, Tinytris, waterCloset, Wesnoth, Xmahjongg
 ![screen](screenshots/busy.jpeg)
 ---
 
+> To see your beloved gem on this repo, submit am package and take care of its maintenance.
 > Use on own risk. Read the buildfiles.
 
 
