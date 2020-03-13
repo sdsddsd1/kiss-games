@@ -28,10 +28,10 @@ dopewars, OpenTTD, SDLPoP, Tinytris, waterCloset, Wesnoth, Xmahjongg
 
 ![screen](screenshots/busy.jpeg)
 ---
-
-- To see your beloved gem on this repo, submit am package and take care of its maintenance.
-- Use on own risk. Read the buildfiles.
-
+```
+To see your beloved gem on this repo, submit a package and take care of its maintenance.
+Use on own risk. Read the buildfiles.
+```
 
 * [k1ss.org](https://k1ss.org/)
 * [kiss github](https://github.com/kisslinux)
