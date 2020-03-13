@@ -7,7 +7,7 @@
 
 - Action
 ```
-CaveStory, Hurrican, OpenTyrian, SuperTuxKart, SDLPoP, Taisei, waterCloset
+CaveStory, Hurrican, OpenTyrian, SRB2Kart, SuperTuxKart, Taisei
 ```
 
 - FPS
@@ -22,7 +22,7 @@ LÖVE, Mednafen, Solarus
 
 - Other stuff
 ```
-dopewars, OpenTTD, The Battle for Wesnoth, Tinytris, Xmahjongg
+dopewars, OpenTTD, SDLPoP, Tinytris, waterCloset, Wesnoth, Xmahjongg
 ```
 
 

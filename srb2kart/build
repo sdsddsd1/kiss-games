@@ -1,0 +1,19 @@
+#!/bin/sh -e
+
+7zr e srb2kart-v11-Installer.exe -aoa -oassets/
+
+mkdir 				assets/installer
+mv assets/*.kart	assets/installer/
+mv assets/srb2.srb 	assets/installer/
+
+export DESTDIR="$1"
+
+cmake -B build \
+    -DCMAKE_INSTALL_PREFIX=/usr/share/srb2kart \
+	-DCMAKE_BUILD_TYPE=INSTALL
+
+cmake --build   build
+cmake --install build
+
+install -Dm755	build/bin/srb2kart	"$1/usr/bin/srb2kart"
+install -m644	assets/mdls.dat		"$1/usr/share/srb2kart"			
