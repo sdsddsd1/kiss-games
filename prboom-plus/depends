@@ -1,3 +1,5 @@
+autoconf make
+automake make
 fluidsynth
 glu
 sdl
