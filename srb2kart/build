@@ -1,5 +1,18 @@
 #!/bin/sh -e
 
+(
+	cd p7zip
+
+	cp makefile.linux_amd64 makefile.machine
+
+make all3
+
+make install \
+    DEST_HOME="$PWD/../junk" 
+)
+
+export PATH=$PWD/junk/bin:$PATH
+
 7zr e srb2kart-v11-Installer.exe -aoa -oassets/
 
 mkdir 				assets/installer

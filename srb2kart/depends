@@ -3,6 +3,5 @@ glu make
 libgme
 libpng
 mesa make
-p7zip make
 sdl2
 sdl2-mixer
