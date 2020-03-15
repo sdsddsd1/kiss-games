@@ -1,4 +1,5 @@
 boost
+cmake make
 fribidi
 libogg
 libpng

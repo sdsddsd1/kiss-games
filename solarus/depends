@@ -1,3 +1,4 @@
+cmake make
 freetype-harfbuzz
 glib
 libmodplug

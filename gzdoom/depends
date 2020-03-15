@@ -1,5 +1,6 @@
 alsa-lib
 bzip2
+cmake make
 glu
 libexecinfo
 libgme
