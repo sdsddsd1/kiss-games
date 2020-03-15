@@ -1,3 +1,4 @@
+flex make
 alsa-lib
 libsndfile
 sdl
