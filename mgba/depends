@@ -1,3 +1,4 @@
+cmake make
 libpng
 sdl2
 zlib
