@@ -5,8 +5,10 @@ libogg
 libpng
 libressl
 libwebp
+meson make
 opus
 opusfile
+samurai make
 sdl2
 sdl2-mixer
 zlib
