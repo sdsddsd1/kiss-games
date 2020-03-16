@@ -1,9 +1,7 @@
 #!/bin/sh -e
 
-
-
 make 
 
-install -D sol 		$1/usr/local/bin/sol
-install -D spider 	$1/usr/local/bin/spider
-install -D freecell	$1/usr/local/bin/freecell
+install -Dm755 sol 		"$1/usr/bin/sol"
+install -Dm755 spider 	"$1/usr/bin/spider"
+install -Dm755 freecell	"$1/usr/bin/freecell"
