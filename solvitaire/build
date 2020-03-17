@@ -2,6 +2,6 @@
 
 make 
 
-install -Dm755 sol 		"$1/usr/bin/sol"
+install -Dm755 sol		"$1/usr/bin/sol"
 install -Dm755 spider 	"$1/usr/bin/spider"
 install -Dm755 freecell	"$1/usr/bin/freecell"
