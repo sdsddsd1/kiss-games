@@ -1,6 +1,7 @@
 boost
 cmake make
 fribidi
+icu
 libogg
 libpng
 libvorbis
