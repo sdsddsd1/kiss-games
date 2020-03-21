@@ -1,31 +1,31 @@
 #!/bin/sh -e
 
 (
-	cd p7zip
+    cd p7zip
 
-	cp makefile.linux_amd64 makefile.machine
+    cp makefile.linux_amd64 makefile.machine
 
 make all3
 
 make install \
-    DEST_HOME="$PWD/../junk" 
+    DEST_HOME="$PWD/../junk"
 )
 
 export PATH=$PWD/junk/bin:$PATH
 
 7zr e srb2kart-v11-Installer.exe -aoa -oassets/
 
-mkdir 				assets/installer
-mv assets/*.kart	assets/installer/
-mv assets/srb2.srb 	assets/installer/
+mkdir               assets/installer
+mv assets/*.kart    assets/installer/
+mv assets/srb2.srb  assets/installer/
 
 export DESTDIR="$1"
 
 cmake -B build \
     -DCMAKE_INSTALL_PREFIX=/usr/share/srb2kart \
-	-DCMAKE_BUILD_TYPE=INSTALL
+    -DCMAKE_BUILD_TYPE=INSTALL
 
 cmake --build   build
 cmake --install build
 
-install -Dm755	srb2kartlauncher	"$1/usr/bin/srb2kart"
+install -Dm755  srb2kartlauncher    "$1/usr/bin/srb2kart"

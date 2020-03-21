@@ -5,12 +5,12 @@ patch -p1 < prboom-plus-2.5.1.4-Remove-nonstandard-gamesdir-variable.patch
 ./bootstrap
 
 ./configure \
- 	--prefix=/usr \
- 	--exec-prefix=/usr/bin \
- 	--bindir=/usr/bin \
- 	--with-waddir=/usr/share/prboom
-make
+    --prefix=/usr \
+    --exec-prefix=/usr/bin \
+    --bindir=/usr/bin \
+    --with-waddir=/usr/share/prboom
 
+make
 make DESTDIR="$1" install
 
 rm -rf "$1/usr/share/doc/"

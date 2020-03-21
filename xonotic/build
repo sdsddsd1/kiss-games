@@ -5,19 +5,15 @@ unzip xonotic-0.8.2.zip
 patch -p1 < musl-moncontrol.patch Xonotic/source/darkplaces/sys_shared.c
 
 sed -i Xonotic/source/darkplaces/makefile.inc \
-	-e "s;^\(CPUOPTIMIZATIONS\)?=\(.*\);\1=${CFLAGS} \2;" \
-	-e "s;^\(LDFLAGS_UNIXCOMMON\)=\(.*\);\1=${LDFLAGS} \2;"
+    -e "s;^\(CPUOPTIMIZATIONS\)?=\(.*\);\1=${CFLAGS} \2;" \
+    -e "s;^\(LDFLAGS_UNIXCOMMON\)=\(.*\);\1=${LDFLAGS} \2;"
 
 make -C Xonotic/source/darkplaces \
-	SDL_CONFIG=sdl2-config \
-	DP_FS_BASEDIR=/usr/share/xonotic/ \
-	DP_LINK_TO_LIBJPEG=1 \
-	sdl-release
+    SDL_CONFIG=sdl2-config \
+    DP_FS_BASEDIR=/usr/share/xonotic/ \
+    DP_LINK_TO_LIBJPEG=1 \
+    sdl-release
 
-install -d	 					"$1/usr/share/xonotic"
-cp -r Xonotic/data					"$1/usr/share/xonotic"
-install -Dm755 Xonotic/source/darkplaces/darkplaces-sdl	"$1/usr/bin/xonotic-sdl"
-
-
-
-
+install -d                                              "$1/usr/share/xonotic"
+cp -r Xonotic/data                                      "$1/usr/share/xonotic"
+install -Dm755 Xonotic/source/darkplaces/darkplaces-sdl "$1/usr/bin/xonotic-sdl"

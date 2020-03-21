@@ -3,12 +3,12 @@
 export DESTDIR="$1"
 
 cmake -B build \
-	-DCMAKE_INSTALL_PREFIX=/usr \
-	-DENABLE_OMP=OFF \
+    -DCMAKE_INSTALL_PREFIX=/usr \
+    -DENABLE_OMP=OFF \
     -DENABLE_TOOLS=OFF \
     -DMANDIR=share/man \
     -DFIFO_DIR=/var/run/wesnothd \
     -DENABLE_DISPLAY_REVISION=OFF
 
-cmake --build 	build
+cmake --build   build
 cmake --install build

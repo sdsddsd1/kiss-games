@@ -3,11 +3,9 @@
 export DESTDIR="$1"
 
 meson \
-	--prefix=/usr \
-	-Ddocs=false \
-	. output 
+    --prefix=/usr \
+    -Ddocs=false \
+    . output
 
 ninja -C output
-
 ninja -C output install
-

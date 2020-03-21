@@ -3,8 +3,8 @@
 export DESTDIR="$1"
 
 cmake -B build \
-	-DCMAKE_INSTALL_PREFIX=/usr \
-	-DENABLE_UBSAN=OFF
+    -DCMAKE_INSTALL_PREFIX=/usr \
+    -DENABLE_UBSAN=OFF
 
-cmake --build 	build
+cmake --build   build
 cmake --install build

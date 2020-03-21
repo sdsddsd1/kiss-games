@@ -5,19 +5,19 @@ pip install scons
 sed -i -e 's/#ifdef CRASH_HANDLER_ENABLED/#if defined(CRASH_HANDLER_ENABLED) \&\& defined(__GLIBC__)/' platform/x11/crash_handler_x11.cpp
 
 scons \
-		platform=x11 \
-        tools=yes \
-        target=release_debug \
-        colored=yes \
-        pulseaudio=no \
-		builtin_libpng=false \
-		builtin_libvpx=false \
-		builtin_libwebp=false \
-		builtin_libogg=false \
-		builtin_libtheora=false \
- 		builtin_opus=false \
-		builtin_libvorbis=false \
- 		builtin_zlib=false \
-		builtin_freetype=false 
+    platform=x11 \
+    tools=yes \
+    target=release_debug \
+    colored=yes \
+    pulseaudio=no \
+    builtin_libpng=false \
+    builtin_libvpx=false \
+    builtin_libwebp=false \
+    builtin_libogg=false \
+    builtin_libtheora=false \
+    builtin_opus=false \
+    builtin_libvorbis=false \
+    builtin_zlib=false \
+    builtin_freetype=false
 
 install -Dm755 bin/godot.x11.opt.tools.64 "$1/usr/bin/godot"
