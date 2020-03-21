@@ -3,4 +3,4 @@
 patch -p1 < Makefile_lncursesw.patch
 
 make
-install -D greed $1/usr/bin/greed
+install -Dm755 greed "$1/usr/bin/greed"
