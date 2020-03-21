@@ -1,5 +1,4 @@
 #!/bin/sh -e
 
-make 
-
+make
 install -D bin/nsnake $1/usr/bin/nsnake

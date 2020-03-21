@@ -3,8 +3,8 @@
 export DESTDIR="$1"
 
 cmake -B build \
-        -DCMAKE_INSTALL_PREFIX=/usr \
-	-D SOLARUS_GUI=OFF
+    -DCMAKE_INSTALL_PREFIX=/usr \
+    -DSOLARUS_GUI=OFF
 
 cmake --build   build
 cmake --install build

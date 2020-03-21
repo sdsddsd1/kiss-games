@@ -4,5 +4,5 @@ fluidsynth
 glu
 sdl
 sdl2-image
-sdl2-net
 sdl2-mixer
+sdl2-net

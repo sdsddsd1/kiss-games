@@ -6,5 +6,4 @@
     --disable-doc
 
 make
-
 make DESTDIR="$1" install

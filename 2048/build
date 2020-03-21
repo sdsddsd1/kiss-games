@@ -1,4 +1,3 @@
 #!/bin/sh -e
 
-
 install -Dm755 bash2048.sh $1/usr/bin/2048

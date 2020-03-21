@@ -7,16 +7,16 @@ sed -i 's|/usr/share/games/doom|/usr/share/gzdoom|g' src/gameconfigfile.cpp
 rm -f output_sdl/liboutput_sdl.so &&
 
 cmake -B build \
-	-DCMAKE_BUILD_TYPE=Release \
-	-DNO_FMOD=ON \
-	-DNO_GTK=ON \
-	-DCMAKE_INSTALL_PREFIX=/usr/ \
-        -DINSTALL_PATH=bin/ \
-        -DINSTALL_PK3_PATH=share/gzdoom/ \
-	-DSHARE_DIR=/usr/share/gzdoom/ \
-	-DINSTALL_DOCS_PATH=/usr/share/gzdoom/ \
-	-DCMAKE_EXE_LINKER_FLAGS=-lfts \
-	-DCMAKE_CXX_FLAGS=-Wl,-lexecinfo 
+    -DCMAKE_BUILD_TYPE=Release \
+    -DNO_FMOD=ON \
+    -DNO_GTK=ON \
+    -DCMAKE_INSTALL_PREFIX=/usr/ \
+    -DINSTALL_PATH=bin/ \
+    -DINSTALL_PK3_PATH=share/gzdoom/ \
+    -DSHARE_DIR=/usr/share/gzdoom/ \
+    -DINSTALL_DOCS_PATH=/usr/share/gzdoom/ \
+    -DCMAKE_EXE_LINKER_FLAGS=-lfts \
+    -DCMAKE_CXX_FLAGS=-Wl,-lexecinfo
 
 cmake --build   build
 cmake --install build

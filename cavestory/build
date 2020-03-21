@@ -1,7 +1,7 @@
 #!/bin/sh -e
 
 cmake -B build \
-	-DCMAKE_BUILD_TYPE=Release
+    -DCMAKE_BUILD_TYPE=Release
 
 cmake --build   build
 
@@ -11,6 +11,6 @@ mv data/* CaveStory/data/
 
 (cd CaveStory; ./extract)
 
-install -d 				"$1/usr/share/cavestory"
-cp -r CaveStory/.			"$1/usr/share/cavestory"
-install -Dm755 cavestory-launcher 	"$1/usr/bin/cavestory"
+install -d                          "$1/usr/share/cavestory"
+cp -r CaveStory/.                   "$1/usr/share/cavestory"
+install -Dm755 cavestory-launcher   "$1/usr/bin/cavestory"

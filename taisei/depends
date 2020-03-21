@@ -4,6 +4,7 @@ glib
 libogg
 libpng
 libressl
+libvorbis
 libwebp
 meson make
 opus
@@ -12,4 +13,3 @@ samurai make
 sdl2
 sdl2-mixer
 zlib
-libvorbis

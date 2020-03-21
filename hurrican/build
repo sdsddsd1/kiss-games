@@ -8,9 +8,6 @@ rm -rf Hurrican/src/
 rm Hurrican/*.exe
 rm Hurrican/*.dll
 
-install -d 			"$1/usr/share/hurrican"
+install -d                      "$1/usr/share/hurrican"
 install -Dm755 hurricanlauncher "$1/usr/bin/hurrican"
-cp -r Hurrican/. 		"$1/usr/share/hurrican"
-
-
-
+cp -r Hurrican/.                "$1/usr/share/hurrican"
