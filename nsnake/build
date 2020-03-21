@@ -1,4 +1,4 @@
 #!/bin/sh -e
 
 make
-install -D bin/nsnake $1/usr/bin/nsnake
+install -Dm755 bin/nsnake "$1/usr/bin/nsnake"
