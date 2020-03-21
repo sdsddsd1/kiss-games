@@ -5,5 +5,5 @@ make -C src/
 install -d                      "$1/usr/share/sdlpop"
 cp -r data/                     "$1/usr/share/sdlpop"
 cp -r mods/                     "$1/usr/share/sdlpop"
-install -D prince               "$1/usr/share/sdlpop/prince"
+install -Dm755 prince           "$1/usr/share/sdlpop/prince"
 install -D sdlpoplauncher.sh    "$1/usr/bin/princeofpersia"
