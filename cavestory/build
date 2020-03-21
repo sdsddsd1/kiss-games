@@ -12,5 +12,6 @@ mv data/* CaveStory/data/
 (cd CaveStory; ./extract)
 
 install -d                          "$1/usr/share/cavestory"
+install -d                          "$1/usr/bin"
 cp -r CaveStory/.                   "$1/usr/share/cavestory"
-install -Dm755 cavestory-launcher   "$1/usr/bin/cavestory"
+ln -s /usr/share/cavestory/nx       "$1/usr/bin/cavestory"
