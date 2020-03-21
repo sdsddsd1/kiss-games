@@ -3,4 +3,4 @@
 patch -p1 < Makefile_lncursesw.patch
 
 make
-install -D  aop $1/usr/bin/aop
+install -Dm755 aop "$1/usr/bin/aop"
