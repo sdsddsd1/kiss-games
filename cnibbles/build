@@ -5,4 +5,4 @@ tar -xvjf cNibbles-2.0.1.tbz --strip-components 1
 patch -p1 < Makefile_lncursesw.patch
 
 make
-install -D cNibbles $1/usr/bin/cNibbles
+install -Dm755 cNibbles "$1/usr/bin/cNibbles"
