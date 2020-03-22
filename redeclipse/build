@@ -7,7 +7,7 @@ for file in install/nix/*.am; do
     sed -i \
         -e "s:@APPNAME@:redeclipse:g" \
         -e "s:@LIBEXECDIR@:/usr/lib:g" \
-        $file
+        "$file"
 done
 
 # Makefile uses lowercase prefix.
