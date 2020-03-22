@@ -1,5 +1,0 @@
-#!/bin/sh -e
-
-cd /usr/share/redeclipse
-
-./redeclipse_linux
