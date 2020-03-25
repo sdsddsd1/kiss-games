@@ -7,7 +7,7 @@
 
 - Action
 ```
-CaveStory, Hurrican, OpenTyrian, SRB2Kart, SuperTuxKart, Taisei
+CaveStory, C-Dogs, Hurrican, OpenTyrian, SRB2Kart, SuperTuxKart, Taisei
 ```
 
 - FPS
