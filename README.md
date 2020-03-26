@@ -22,7 +22,7 @@ Godot, Irrlicht, LÖVE, Mednafen(multisystem), mGBA, Solarus
 
 - Other stuff
 ```
-dopewars, OpenTTD, SDLPoP, Tinytris, waterCloset, Wesnoth, Xmahjongg
+dopewars, Minetest, OpenTTD, SDLPoP, Tinytris, waterCloset, Wesnoth, Xmahjongg
 ```
 
 
