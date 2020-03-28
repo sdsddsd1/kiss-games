@@ -7,23 +7,23 @@
 
 ## Packages
 
-- Terminalgames
+### Terminalgames
 
     2048, Aop, cNibbles, CurseofWar, greed, nPush, nSnake, solVItaire, vitetris
 
-- Action
+### Action
 
     CaveStory, C-Dogs, Hurrican, OpenTyrian, SRB2Kart, SuperTuxKart, Taisei
 
-- FPS
+### FPS
 
     Crispy Doom, DOOM Retro, GZDoom, PrBoom+, Redeclipse, Sauerbraten, UrbanTerror, Xonotic
 
-- Emulator, engine
+### Emulator, engine
 
     Godot, Irrlicht, LÖVE, Mednafen(multisystem), mGBA, Solarus
 
-- Other stuff
+### Other stuff
 
     dopewars, Minetest, OpenTTD, SDLPoP, Tinytris, waterCloset, Wesnoth, Xmahjongg
 
