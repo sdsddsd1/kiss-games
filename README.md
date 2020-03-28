@@ -27,7 +27,8 @@
 
     dopewars, Minetest, OpenTTD, SDLPoP, Tinytris, waterCloset, Wesnoth, Xmahjongg
 
-Use on own risk. Read the buildfiles.
+## Use on own risk. Read the buildfiles.
+
 ![screen](screenshots/busy.jpeg)
 ![screen](screenshots/busy2.png)
 
