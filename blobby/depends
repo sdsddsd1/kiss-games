@@ -1,0 +1,6 @@
+boost make
+cmake make
+glu
+physfs
+sdl2
+
