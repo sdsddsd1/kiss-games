@@ -1,4 +1,5 @@
 cmake make
+ffmpeg make
 libpng
 sdl2
 zlib
