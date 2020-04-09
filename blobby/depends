@@ -3,4 +3,3 @@ cmake make
 glu
 physfs
 sdl2
-
