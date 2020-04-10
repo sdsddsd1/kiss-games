@@ -1,0 +1,18 @@
+#!/bin/sh -e
+
+./configure \
+    --prefix=/usr
+
+make
+
+
+cd contrib/minizip
+
+autoreconf --install
+
+./configure \
+    --prefix=/usr \
+    --enable-static=no
+
+make
+make DESTDIR="$1" install
