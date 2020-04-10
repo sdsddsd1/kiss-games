@@ -33,6 +33,3 @@ Use on own risk. Read the buildfiles.
 ```
 Want to see your beloved gem on this repo? Submit a package and take care of its maintenance!
 ```
-
-* [k1ss.org](https://k1ss.org/)
-* [kiss github](https://github.com/kisslinux)
