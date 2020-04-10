@@ -1,0 +1,4 @@
+libmodplug make
+minizip make
+sdl2
+sdl2-mixer
