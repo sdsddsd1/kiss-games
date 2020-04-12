@@ -1,6 +1,7 @@
 cmake make
 freetype-harfbuzz
 glib
+glm
 libmodplug
 libogg
 libpng
