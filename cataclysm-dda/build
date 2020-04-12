@@ -1,0 +1,19 @@
+#!/bin/sh -e
+
+cmake  -B build \
+    -DCMAKE_INSTALL_PREFIX=/usr \
+    -DCMAKE_BUILD_TYPE=Release \
+    -DBACKTRACE=OFF \
+    -DUSE_HOME_DIR=1 \
+    -DLOCALIZE=OFF \
+    -DSOUND=ON \
+    -DTILES=ON
+
+cmake --build   build
+
+install -Dm755 build/src/cataclysm-tiles			"$1/usr/share/cataclysm-dda/cataclysm-tiles"
+install -Dm755 cataclysm-launcher					"$1/usr/share/cataclysm-dda/cataclysm-launcher"
+cp -r data											"$1/usr/share/cataclysm-dda"
+cp -r gfx											"$1/usr/share/cataclysm-dda"
+install -d											"$1/usr/bin"
+ln -s /usr/share/cataclysm-dda/cataclysm-launcher	"$1/usr/bin/cataclysm-dda"
