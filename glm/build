@@ -1,0 +1,12 @@
+#!/bin/sh -e
+
+cmake -B build \
+    -DCMAKE_INSTALL_PREFIX=/usr \
+    -DCMAKE_BUILD_TYPE=None
+
+cmake --build   build
+
+install -d				"$1/usr/include"
+install -d				"$1/usr/lib/pkgconfig"
+cp -r glm 				"$1/usr/include"
+install -Dm755	glm.pc	"$1/usr/lib/pkgconfig/glm.pc"
