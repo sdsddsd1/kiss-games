@@ -1,13 +1,11 @@
 #!/bin/sh -e
 
-sed -r "s/-DUSE_PVRTC|-DUSE_ETC1//g" -i Hurrican/src/Makefile
+export DESTDIR="$1"
 
-make TARGET=linux -C Hurrican/src/
+cd Hurrican
 
-rm -rf Hurrican/src/
-rm Hurrican/*.exe
-rm Hurrican/*.dll
+cmake -B build \
+    -DCMAKE_INSTALL_PREFIX=/usr
 
-install -d                      "$1/usr/share/hurrican"
-install -Dm755 hurricanlauncher "$1/usr/bin/hurrican"
-cp -r Hurrican/.                "$1/usr/share/hurrican"
+cmake --build   build
+cmake --install build
