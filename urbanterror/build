@@ -1,7 +1,5 @@
 #!/bin/sh -e
 
-unzip UrbanTerror434_full.zip
-
 patch -p1 < musl.patch code/unix/unix_main.c
 
 make \
