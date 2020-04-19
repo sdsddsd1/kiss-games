@@ -5,7 +5,6 @@ cmake -B build \
 
 cmake --build   build
 
-unzip cavestoryen.zip
 mv bin/* CaveStory/
 mv data/* CaveStory/data/
 
