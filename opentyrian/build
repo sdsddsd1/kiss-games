@@ -1,8 +1,5 @@
 #!/bin/sh -e
 
-unzip 6b46ca6fa8f7.zip
-unzip tyrian21.zip
-
 make -C opentyrian-opentyrian-6b46ca6fa8f7/
 
 install -d                                                      "$1/usr/share/opentyrian"
