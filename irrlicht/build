@@ -1,7 +1,5 @@
 #!/bin/sh -e
 
-unzip irrlicht-1.8.4.zip
-
 for patch in *.patch; do
     patch -p0 < "$patch"
 done
