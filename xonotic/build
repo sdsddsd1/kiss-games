@@ -1,7 +1,5 @@
 #!/bin/sh -e
 
-unzip xonotic-0.8.2.zip
-
 patch -p1 < musl-moncontrol.patch Xonotic/source/darkplaces/sys_shared.c
 
 sed -i Xonotic/source/darkplaces/makefile.inc \
