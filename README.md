@@ -17,7 +17,7 @@ Crispy Doom, DOOM Retro, GZDoom, PrBoom+, Redeclipse, Sauerbraten, UrbanTerror, 
 
 - Emulator, engine
 ```
-Godot, Irrlicht, LÖVE, Mednafen(multisystem), mGBA, Solarus
+Godot, Irrlicht, LÖVE, Mednafen(multisystem), mGBA, Solarus, Stockfish
 ```
 
 - Other stuff
