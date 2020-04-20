@@ -1,0 +1,15 @@
+#!/bin/sh -e
+
+cd src
+
+# Choices for ARCH:
+#
+# x86-64:           Generic (default)
+# x86-64-modern:    With popcnt and SSE3 support
+# x86-64-bmi2:      With popcnt, pext, SSE3, and SSE4 support
+
+make ARCH="${ARCH:-x86-64}" build
+
+# Makefile doesn't allow custom PREFIX/DESTDIR, install manually
+mkdir -p "$1/usr/bin"
+install -Dm755 stockfish "$1/usr/bin"
