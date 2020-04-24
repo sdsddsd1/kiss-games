@@ -1,4 +1,4 @@
 #!/bin/sh
 
 cd /usr/share/assaultcube || exit
-exec ./server.sh $@"
+exec ./server.sh "$@"
