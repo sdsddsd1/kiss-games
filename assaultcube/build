@@ -1,0 +1,22 @@
+#!/bin/sh -e
+
+for patch in *.patch; do
+    patch -p0 < "$patch"
+done
+
+cd source/src/
+make
+make install
+cd ../..
+
+mkdir -p       "$1/usr/share/assaultcube"
+cp -R bot      "$1/usr/share/assaultcube"
+cp -R config   "$1/usr/share/assaultcube"
+cp -R packages "$1/usr/share/assaultcube"
+
+install -Dm755 bin_unix/native_client "$1/usr/share/assaultcube"
+install -Dm755 bin_unix/native_server "$1/usr/share/assaultcube"
+
+mkdir -p                 "$1/usr/bin"
+install -Dm755 ac_client "$1/usr/bin"
+install -Dm755 ac_server "$1/usr/bin"

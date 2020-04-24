@@ -1,0 +1,5 @@
+https://github.com/assaultcube/AC/archive/v1.2.0.2.tar.gz
+patches/musl.patch
+patches/remove-round.patch
+files/ac_client
+files/ac_server

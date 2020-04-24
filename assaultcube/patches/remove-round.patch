@@ -1,0 +1,11 @@
+--- source/src/tools.h
++++ source/src/tools.h
+@@ -55,8 +55,6 @@
+     return a < b ? a : b;
+ }
+ 
+-static inline float round(float x) { return floor(x + 0.5f); }
+-
+ #define clamp(a,b,c) (max(b, min(a, c)))
+ #define rnd(x) ((int)(randomMT()&0xFFFFFF)%(x))
+ #define rndscale(x) (float((randomMT()&0xFFFFFF)*double(x)/double(0xFFFFFF)))
