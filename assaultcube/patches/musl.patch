@@ -1,0 +1,11 @@
+--- source/src/tools.cpp
++++ source/src/tools.cpp
+@@ -202,7 +202,7 @@
+     }
+     fatal("%s", out);
+ }
+-#elif defined(linux) || defined(__linux) || defined(__linux__)
++#elif defined(GLIBC) || defined(__GLIBC) || defined(__GLIBC__)
+ 
+ #include <execinfo.h>
+ 

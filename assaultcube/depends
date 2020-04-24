@@ -1,0 +1,9 @@
+clang make
+curl
+libogg
+libvorbis
+libX11
+openal
+sdl
+sdl-image
+zlib
