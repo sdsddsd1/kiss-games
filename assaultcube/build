@@ -10,12 +10,13 @@ make install
 cd ../..
 
 mkdir -p       "$1/usr/share/assaultcube"
+cp -R bin_unix "$1/usr/share/assaultcube"
 cp -R bot      "$1/usr/share/assaultcube"
 cp -R config   "$1/usr/share/assaultcube"
 cp -R packages "$1/usr/share/assaultcube"
 
-install -Dm755 bin_unix/native_client "$1/usr/share/assaultcube"
-install -Dm755 bin_unix/native_server "$1/usr/share/assaultcube"
+install -Dm755 assaultcube.sh   "$1/usr/share/assaultcube"
+install -Dm755 server.sh        "$1/usr/share/assaultcube"
 
 mkdir -p                 "$1/usr/bin"
 install -Dm755 ac_client "$1/usr/bin"
