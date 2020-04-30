@@ -1,0 +1,4 @@
+#!/bin/sh
+
+cd /usr/share/openarena
+./oa_ded.x86_64

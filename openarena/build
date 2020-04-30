@@ -1,0 +1,14 @@
+#!/bin/sh -e
+
+make -C engine/
+
+rm openarena-0.8.8/*.dll
+rm openarena-0.8.8/*.exe
+
+mkdir -p                                  "$1/usr/share/openarena"
+cp -r openarena-0.8.8/.                   "$1/usr/share/openarena"
+cp -r engine/build/release-linux-x86_64/. "$1/usr/share/openarena"
+
+install -Dm755 launcher                   "$1/usr/bin/openarena"
+install -Dm755 launcherded                "$1/usr/bin/openarena-server"
+

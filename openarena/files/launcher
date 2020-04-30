@@ -1,0 +1,4 @@
+#!/bin/sh
+
+cd /usr/share/openarena
+./openarena.x86_64
