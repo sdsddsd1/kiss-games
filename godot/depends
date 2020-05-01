@@ -4,12 +4,12 @@ libXi
 libXinerama
 libXrandr
 libogg
-libopus
 libpng
 libtheora
 libvorbis
 libvpx
 libwebp
+opus
 opusfile
 python make
 zlib
