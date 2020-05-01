@@ -1,21 +1,21 @@
 # KISSlinux compatible game repository
 
-- Terminalgames:  
+#### Terminalgames:  
 `2048` `Aop` `cNibbles` `CurseofWar` `greed` `nPush` `nSnake` `solVItaire` `vitetris`
 
-- Doom:  
+#### Doom:  
 `Crispy Doom` `DOOM Retro` `GZDoom` `PrBoom+`
 
-- Action:  
+#### Action:  
 `Blobby Volley 2` `CaveStory` `C-Dogs` `Hurrican` `Mr. Boom` `OpenTyrian` `SRB2Kart` `SuperTuxKart` `Taisei` `Teeworlds`
 
-- FPS:  
+#### FPS:  
 `AssaultCube` `BetterSpades` `OpenArena` `Redeclipse` `Sauerbraten` `UrbanTerror` `Xonotic`
 
-- Emulator, engine:  
+#### Emulator, engine:  
 `Godot` `Irrlicht` `LÖVE` `Mednafen(multisystem)` `mGBA` `Solarus` `Stockfish`
 
-- Other stuff:  
+#### Other stuff:  
 `Cataclysm-DDA` `dopewars` `Minetest` `OpenTTD` `SDLPoP` `Tinytris` `waterCloset` `Wesnoth` `Xmahjongg`
 
 
