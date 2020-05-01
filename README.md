@@ -12,7 +12,7 @@ Blobby Volley 2, CaveStory, C-Dogs, Hurrican, Mr. Boom, OpenTyrian, SRB2Kart, Su
 
 - FPS
 ```
-AssaultCube, Crispy Doom, DOOM Retro, GZDoom, OpenArena, PrBoom+, Redeclipse, Sauerbraten, UrbanTerror, Xonotic
+AssaultCube, BetterSpades, Crispy Doom, DOOM Retro, GZDoom, OpenArena, PrBoom+, Redeclipse, Sauerbraten, UrbanTerror, Xonotic
 ```
 
 - Emulator, engine
