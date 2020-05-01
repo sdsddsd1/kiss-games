@@ -5,6 +5,11 @@
 2048, Aop, cNibbles, CurseofWar, greed, nPush, nSnake, solVItaire, vitetris
 ```
 
+- Doom
+```
+Crispy Doom, DOOM Retro, GZDoom, PrBoom+
+```
+
 - Action
 ```
 Blobby Volley 2, CaveStory, C-Dogs, Hurrican, Mr. Boom, OpenTyrian, SRB2Kart, SuperTuxKart, Taisei, Teeworlds
@@ -12,7 +17,7 @@ Blobby Volley 2, CaveStory, C-Dogs, Hurrican, Mr. Boom, OpenTyrian, SRB2Kart, Su
 
 - FPS
 ```
-AssaultCube, BetterSpades, Crispy Doom, DOOM Retro, GZDoom, OpenArena, PrBoom+, Redeclipse, Sauerbraten, UrbanTerror, Xonotic
+AssaultCube, BetterSpades, OpenArena, Redeclipse, Sauerbraten, UrbanTerror, Xonotic
 ```
 
 - Emulator, engine
