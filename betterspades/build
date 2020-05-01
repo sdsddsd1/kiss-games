@@ -1,32 +1,31 @@
 #!/bin/sh -e
 
-# This build consists out of many little parts.
-
-cp dr_wav.h src/
-mv src/dr_wav.h src/dr_wav.c
-mkdir src/lodepng/
-cp lodepng.h src/lodepng/
-cp lodepng.cpp src/lodepng/lodepng.c 
+# This build consists out of many little things.
+cp dr_wav.h              src/
+mv src/dr_wav.h          src/dr_wav.c
+mkdir                    src/lodepng/
+cp lodepng.h             src/lodepng/
+cp lodepng.cpp           src/lodepng/lodepng.c 
 cp /usr/lib/libdeflate.a libs/
-cp libdeflate.h src/
-cp ini.* src/
-cp http.h src/
-cp stb_truetype.h src/
-cp log.* src/
-cp parson.* src/
-cp -r fonts/ build/bin/
-cp -r png/   build/bin/
-cp -r kv6/   build/bin/
-cp -r wav/   build/bin
+cp libdeflate.h          src/
+cp ini.*                 src/
+cp http.h                src/
+cp stb_truetype.h        src/
+cp log.*                 src/
+cp parson.*              src/
+cp -r fonts/             build/bin/
+cp -r png/               build/bin/
+cp -r kv6/               build/bin/
+cp -r wav/               build/bin
 
 cmake -B build
-cmake --build   build
+cmake --build  build
 
-mkdir -p                "$1/usr/share/betterspades"
-cp -r build/bin/.       "$1/usr/share/betterspades"
+mkdir -p                            "$1/usr/share/betterspades"
+cp -r build/bin/.                   "$1/usr/share/betterspades"
 # Delete cache directory to avoid crashes.
-rm -r                   "$1/usr/share/betterspades/cache"
-install -Dm755 launcher "$1/usr/bin/betterspades"
+rm -r                               "$1/usr/share/betterspades/cache"
+install -Dm755 launcher             "$1/usr/bin/betterspades"
 
 ln -sf /tmp/betterspades/cache      "$1/usr/share/betterspades/cache"
 ln -sf /tmp/betterspades/config.ini "$1/usr/share/betterspades/config.ini"
