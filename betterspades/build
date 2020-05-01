@@ -18,7 +18,7 @@ cp -r png/               build/bin/
 cp -r kv6/               build/bin/
 cp -r wav/               build/bin
 
-cmake -B build
+cmake -B       build
 cmake --build  build
 
 mkdir -p                            "$1/usr/share/betterspades"
