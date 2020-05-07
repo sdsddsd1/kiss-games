@@ -24,4 +24,5 @@
 ---
 ```
 Want to see your beloved gem on this repo? Submit a package and take care of its maintenance!
+Non-free content is no problem on this repo.
 ``` 
