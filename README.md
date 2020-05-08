@@ -17,7 +17,7 @@
 `Godot` `Irrlicht` `LÖVE` `Mednafen(multisystem)` `mGBA` `Solarus` `Stockfish`
   
 **Other stuff:**  
-`Cataclysm-DDA` `dopewars` `Minetest` `OpenTTD` `SDLPoP` `Tinytris` `waterCloset` `Wesnoth` `Xmahjongg`
+`Cataclysm-DDA` `dopewars` `Minetest` `OpenTTD` `SDLPoP` `waterCloset` `Wesnoth` `Xmahjongg`
 
 ![screen](screenshots/busy.jpeg)
 ![screen](screenshots/busy2.png)
