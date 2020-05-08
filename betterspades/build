@@ -1,5 +1,8 @@
 #!/bin/sh -e
 
+#GCC10 fix
+export CFLAGS="$CFLAGS -fcommon"
+
 # This build consists out of many little things.
 cp dr_wav.h              src/
 mv src/dr_wav.h          src/dr_wav.c

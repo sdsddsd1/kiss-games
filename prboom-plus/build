@@ -1,5 +1,8 @@
 #!/bin/sh -e
 
+#GCC10 fix
+export CFLAGS="$CFLAGS -fcommon"
+
 patch -p1 < prboom-plus-2.5.1.4-Remove-nonstandard-gamesdir-variable.patch
 
 ./bootstrap

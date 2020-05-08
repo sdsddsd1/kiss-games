@@ -1,5 +1,8 @@
 #!/bin/sh -e
 
+#GCC10 fix
+export CFLAGS="$CFLAGS -fcommon"
+
 make -C src/
 
 install -d                       "$1/usr/share/sdlpop"
