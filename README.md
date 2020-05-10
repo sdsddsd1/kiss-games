@@ -11,7 +11,7 @@
 `SRB2Kart` `SuperTuxKart` `Taisei` `Teeworlds`
   
 **FPS:**  
-`AssaultCube` `BetterSpades` `OpenArena` `Redeclipse` `Sauerbraten` `UrbanTerror` `Xonotic`
+`AssaultCube` `BetterSpades` `OpenArena` `QuakeSpasm` `Redeclipse` `Sauerbraten` `UrbanTerror` `Xonotic`
   
 **Emulator, engine:**  
 `Godot` `Irrlicht` `LÖVE` `Mednafen(multisystem)` `mGBA` `Solarus` `Stockfish`

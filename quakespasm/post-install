@@ -1,0 +1,14 @@
+#!/bin/sh
+
+cat <<EOF
+
+### IMPORTANT ###
+### IMPORTANT ###
+
+Note: Place your copy of 'pak.0.pak' and 'pak1.pak' inside 
+      /usr/share/quakespasm/id1
+
+### IMPORTANT ###
+### IMPORTANT ###
+
+EOF

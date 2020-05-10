@@ -1,0 +1,7 @@
+#!/bin/sh -e
+
+make -C Quake/ DO_USERDIRS=1 USE_SDL2=1
+
+install -Dm755 Quake/quakespasm "$1/usr/share/quakespasm/quakespasm"
+mkdir -p                        "$1/usr/share/quakespasm/id1"
+install -Dm755 launcher         "$1/usr/bin/quakespasm"
