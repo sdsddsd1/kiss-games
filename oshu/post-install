@@ -1,0 +1,17 @@
+#!/bin/sh
+
+cat <<EOF
+
+### IMPORTANT ###
+### IMPORTANT ###
+
+Note: A more featureful skin can be choosen at compile time.
+      However this needs a internet connection.
+      -DOSHU_DEFAULT_SKIN=osu
+
+      Beatmaps without osu account can be found at:
+      https://bloodcat.com/osu/
+
+### IMPORTANT ###
+### IMPORTANT ###
+EOF

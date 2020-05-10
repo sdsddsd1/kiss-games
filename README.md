@@ -7,8 +7,8 @@
 `Crispy Doom` `DOOM Retro` `GZDoom` `PrBoom+`
   
 **Action:**  
-`Blobby Volley 2` `Cave Story(NXEngine-evo)` `C-Dogs` `Hurrican` `Mr. Boom` `OpenTyrian` `SRB2Kart`  
-`SuperTuxKart` `Taisei` `Teeworlds`
+`Blobby Volley 2` `Cave Story(NXEngine-evo)` `C-Dogs` `Hurrican` `Mr. Boom` `OpenTyrian` `oshu!` 
+`SRB2Kart` `SuperTuxKart` `Taisei` `Teeworlds`
   
 **FPS:**  
 `AssaultCube` `BetterSpades` `OpenArena` `Redeclipse` `Sauerbraten` `UrbanTerror` `Xonotic`
