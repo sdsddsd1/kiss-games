@@ -16,7 +16,7 @@
 **Emulator, engine:**  
 `Godot` `Irrlicht` `LÖVE` `Mednafen(multisystem)` `mGBA` `Solarus` `Stockfish`  
 
-**Rogue like:**
+**Rogue-like:**  
 `Brogue CE` `Cataclysm-DDA`  
   
 **Other stuff:**  
