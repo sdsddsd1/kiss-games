@@ -1,17 +1,14 @@
 # KISSlinux compatible game repository
 
-**Terminalgames:**  
-`2048` `Aop` `cNibbles` `CurseofWar` `greed` `nPush` `nSnake` `solVItaire` `vitetris`  
-  
-**Doom:**  
-`Crispy Doom` `DOOM Retro` `GZDoom` `PrBoom+`
-  
 **Action:**  
 `Blobby Volley 2` `Cave Story(NXEngine-evo)` `C-Dogs` `Hurrican` `Mr. Boom` `OpenTyrian` `oshu!`  
-`SRB2Kart` `SuperTuxKart` `Taisei` `Teeworlds`
+`SRB2Kart` `SuperTuxKart` `Taisei` `Teeworlds`  
+
+**Doom:**  
+`Crispy Doom` `DOOM Retro` `GZDoom` `PrBoom+`  
   
 **FPS:**  
-`AssaultCube` `BetterSpades` `OpenArena` `QuakeSpasm` `Redeclipse` `Sauerbraten` `UrbanTerror` `Xonotic`
+`AssaultCube` `BetterSpades` `OpenArena` `QuakeSpasm` `Redeclipse` `Sauerbraten` `UrbanTerror` `Xonotic`  
   
 **Emulator, engine:**  
 `Godot` `Irrlicht` `LÖVE` `Mednafen(multisystem)` `mGBA` `Solarus` `Stockfish`  
@@ -20,8 +17,10 @@
 `Brogue CE` `Cataclysm-DDA`  
   
 **Other stuff:**  
-`dopewars` `Minetest` `OpenTTD` `SDLPoP` `waterCloset` `Wesnoth` `Xmahjongg`
+`dopewars` `Minetest` `OpenTTD` `SDLPoP` `waterCloset` `Wesnoth` `Xmahjongg` 
 
+**Terminalgames:**  
+`2048` `Aop` `cNibbles` `CurseofWar` `greed` `nPush` `nSnake` `solVItaire` `vitetris`  
 ![screen](screenshots/busy.jpeg)
 ![screen](screenshots/busy2.png)
 ---
