@@ -1,0 +1,7 @@
+#!/bin/sh -e
+
+make DATADIR=/usr/share/brogue
+
+install -Dm755 bin/brogue     "$1/usr/bin/brogue"
+install -Dm644 bin/keymap.txt "$1/usr/share/brogue/keymap.txt"
+cp -r bin/assets              "$1/usr/share/brogue/"

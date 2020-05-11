@@ -14,10 +14,13 @@
 `AssaultCube` `BetterSpades` `OpenArena` `QuakeSpasm` `Redeclipse` `Sauerbraten` `UrbanTerror` `Xonotic`
   
 **Emulator, engine:**  
-`Godot` `Irrlicht` `LÖVE` `Mednafen(multisystem)` `mGBA` `Solarus` `Stockfish`
+`Godot` `Irrlicht` `LÖVE` `Mednafen(multisystem)` `mGBA` `Solarus` `Stockfish`  
+
+**Rogue like:**
+`Brogue CE` `Cataclysm-DDA`  
   
 **Other stuff:**  
-`Cataclysm-DDA` `dopewars` `Minetest` `OpenTTD` `SDLPoP` `waterCloset` `Wesnoth` `Xmahjongg`
+`dopewars` `Minetest` `OpenTTD` `SDLPoP` `waterCloset` `Wesnoth` `Xmahjongg`
 
 ![screen](screenshots/busy.jpeg)
 ![screen](screenshots/busy2.png)
