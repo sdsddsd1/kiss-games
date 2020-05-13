@@ -1,5 +1,4 @@
 cmake make
-glu make
 libgme
 libpng
 mesa make

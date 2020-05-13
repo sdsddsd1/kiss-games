@@ -1,23 +1,11 @@
 #!/bin/sh -e
 
-(
-    cd p7zip
+#GCC10 fix
+export CFLAGS="$CFLAGS -fcommon"
 
-    cp makefile.linux_amd64 makefile.machine
-
-make all3
-
-make install \
-    DEST_HOME="$PWD/../junk"
-)
-
-export PATH=$PWD/junk/bin:$PATH
-
-7zr e srb2kart-v11-Installer.exe -aoa -oassets/
-
-mkdir               assets/installer
-mv assets/*.kart    assets/installer/
-mv assets/srb2.srb  assets/installer/
+mkdir -p                  assets/installer
+mv srb2kart-v101/*.kart   assets/installer/
+mv srb2kart-v101/srb2.srb assets/installer/
 
 export DESTDIR="$1"
 
