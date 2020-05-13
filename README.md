@@ -26,6 +26,7 @@
 ![screen](screenshots/busy2.png)
 ---
 ```
-Want to see your beloved gem on this repo? Submit a package and take care of its maintenance!
-Non-free content is no problem on this repo.
+No matter the license, if you want to see your beloved gem on this repo,  
+submit a package and take care of its maintenance!
+
 ``` 
