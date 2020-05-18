@@ -1,8 +1,8 @@
 # KISSlinux compatible game repository
 
 **Action:**  
-`Blobby Volley 2` `Cave Story(NXEngine-evo)` `C-Dogs` `Hurrican` `Mr. Boom` `OpenTyrian` `oshu!`  
-`SRB2Kart` `SuperTuxKart` `Taisei` `Teeworlds`  
+`Cave Story(NXEngine-evo)` `C-Dogs` `Hurrican` `Mr. Boom` `OpenTyrian` `oshu!`  
+`SRB2Kart` `SuperTuxKart` `Taisei` `Teeworlds` `VVVVVV`  
 
 **Doom:**  
 `Crispy Doom` `DOOM Retro` `GZDoom` `PrBoom+`  
@@ -20,7 +20,7 @@
 `dopewars` `Minetest` `OpenTTD` `SDLPoP` `waterCloset` `Wesnoth` `Xmahjongg` 
 
 **Terminalgames:**  
-`2048` `Aop` `cNibbles` `CurseofWar` `greed` `nPush` `nSnake` `solVItaire` `vitetris`  
+`2048` `Aop` `Blobby Volley 2` `cNibbles` `CurseofWar` `greed` `nPush` `nSnake` `solVItaire` `vitetris`  
 
 ![screen](screenshots/busy.jpeg)
 ![screen](screenshots/busy2.png)

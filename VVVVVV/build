@@ -1,0 +1,14 @@
+#!/bin/sh -e
+
+(
+cd desktop_version
+
+cmake -B build \
+    -DCMAKE_INSTALL_PREFIX=/usr \
+    -DCMAKE_BUILD_TYPE=Release
+
+cmake --build build
+)
+
+install -Dm755 desktop_version/build/VVVVVV "$1/usr/share/VVVVVV/VVVVVV"
+cp -r          data.zip?no-extract          "$1/usr/share/VVVVVV/data.zip"
