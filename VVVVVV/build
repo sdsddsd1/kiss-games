@@ -12,3 +12,4 @@ cmake --build build
 
 install -Dm755 desktop_version/build/VVVVVV "$1/usr/share/VVVVVV/VVVVVV"
 cp -r          data.zip?no-extract          "$1/usr/share/VVVVVV/data.zip"
+install -Dm755 launcher.sh                  "$1/usr/bin/VVVVVV"
