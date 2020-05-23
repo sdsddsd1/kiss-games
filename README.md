@@ -13,8 +13,8 @@
 **Emulator, engine:**  
 `Godot` `Irrlicht` `LÖVE` `Mednafen(multisystem)` `mGBA` `Solarus` `Stockfish`  
 
-**Rogue-like:**  
-`Brogue CE` `Cataclysm-DDA`  
+**Rogue-like, RPG:**  
+`Brogue CE` `Cataclysm-DDA` `Flare`  
   
 **Other stuff:**  
 `Blobby Volley 2` `dopewars` `Minetest` `OpenTTD` `SDLPoP` `waterCloset` `Wesnoth` `Xmahjongg` 

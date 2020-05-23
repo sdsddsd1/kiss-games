@@ -1,0 +1,7 @@
+cmake make
+hicolor-icon-theme
+python
+sdl2-image
+sdl2-mixer
+sdl2-ttf
+

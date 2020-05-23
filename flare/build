@@ -1,0 +1,12 @@
+#!/bin/sh -e
+
+# This is actually flare-game. Because of repology the name needs to be short.
+export DESTDIR="$1"
+
+cmake -B build \
+    -DCMAKE_INSTALL_PREFIX=/usr \
+    -DDATADIR=share/flare \
+    -DCMAKE_BUILD_TYPE=Release 
+
+cmake --build   build
+cmake --install build
