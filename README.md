@@ -1,8 +1,7 @@
 # KISSlinux compatible game repository
 
 **Action:**  
-`Cave Story(NXEngine-evo)` `C-Dogs` `Dave Gnukem` `Hurrican` `Mr. Boom` `OpenTyrian` `oshu!`  
-`SRB2Kart` `SuperTuxKart` `Taisei` `Teeworlds` `VVVVVV`  
+`C-Dogs` `Mr. Boom` `OpenTyrian` `oshu!` `SRB2Kart` `SuperTuxKart` `Taisei`  
 
 **Doom:**  
 `Crispy Doom` `DOOM Retro` `GZDoom` `PrBoom+`  
@@ -15,9 +14,12 @@
 
 **Rogue-like, RPG:**  
 `Brogue CE` `Cataclysm-DDA` `Flare`  
+
+**Jump'n \*:**  
+`Cave Story(NXEngine-evo)` `Dave Gnukem` `Hurrican` `SDLPoP` `Teeworlds` `VVVVVV`
   
 **Other stuff:**  
-`Blobby Volley 2` `dopewars` `Minetest` `OpenTTD` `SDLPoP` `waterCloset` `Wesnoth` `Xmahjongg` 
+`Blobby Volley 2` `dopewars` `Minetest` `OpenTTD` `waterCloset` `Wesnoth` `Xmahjongg` 
 
 **Terminalgames:**  
 `2048` `Aop` `cNibbles` `CurseofWar` `greed` `nPush` `nSnake` `solVItaire` `vitetris`  
