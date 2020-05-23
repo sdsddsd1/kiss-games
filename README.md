@@ -1,7 +1,7 @@
 # KISSlinux compatible game repository
 
 **Action:**  
-`Cave Story(NXEngine-evo)` `C-Dogs` `Hurrican` `Mr. Boom` `OpenTyrian` `oshu!`  
+`Cave Story(NXEngine-evo)` `C-Dogs` `Dave Gnukem` `Hurrican` `Mr. Boom` `OpenTyrian` `oshu!`  
 `SRB2Kart` `SuperTuxKart` `Taisei` `Teeworlds` `VVVVVV`  
 
 **Doom:**  

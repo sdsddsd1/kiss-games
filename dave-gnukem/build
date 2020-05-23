@@ -1,0 +1,7 @@
+#!/bin/sh -e
+
+make
+
+install -Dm755 davegnukem "$1/usr/share/dave-gnukem/davegnukem"
+cp -r          data       "$1/usr/share/dave-gnukem"
+install -Dm755 launcher   "$1/usr/bin/dave-gnukem"
