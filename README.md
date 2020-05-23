@@ -16,10 +16,10 @@
 `Brogue CE` `Cataclysm-DDA` `Flare`  
 
 **Jump'n \*:**  
-`Cave Story(NXEngine-evo)` `Dave Gnukem` `Hurrican` `SDLPoP` `Teeworlds` `VVVVVV`
+`Cave Story(NXEngine-evo)` `Dave Gnukem` `Hurrican` `SDLPoP` `Teeworlds` `VVVVVV` `waterCloset`  
   
 **Other stuff:**  
-`Blobby Volley 2` `dopewars` `Minetest` `OpenTTD` `waterCloset` `Wesnoth` `Xmahjongg` 
+`Blobby Volley 2` `dopewars` `Minetest` `OpenTTD` `Wesnoth` `Xmahjongg` 
 
 **Terminalgames:**  
 `2048` `Aop` `cNibbles` `CurseofWar` `greed` `nPush` `nSnake` `solVItaire` `vitetris`  
