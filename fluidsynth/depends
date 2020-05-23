@@ -1,2 +1,3 @@
 cmake make
+linux-headers make
 soundfont-fluid
