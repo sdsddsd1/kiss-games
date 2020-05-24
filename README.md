@@ -1,7 +1,7 @@
 # KISSlinux compatible game repository
 
 **Action:**  
-`C-Dogs` `Mr. Boom` `OpenTyrian` `oshu!` `SRB2Kart` `SuperTuxKart` `Taisei`  
+`C-Dogs` `Extreme Tux Racer` `Mr. Boom` `OpenTyrian` `oshu!` `SRB2Kart` `SuperTuxKart` `Taisei`  
 
 **Doom:**  
 `Crispy Doom` `DOOM Retro` `GZDoom` `PrBoom+`  

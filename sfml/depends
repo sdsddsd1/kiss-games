@@ -1,0 +1,8 @@
+cmake make
+freetype-harfbuzz
+glew
+libX11
+libXrandr
+libsndfile
+mesa make
+openal
