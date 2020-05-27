@@ -1,6 +1,9 @@
 #!/bin/sh -e
 
 export DESTDIR="$1"
+export CFLAGS="$CFLAGS -fcommon"
+
+sed 's| -Werror||' -i CMakeLists.txt
 
 cmake -B build \
     -DCMAKE_INSTALL_PREFIX=/usr \
