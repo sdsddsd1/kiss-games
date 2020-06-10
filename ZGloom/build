@@ -1,0 +1,7 @@
+#!/bin/sh -e
+
+make
+
+install -Dm755 ZGloom     "$1/usr/share/ZGloom/ZGloom"
+cp -r GloomAmiga-master/* "$1/usr/share/ZGloom/"
+install -Dm755 launcher   "$1/usr/bin/ZGloom"

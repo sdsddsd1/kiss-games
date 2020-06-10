@@ -7,7 +7,7 @@
 `Crispy Doom` `DOOM Retro` `GZDoom` `PrBoom+`  
   
 **FPS:**  
-`AssaultCube` `BetterSpades` `OpenArena` `QuakeSpasm` `Redeclipse` `Sauerbraten` `Urban Terror` `Xonotic`  
+`AssaultCube` `BetterSpades` `OpenArena` `QuakeSpasm` `Redeclipse` `Sauerbraten` `Urban Terror` `Xonotic` `ZGloom`  
   
 **Emulator, engine:**  
 `Godot` `Irrlicht` `LÖVE` `Mednafen(multisystem)` `mGBA` `Solarus` `Stockfish`  
