@@ -1,8 +1,8 @@
 #!/bin/sh -e
 
-make -C opentyrian-opentyrian-6b46ca6fa8f7/
+make CFLAGS=-fcommon
 
-install -d                                                      "$1/usr/share/opentyrian"
-install -Dm755 opentyrian-opentyrian-6b46ca6fa8f7/opentyrian    "$1/usr/share/opentyrian/opentyrian"
-cp -r tyrian21/.                                                "$1/usr/share/opentyrian"
-install -Dm755 opentyrian-launcher                              "$1/usr/bin/opentyrian"
+install -d                         "$1/usr/share/opentyrian"
+install -Dm755 opentyrian          "$1/usr/share/opentyrian/opentyrian"
+cp -r tyrian21/.                   "$1/usr/share/opentyrian"
+install -Dm755 opentyrian-launcher "$1/usr/bin/opentyrian"
