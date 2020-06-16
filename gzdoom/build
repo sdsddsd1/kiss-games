@@ -2,7 +2,6 @@
 
 export DESTDIR="$1"
 
-sed -i 's|#define SHARE_DIR.*|#define SHARE_DIR "/usr/share/gzdoom/"|' src/posix/i_system.h
 sed -i 's|/usr/share/games/doom|/usr/share/gzdoom|g' src/gameconfigfile.cpp
 rm -f output_sdl/liboutput_sdl.so &&
 
