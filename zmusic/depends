@@ -1,0 +1,5 @@
+alsa-lib
+cmake make
+libsndfile
+mpg123
+zlib
