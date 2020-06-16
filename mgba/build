@@ -2,9 +2,50 @@
 
 export DESTDIR="$1"
 
+# declaration mismatch in include/mgba/core/thread.h
+export CPPFLAGS="$CPPFLAGS -fno-strict-aliasing"
+
+# Get rid of any bundled stuff we don't want
+for pkg in discord-rpc libpng lzma sqlite3; do
+    rm -r "src/third-party/$pkg"
+done
+
 cmake -B build \
     -DCMAKE_INSTALL_PREFIX=/usr \
-    -DCMAKE_INSTALL_LIBDIR=/usr/lib
+    -DCMAKE_INSTALL_LIBDIR=/usr/lib \
+    -DCMAKE_SKIP_RPATH=ON \
+    -DBUILD_GL=ON \
+    -DBUILD_PYTHON=OFF \
+    -DBUILD_QT=OFF \
+    -DBUILD_SDL=ON \
+    -DBUILD_SHARED=ON \
+    -DBUILD_TEST=OFF \
+    -DBUILD_SUITE=OFF \
+    -DM_CORE_GB=ON \
+    -DM_CORE_GBA=ON \
+    -DUSE_DEBUGGERS=OFF \
+    -DUSE_DISCORD_RPC=OFF \
+    -DUSE_EDITLINE=OFF \
+    -DUSE_ELF=OFF \
+    -DUSE_EPOXY=OFF \
+    -DUSE_FFMPEG=OFF \
+    -DUSE_GDB_STUB=OFF \
+    -DUSE_LIBZIP=OFF \
+    -DUSE_LZMA=OFF \
+    -DUSE_MINIZIP=OFF \
+    -DUSE_PNG=ON \
+    -DUSE_SQLITE3=OFF \
+    -DUSE_ZLIB=ON
 
 cmake --build   build
 cmake --install build
+
+# delete unused files
+rm -rf "$1/usr/share/icons"
+rm -rf "$1/usr/share/doc"
+
+# delete config cruft
+rm -f  "$1/usr/include/mgba/flags.h"
+rm -rf "$1/usr/include/mgba/internal/arm"
+rm -rf "$1/usr/include/mgba/internal/debugger"
+rm -rf "$1/usr/include/mgba/internal/sm83"
