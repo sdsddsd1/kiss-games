@@ -1,0 +1,3 @@
+#!/bin/sh
+
+echo "To run, copy your original QuakeII .pak files to ~/.yq2/baseq2/"

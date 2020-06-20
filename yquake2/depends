@@ -1,0 +1,12 @@
+expat
+libX11
+libXau
+libXdamage
+libXext
+libXfixes
+libXxf86vm
+libdrm
+libxcb
+libxshmfence
+mesa
+sdl2
