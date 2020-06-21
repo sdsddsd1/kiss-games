@@ -9,4 +9,5 @@ libdrm
 libxcb
 libxshmfence
 mesa
+openal
 sdl2
