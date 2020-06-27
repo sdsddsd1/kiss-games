@@ -1,6 +1,6 @@
 #!/bin/sh -e
 
-pip install scons
+pip install --user scons
 
 sed -i -e 's/#ifdef CRASH_HANDLER_ENABLED/#if defined(CRASH_HANDLER_ENABLED) \&\& defined(__GLIBC__)/' platform/x11/crash_handler_x11.cpp
 
