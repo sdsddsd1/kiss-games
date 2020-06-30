@@ -3,6 +3,8 @@
 export DESTDIR="$1"
 
 # Submit a pullrequest if you put this in a nice patch or sed. (:
+# qt5-script can be found in KISS-kde
+
 cp debug.cpp   lib/framework/debug.cpp
 cp netplay.cpp lib/netplay/netplay.cpp
 
