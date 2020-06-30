@@ -1,0 +1,18 @@
+#!/bin/sh -e
+
+export DESTDIR="$1"
+
+# Submit a pullrequest if you put this in a nice patch or sed. (:
+cp debug.cpp   lib/framework/debug.cpp
+cp netplay.cpp lib/netplay/netplay.cpp
+
+cmake -B build \
+    -DCMAKE_INSTALL_PREFIX=/usr \
+    -DCMAKE_BUILD_TYPE=Release \
+    -DENABLE_NLS=OFF \
+    -DENABLE_DOCS=OFF \
+    -DENABLE_DISCORD=OFF \
+    -DWZ_ENABLE_WARNINGS_AS_ERRORS=OFF 
+
+cmake --build   build
+cmake --install build
