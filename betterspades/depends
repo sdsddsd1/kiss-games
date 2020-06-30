@@ -2,4 +2,4 @@ enet
 glew
 glfw
 libdeflate
-openal
+openal-soft

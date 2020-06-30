@@ -2,6 +2,6 @@ cmake make
 libexecinfo
 libjpeg-turbo
 musl-fts
-openal
+openal-soft
 sdl2
 zmusic

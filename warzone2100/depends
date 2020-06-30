@@ -5,7 +5,7 @@ libvorbis
 libpng
 libsodium
 libtheora
-openal
+openal-soft
 physfs
 qt5-script
 qt5

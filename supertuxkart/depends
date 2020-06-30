@@ -5,5 +5,5 @@ libjpeg-turbo
 libogg
 libvorbis
 mesa make
-openal
+openal-soft
 sqlite

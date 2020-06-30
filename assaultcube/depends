@@ -3,7 +3,7 @@ curl
 libogg
 libvorbis
 libX11
-openal
+openal-soft
 sdl
 sdl-image
 zlib

@@ -2,4 +2,4 @@ curl
 sdl
 libvorbis
 libxmp
-openal
+openal-soft

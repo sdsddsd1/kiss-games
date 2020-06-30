@@ -1,5 +1,5 @@
 curl
 libogg
 libvorbis
-openal
+openal-soft
 sdl

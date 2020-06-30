@@ -4,5 +4,5 @@ libtheora
 libvorbis
 luajit
 mpg123
-openal
+openal-soft
 sdl2

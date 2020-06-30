@@ -8,6 +8,6 @@ libXxf86vm
 libogg
 libvorbis
 luajit
-openal
+openal-soft
 sqlite
 zlib

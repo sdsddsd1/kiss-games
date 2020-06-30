@@ -5,4 +5,4 @@ libX11
 libXrandr
 libsndfile
 mesa make
-openal
+openal-soft
