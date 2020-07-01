@@ -23,6 +23,9 @@
 
 **Terminalgames:**  
 `2048` `Aop` `cNibbles` `CurseofWar` `greed` `nPush` `nSnake` `solVItaire` `vitetris`  
+  
+**Missing:**  
+Casual games like `solitaire` with decent dependencies.
 
 ![screen](screenshots/busy.jpeg)
 ![screen](screenshots/busy2.png)
