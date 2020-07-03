@@ -3,7 +3,9 @@
 ./configure \
     --prefix=/usr \
     --disable-examples \
-    --disable-doc
+    --disable-doc \
+    --disable-static \
+    --with-pic
 
 make
 make DESTDIR="$1" install
