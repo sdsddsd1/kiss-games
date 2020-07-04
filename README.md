@@ -19,7 +19,7 @@
 `Cave Story(NXEngine-evo)` `Dave Gnukem` `Hurrican` `SDLPoP` `Teeworlds` `VVVVVV` `waterCloset`  
   
 **Other stuff:**  
-`Blobby Volley 2` `dopewars` `Minetest` `OpenTTD` `Warzone 2100` `Wesnoth` `Xmahjongg` 
+`Blobby Volley 2` `dopewars` `Minetest` `OpenTTD` `Warzone 2100` `Wesnoth` `Xmahjongg` 'Zatacka X'
 
 **Terminalgames:**  
 `2048` `Aop` `cNibbles` `CurseofWar` `greed` `nPush` `nSnake` `solVItaire` `vitetris`  

@@ -1,0 +1,5 @@
+automake make
+sdl
+sdl-image
+sdl-mixer
+sdl-ttf
