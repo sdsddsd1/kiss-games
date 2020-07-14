@@ -1,3 +1,5 @@
+alsa-lib
 cmake make
+glib
 linux-headers make
 soundfont-fluid
