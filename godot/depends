@@ -12,4 +12,5 @@ libwebp
 opus
 opusfile
 python make
+scons make
 zlib
