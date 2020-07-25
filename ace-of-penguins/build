@@ -1,0 +1,11 @@
+#!/bin/sh -e
+
+patch -p1 < ace.patch
+
+export CFLAGS="$CFLAGS -fcommon"
+
+./configure \
+    --prefix=/usr
+
+make
+make DESTDIR="$1" install

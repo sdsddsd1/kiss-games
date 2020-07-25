@@ -19,13 +19,11 @@
 `Cave Story(NXEngine-evo)` `Dave Gnukem` `Hurrican` `SDLPoP` `Teeworlds` `VVVVVV` `waterCloset`  
   
 **Other stuff:**  
-`Blobby Volley 2` `dopewars` `Minetest` `OpenTTD` `Warzone 2100` `Wesnoth` `Xmahjongg` `Zatacka X`
+`Ace of Penguins` `Blobby Volley 2` `dopewars` `Minetest` `OpenTTD` `Warzone 2100` `Wesnoth` `Xmahjongg` `Zatacka X`
 
 **Terminalgames:**  
 `2048` `Aop` `cNibbles` `CurseofWar` `greed` `nPush` `nSnake` `solVItaire` `vitetris`  
   
-**Missing:**  
-Casual games like `solitaire` with decent dependencies.
 
 ![screen](screenshots/busy.jpeg)
 ![screen](screenshots/busy2.png)
