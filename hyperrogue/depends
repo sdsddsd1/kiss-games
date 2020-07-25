@@ -1,0 +1,7 @@
+automake make
+glu make
+libtool make
+sdl
+sdl-gfx
+sdl-ttf
+sdl-mixer
