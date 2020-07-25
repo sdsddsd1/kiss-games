@@ -13,7 +13,7 @@
 `Godot` `Irrlicht` `LÖVE` `Mednafen(multisystem)` `mGBA` `Solarus` `Stockfish`  
 
 **Rogue-like, RPG:**  
-`Brogue CE` `Cataclysm-DDA` `Flare`  
+`Brogue CE` `Cataclysm-DDA` `Flare` `HyperRogue`   
 
 **Jump'n \*:**  
 `Cave Story(NXEngine-evo)` `Dave Gnukem` `Hurrican` `SDLPoP` `Teeworlds` `VVVVVV` `waterCloset`  
