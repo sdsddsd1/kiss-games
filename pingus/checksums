@@ -1,0 +1,5 @@
+31cb2c0ecddd49dbe03535648e8c7c2971da469c52af52cdf9dc2459798342c8  pingus-v0.7.6.tar.gz
+af2323c4eb244d0b7c3ff6592ce30906a2d5c4aef08d33c23fef629b22261d38  scons-python3.patch
+9b9c35b9e0ed80408d01a1b63c43e05f1139bb42a29f3a2405406fbec5f33ce9  pingus-0.7.6-boost_signals2.patch
+3a8a20c9c2df1d231c3f8462d9b65bb69778bcb8fb7be5efd9a3ee0fd993f098  pingus-0.7.6-noopengl.patch
+83c629a5fe6b3a8255c70f9afc57583d8a01a73a442b412af65a98f881a2c868  pingus-0.7.6-gcc7.patch

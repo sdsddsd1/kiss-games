@@ -1,0 +1,5 @@
+https://gitlab.com/pingus/pingus/-/archive/v0.7.6/pingus-v0.7.6.tar.gz
+patches/scons-python3.patch
+patches/pingus-0.7.6-boost_signals2.patch
+patches/pingus-0.7.6-noopengl.patch
+patches/pingus-0.7.6-gcc7.patch
