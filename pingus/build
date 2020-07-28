@@ -1,0 +1,10 @@
+#!/bin/sh -e
+
+for patch in *.patch; do
+    patch -Np1 < "$patch"
+done
+
+scons with_opengl=0
+make DESTDIR="$1" PREFIX=/usr install-exec install-data
+
+rm -rf "$1/usr/share/pingus/po"
