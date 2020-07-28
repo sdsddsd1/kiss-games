@@ -2,13 +2,9 @@
 
 make -C engine/
 
-rm openarena-0.8.8/*.dll
-rm openarena-0.8.8/*.exe
-
-mkdir -p                                  "$1/usr/share/openarena"
-cp -r openarena-0.8.8/.                   "$1/usr/share/openarena"
-cp -r engine/build/release-linux-x86_64/. "$1/usr/share/openarena"
-
-install -Dm755 launcher                   "$1/usr/bin/openarena"
-install -Dm755 launcherded                "$1/usr/bin/openarena-server"
-
+mkdir -p                                                          "$1/usr/share/openarena/baseoa"
+install -Dm644 openarena-0.8.8/baseoa/*.pk3                       "$1/usr/share/openarena/baseoa/"
+install -Dm755 engine/build/release-linux-x86_64/openarena.x86_64 "$1/usr/share/openarena"
+install -Dm755 engine/build/release-linux-x86_64/oa_ded.x86_64    "$1/usr/share/openarena"
+install -Dm755 launcher                                           "$1/usr/bin/openarena"
+install -Dm755 launcherded                                        "$1/usr/bin/openarena-server"
