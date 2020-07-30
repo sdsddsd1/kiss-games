@@ -16,7 +16,7 @@
 `Brogue CE` `Cataclysm-DDA` `Flare` `HyperRogue`   
 
 **Jump'n \*:**  
-`Cave Story(NXEngine-evo)` `Dave Gnukem` `Hurrican` `SDLPoP` `Teeworlds` `VVVVVV` `waterCloset`  
+`Cave Story(NXEngine-evo)` `Dave Gnukem` `Hurrican` `Jazz JackRabbit` `SDLPoP` `Teeworlds` `VVVVVV` `waterCloset`  
   
 **Other stuff:**  
 `Ace of Penguins` `Blobby Volley 2` `dopewars` `Minetest` `OpenTTD` `Pingus` `Warzone 2100` `Wesnoth` `Xmahjongg` `Zatacka X`
