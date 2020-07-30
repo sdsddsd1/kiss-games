@@ -1,0 +1,10 @@
+#!/bin/sh -e
+
+export LDFLAGS="$LDFLAGS -lexecinfo"
+
+make PACKAGE_REPOSITORY=1 HAVE_GTK2=0
+
+install -Dm755 rednukem   "$1/usr/bin/rednukem"
+install -Dm755 nblood     "$1/usr/bin/nblood"
+install -Dm755 pcexhumed  "$1/usr/bin/pcexhumed"
+install -Dm644 nblood.pk3 "$1/usr/share/nblood/nblood.pk3"
