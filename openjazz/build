@@ -11,5 +11,4 @@ export CPPFLAGS="$CPPFLAGS -DDATAPATH=\\\"/usr/share/openjazz/\\\" -DHOMEDIR"
 make
 make DESTDIR="$1" install
 
-mkdir -p "$1/usr/share/openjazz/shareware"
-mv game/* "$1/usr/share/openjazz/shareware"
+mv game "$1/usr/share/openjazz/shareware"
