@@ -1,0 +1,4 @@
+#!/bin/sh -e
+
+make -f Makefile.libretro
+install -Dm644 vba_next_libretro.so "$1/usr/lib/libretro/vba_next_libretro.so"
