@@ -1,0 +1,4 @@
+#!/bin/sh -e
+
+make -f Makefile.libretro
+install -Dm644 gw_libretro.so "$1/usr/lib/libretro/gw_libretro.so"
