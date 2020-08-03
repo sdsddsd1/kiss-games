@@ -1,0 +1,4 @@
+#!/bin/sh -e
+
+make -C libretro
+install -Dm644 libretro/nestopia_libretro.so "$1/usr/lib/libretro/nestopia_libretro.so"
