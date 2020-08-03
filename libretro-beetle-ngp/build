@@ -1,0 +1,4 @@
+#!/bin/sh -e
+
+make
+install -Dm644 mednafen_ngp_libretro.so "$1/usr/lib/libretro/mednafen_ngp_libretro.so"
