@@ -1,0 +1,19 @@
+#!/bin/sh -e
+
+for patch in *.patch; do
+    patch -Np1 -i "$patch"
+done
+
+CFLAGS="$CFLAGS -I/usr/include/directfb"
+./configure \
+    --prefix=/usr \
+    --enable-dynamic \
+    --disable-vg \
+    --disable-discord \
+    --disable-builtinminiupnpc \
+    --disable-builtinmbedtls \
+    --disable-builtinflac \
+    --disable-builtinzlib
+
+make
+make DESTDIR="$1" install
