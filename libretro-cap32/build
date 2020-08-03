@@ -1,0 +1,4 @@
+#!/bin/sh -e
+
+make
+install -Dm644 cap32_libretro.so "$1/usr/lib/libretro/cap32_libretro.so"
