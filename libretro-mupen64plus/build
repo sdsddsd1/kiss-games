@@ -1,0 +1,8 @@
+#!/bin/sh -e
+
+for patch in *.patch; do
+    patch -Np1 -i "$patch"
+done
+
+make WITH_DYNAREC=x86_64
+install -Dm644 mupen64plus_next_libretro.so "$1usr/lib/libretro/mupen64plus_next_libretro.so"
