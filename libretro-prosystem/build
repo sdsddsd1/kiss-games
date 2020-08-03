@@ -1,0 +1,4 @@
+#!/bin/sh -e
+
+make
+install -Dm644 prosystem_libretro.so "$1/usr/lib/libretro/prosystem_libretro.so"
