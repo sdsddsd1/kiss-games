@@ -1,0 +1,8 @@
+#!/bin/sh -e
+
+for patch in *.patch; do
+    patch -Np1 -i "$patch"
+done
+
+make -f Makefile.libretro
+install -Dm644 blastem_libretro.so "$1/usr/lib/libretro/blastem_libretro.so"
