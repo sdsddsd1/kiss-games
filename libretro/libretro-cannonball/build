@@ -1,0 +1,4 @@
+#!/bin/sh -e
+
+make
+install -Dm644 cannonball_libretro.so "$1/usr/lib/libretro/cannonball_libretro.so"

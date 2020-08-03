@@ -1,0 +1,4 @@
+#!/bin/sh -e
+
+make
+install -Dm644 parallel_n64_libretro.so "$1/usr/lib/libretro/parallel_n64_libretro.so"

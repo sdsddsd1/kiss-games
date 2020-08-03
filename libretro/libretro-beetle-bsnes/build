@@ -1,0 +1,8 @@
+#!/bin/sh -e
+
+for patch in *.patch; do
+    patch -Np1 -i "$patch"
+done
+
+make
+install -Dm644 mednafen_snes_libretro.so "$1/usr/lib/libretro/mednafen_snes_libretro.so"

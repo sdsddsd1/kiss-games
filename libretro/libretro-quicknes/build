@@ -1,0 +1,4 @@
+#!/bin/sh -e
+
+make
+install -Dm644 quicknes_libretro.so "$1/usr/lib/libretro/quicknes_libretro.so"

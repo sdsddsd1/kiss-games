@@ -1,0 +1,4 @@
+#!/bin/sh -e
+
+make
+install -Dm644 gpsp_libretro.so "$1/usr/lib/libretro/gpsp_libretro.so"

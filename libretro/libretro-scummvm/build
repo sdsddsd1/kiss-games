@@ -1,0 +1,5 @@
+#!/bin/sh -e
+
+make -C backends/platform/libretro/build
+install -Dm644 backends/platform/libretro/build/scummvm_libretro.so \
+		"$1/usr/lib/libretro/scummvm_libretro.so"

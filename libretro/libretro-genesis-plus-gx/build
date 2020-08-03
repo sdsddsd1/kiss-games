@@ -1,0 +1,4 @@
+#!/bin/sh -e
+
+make -f Makefile.libretro
+install -Dm644 genesis_plus_gx_libretro.so "$1/usr/lib/libretro/genesis_plus_gx_libretro.so"

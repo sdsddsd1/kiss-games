@@ -1,0 +1,2 @@
+git  git+https://github.com/libretro/mupen64plus-libretro-nx
+0d64e67e104bf69967e1325406c6776e7351483d867c4c850d60d80d44748d56  musl-incompatibility.patch

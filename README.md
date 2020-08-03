@@ -10,7 +10,7 @@
 `AssaultCube` `BetterSpades` `NBlood|PCExhumed|RedNukem` `OpenArena` `QuakeSpasm` `Redeclipse` `Sauerbraten` `Urban Terror` `Xonotic` `Yamagi Quake 2` `ZGloom`  
   
 **Emulator, engine:**  
-`Godot` `Irrlicht` `LÖVE` `Mednafen(multisystem)` `mGBA` `Solarus` `Stockfish`  
+`Godot` `Irrlicht` `LÖVE` `Mednafen(multisystem)` `mGBA` `RetroArch` `Solarus` `Stockfish`  
 
 **Rogue-like, RPG:**  
 `Brogue CE` `Cataclysm-DDA` `Flare` `HyperRogue`   

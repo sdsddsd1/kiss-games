@@ -1,0 +1,4 @@
+#!/bin/sh -e
+
+make -C platforms/libretro
+install -Dm644 platforms/libretro/gearboy_libretro.so "$1/usr/lib/libretro/gearboy_libretro.so"

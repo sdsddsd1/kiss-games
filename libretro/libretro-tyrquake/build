@@ -1,0 +1,4 @@
+#!/bin/sh -e
+
+make
+install -Dm644 tyrquake_libretro.so "$1/usr/lib/libretro/tyrquake_libretro.so"

@@ -1,0 +1,4 @@
+#!/bin/sh -e
+
+make
+install -Dm644 daphne_libretro.so "$1/usr/lib/libretro/daphne_libretro.so"

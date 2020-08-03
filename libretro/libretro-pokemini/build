@@ -1,0 +1,4 @@
+#!/bin/sh -e
+
+make -f Makefile.libretro
+install -Dm644 pokemini_libretro.so "$1/usr/lib/libretro/pokemini_libretro.so"
