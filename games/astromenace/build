@@ -1,0 +1,11 @@
+#!/bin/sh -e
+
+cmake -B build\
+    -DCMAKE_INSTALL_PREFIX=/usr \
+    -DCMAKE_BUILD_TYPE=Release \
+    -DDATADIR=/usr/share/astromenace
+
+cmake --build   build
+
+install -Dm755 build/astromenace  "$1/usr/bin/astromenace"
+install -Dm644 build/gamedata.vfs "$1/usr/share/astromenace/gamedata.vfs"
