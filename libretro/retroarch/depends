@@ -23,6 +23,8 @@ libdrm
 libogg
 libpng
 libressl
+libretro-core-info
+libretro-database
 libusb
 libvorbis
 libvpx
@@ -34,6 +36,8 @@ mesa
 opus
 pcre2
 qt5
+retroarch-assets
+retroarch-joypad-autoconfig
 sdl2
 x264
 x265
