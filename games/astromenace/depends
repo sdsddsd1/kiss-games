@@ -1,3 +1,4 @@
+bzip2
 expat
 freetype-harfbuzz
 glib
@@ -17,5 +18,4 @@ libxcb
 libxshmfence
 mesa
 sdl2
-zip2
 zlib
