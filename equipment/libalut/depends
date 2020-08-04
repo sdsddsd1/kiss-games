@@ -1,0 +1,3 @@
+automake    make
+libtool     make
+openal-soft
