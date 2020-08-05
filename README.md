@@ -1,13 +1,16 @@
 # KISSlinux compatible game repository
 
-**Action:**  
-`Astromenace` `C-Dogs` `Extreme Tux Racer` `Mr. Boom` `OpenTyrian` `oshu!` `SRB2Kart` `SuperTuxKart` `Taisei`  
+**Racing:**  
+`Extreme Tux Racer`  `SRB2Kart` `SuperTuxKart`   
 
 **Doom:**  
 `Crispy Doom` `DOOM Retro` `GZDoom` `PrBoom+`  
   
 **FPS:**  
 `AssaultCube` `BetterSpades` `NBlood|PCExhumed|RedNukem` `OpenArena` `QuakeSpasm` `Redeclipse` `Sauerbraten` `Urban Terror` `Xonotic` `Yamagi Quake 2` `ZGloom`  
+  
+**Shoot'em \*:**  
+`Astromenace` `C-Dogs` `OpenTyrian` `Taisei`  
   
 **Emulator, engine:**  
 `Godot` `Irrlicht` `LÖVE` `Mednafen(multisystem)` `mGBA` `RetroArch` `Solarus` `Stockfish`  
@@ -19,7 +22,7 @@
 `Cave Story(NXEngine-evo)` `Dave Gnukem` `Hurrican` `Jazz JackRabbit` `SDLPoP` `Teeworlds` `VVVVVV` `waterCloset`  
   
 **Other stuff:**  
-`Ace of Penguins` `Blobby Volley 2` `dopewars` `Minetest` `OpenTTD` `Pingus` `Warzone 2100` `Wesnoth` `Xmahjongg` `Zatacka X`
+`Ace of Penguins` `Blobby Volley 2` `dopewars` `Minetest` `Mr. Boom` `OpenTTD` `oshu!` `Pingus` `Warzone 2100` `Wesnoth` `Xmahjongg` `Zatacka X`   
 
 **Terminalgames:**  
 `2048` `Aop` `cNibbles` `CurseofWar` `greed` `nPush` `nSnake` `solVItaire` `vitetris`  
