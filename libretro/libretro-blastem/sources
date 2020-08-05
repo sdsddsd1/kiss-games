@@ -1,2 +1,2 @@
-git+https://github.com/libretro/blastem#d15273496ea3aad0cf1c23d1853586e7a71eb112 
+git+https://github.com/libretro/blastem#4206da1f986ecda199c82d4a2404eff904397f55
 patches/fix-gcc10.patch
