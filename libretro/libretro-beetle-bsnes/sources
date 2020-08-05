@@ -1,2 +1,2 @@
-git+https://github.com/libretro/beetle-bsnes-libretro
+git+https://github.com/libretro/beetle-bsnes-libretro#7c111b429bb34bd5073a0092495d668bd200c474 
 patches/patch-musl.patch
