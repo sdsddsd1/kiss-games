@@ -16,13 +16,16 @@
 `Godot` `Irrlicht` `LÖVE` `Mednafen(multisystem)` `mGBA` `RetroArch` `Solarus` `Stockfish`  
 
 **Rogue-like, RPG:**  
-`Brogue CE` `Cataclysm-DDA` `Flare` `HyperRogue`   
+`Brogue CE` `Cataclysm-DDA` `Flare` `HyperRogue` 
+
+**Strategic:**  
+`OpenTTD` `Warzone 2100` `Wesnoth`
 
 **Jump'n \*:**  
 `Cave Story(NXEngine-evo)` `Dave Gnukem` `Hurrican` `Jazz JackRabbit` `SDLPoP` `Teeworlds` `VVVVVV` `waterCloset`  
   
 **Other stuff:**  
-`Ace of Penguins` `Blobby Volley 2` `dopewars` `Minetest` `Mr. Boom` `OpenTTD` `oshu!` `Pingus` `Warzone 2100` `Wesnoth` `Xmahjongg` `Zatacka X`   
+`Ace of Penguins` `Blobby Volley 2` `dopewars` `Minetest` `Mr. Boom` `oshu!` `Pingus` `Xmahjongg` `Zatacka X`   
 
 **Terminalgames:**  
 `2048` `Aop` `cNibbles` `CurseofWar` `greed` `nPush` `nSnake` `solVItaire` `vitetris`  
