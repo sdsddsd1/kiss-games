@@ -28,7 +28,7 @@
 `Ace of Penguins` `Blobby Volley 2` `dopewars` `Minetest` `Mr. Boom` `oshu!` `Pingus` `Xmahjongg` `Zatacka X`   
 
 **Terminalgames:**  
-`2048` `Aop` `cNibbles` `CurseofWar` `greed` `nPush` `nSnake` `solVItaire` `vitetris`  
+`2048` `Aop` `cNibbles` `CurseofWar` `greed` `nPush` `nSnake` `solVItaire` `terminal-pong` `vitetris`  
   
 
 ![screen](screenshots/busy.jpeg)
