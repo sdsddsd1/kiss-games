@@ -1,6 +1,7 @@
 # RetroArch & libRetro for KISSLinux
 
-:construction: This is a WIP on how to setup `retroarch` and friends. :construction:
+:construction: This is a WIP on how to setup `retroarch` and friends.
+:construction:
 
 ## Install
 
@@ -12,12 +13,35 @@
 ~ $ kiss i retroarch
 ```
 
-The emulators, so called 'cores', start with `libretro-` followed by the corresponding name.
+The emulators, so called 'cores', start with `libretro-` followed by the
+corresponding name, can be installed with the following:
 
- * libretro-:  
-   
-`2048` `3dengine` `81` `atari800` `beetle-bsnes` `beetle-lynx` `beetle-ngp` `beetle-pce-fast` `beetle-pcfx` `beetle-psx` `beetle-psx-hw` `beetle-saturn`
-`beetle-supergrafx` `beetle-vb` `beetle-wswan` `bk` `blastem` `bluemsx` `bsnes` `cannonball` `cap32` `craft` `crocods` `daphne` `desmume` `dinothawr` `dosbox`
-`fbneo` `fceumm` `fmsx` `freechaf` `frodo` `fuse` `gambatte` `gearboy` `genesis-plus-gx` `gme` `gpsp` `gw` `handy` `hatari` `mame2000` `mame2003`
-`meteor` `mgba` `mrboom` `mupen64plus` `nestopia` `nxengine` `o2em` `opera` `parallel-n64` `pcsx-rearmed` `picodrive` `pocketcdg` `pokemini` `prosystem`
-`quicknes` `sameboy` `scummvm` `snes9x` `stella2014` `tgbdual` `theodore` `tyrquake` `uzem` `vba-next` `vbam` `vecx` `virtualjaguar` `xrick` `yabause`
+```
+~ $ kiss b libretro-$core
+~ $ kiss i libretro-$core
+```
+
+Once installed, retroarch will pick them up.
+
+## Usage
+
+In order to change configuration, that can be found, and edited in:
+```
+~ $ vi $HOME/retroarch/retroarch.cfg
+```
+Firmware goes inside:
+```
+~ $ $HOME/.config/retroarch/system/
+```
+And roms have no specified path and can live anywhere on the system. They are added
+inside retroarch menu.
+
+ * 'Import content -> Scan directory'
+
+Furthermore, if someone needs more complete documentation can be found [here](https://docs.libretro.com).
+
+## KISS way
+
+The online updater is disabled as retroarch's buildsystem is targeted at `glibc`
+and therefore the whole suite is managed by the package manager. Only preview
+thumbnails are downloaded once at runtime.
