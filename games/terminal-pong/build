@@ -1,0 +1,6 @@
+#!/bin/sh -e
+
+cmake .
+
+cmake --build .
+install -Dm755 pong "$1/usr/bin/pong"
