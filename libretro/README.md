@@ -25,7 +25,7 @@ Once installed, retroarch will pick them up.
 
 ## Usage
 
-In order to change configuration, that can be found, and edited in:
+The user config file can be found in:
 ```
 ~ $ vi $HOME/retroarch/retroarch.cfg
 ```
@@ -33,12 +33,12 @@ Firmware goes inside:
 ```
 ~ $ $HOME/.config/retroarch/system/
 ```
-And roms have no specified path and can live anywhere on the system. They are added
-inside retroarch menu.
+Roms have no specified path and can live anywhere on the system. They are added
+inside the menu of retroarch.
 
  * 'Import content -> Scan directory'
 
-Furthermore, if someone needs more complete documentation can be found [here](https://docs.libretro.com).
+A more complete documentation can be found [here](https://docs.libretro.com).
 
 ## KISS way
 
