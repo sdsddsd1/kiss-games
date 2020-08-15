@@ -1,0 +1,19 @@
+#!/bin/sh -e
+
+for patch in *.patch; do
+    patch -Np1 -i "$patch"
+done
+
+libtoolize --force
+aclocal
+autoconf
+automake --add-missing
+
+./configure \
+    --prefix=/usr \
+    --enable-shared
+
+make
+make DESTDIR="$1" install
+
+install -m644 liba52/a52_internal.h "$1/usr/include/a52dec/"
