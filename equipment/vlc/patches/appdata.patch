@@ -1,0 +1,22 @@
+--- old/share/Makefile.am
++++ new/share/Makefile.am
+@@ -24,7 +24,7 @@
+ 	$(AM_V_at)mv -f tmp-$@ $@
+ 
+ vlc.appdata.xml: vlc.appdata.xml.in
+-	$(AM_V_GEN)$(MSGFMT) --xml --template $< -d $(top_srcdir)/po -o $@ || cp $< $@
++	cp $< $@
+ 
+ iconsdatadir = $(datadir)/icons/hicolor
+ icons16dir = $(iconsdatadir)/16x16/apps
+--- old/share/Makefile.in
++++ new/share/Makefile.in
+@@ -1834,7 +1834,7 @@
+ 	$(AM_V_at)mv -f tmp-$@ $@
+ 
+ vlc.appdata.xml: vlc.appdata.xml.in
+-	$(AM_V_GEN)$(MSGFMT) --xml --template $< -d $(top_srcdir)/po -o $@ || cp $< $@
++	cp $< $@
+ 
+ skins2/default.vlt: $(skins2_default_vlt_FILES)
+ 	$(AM_V_at)mkdir -p skins2

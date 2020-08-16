@@ -1,0 +1,27 @@
+#!/bin/sh -e
+
+for patch in *.patch; do
+    patch -Np1 -i "$patch"
+done
+
+NOCONFIGURE=1 ./bootstrap
+
+export BUILDCC="${CC:-gcc} -std=c99"
+
+./configure \
+    --prefix=/usr \
+    --disable-nls \
+    --disable-fribidi \
+    --disable-dbus \
+    --disable-lua \
+    --disable-update-check \
+    --enable-alsa
+
+make
+make DESTDIR="$1" install
+
+rm -rf "$1/usr/share/doc"
+rm -rf "$1/usr/share/kde4"
+
+# fix desktop file
+sed -i 's/--started-from-file//g' "$1/usr/share/applications/vlc.desktop"
