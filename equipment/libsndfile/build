@@ -1,7 +1,9 @@
 #!/bin/sh -e
 
-./configure \
-    --prefix=/usr
+export DESTDIR="$1"
 
-make
-make DESTDIR="$1" install
+cmake -B build \
+    -DCMAKE_INSTALL_PREFIX=/usr
+
+cmake --build   build
+cmake --install build
