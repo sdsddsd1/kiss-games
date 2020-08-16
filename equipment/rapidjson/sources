@@ -1,0 +1,4 @@
+https://github.com/miloyip/rapidjson/archive/v1.1.0.tar.gz
+patches/disable-Werror.patch
+patches/disable-march-cxx-flag.patch
+patches/do-not-include-gtest-src-dir.patch
