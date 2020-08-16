@@ -1,7 +1,4 @@
-# RetroArch & libRetro for KISSLinux
-
-:construction: This is a WIP on how to setup `retroarch` and friends.
-:construction:
+# RetroArch & libRetro for KISS Linux
 
 ## Install
 
@@ -13,35 +10,33 @@
 ~ $ kiss i retroarch
 ```
 
-The emulators, so called 'cores', start with `libretro-` followed by the
-corresponding name, can be installed with the following:
+The emulators, so called 'cores', start with `libretro-` followed by the  
+corresponding name. Once installed, retroarch will pick them up.
 
 ```
 ~ $ kiss b libretro-$core
 ~ $ kiss i libretro-$core
 ```
 
-Once installed, retroarch will pick them up.
-
 ## Usage
 
-The user config file can be found in:
+The user config file is located at:
 ```
-~ $ vi $HOME/retroarch/retroarch.cfg
+~ $ $HOME/.config/retroarch/retroarch.cfg
 ```
 Firmware goes inside:
 ```
 ~ $ $HOME/.config/retroarch/system/
 ```
-Roms have no specified path and can live anywhere on the system. They are added
+Roms have no specified path and can live anywhere on the system. They are added  
 inside the menu of retroarch.
 
- * 'Import content -> Scan directory'
+ * `Import content -> Scan directory`
 
 A more complete documentation can be found [here](https://docs.libretro.com).
 
 ## KISS way
 
-The online updater is disabled as retroarch's buildsystem is targeted at `glibc`
-and therefore the whole suite is managed by the package manager. Only preview
+The online updater is disabled as retroarch's buildsystem is targeted at `glibc`  
+and therefore the whole suite is managed by the package manager. Only preview  
 thumbnails are downloaded once at runtime.
