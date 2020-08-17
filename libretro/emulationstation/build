@@ -1,0 +1,24 @@
+#!/bin/sh -e
+
+export DESTDIR="$1"
+
+for patch in *.patch; do
+    patch -Np1 -i "$patch"
+done
+
+cmake -B build \
+    -DCMAKE_BUILD_TYPE:STRING='None' \
+    -DCMAKE_INSTALL_LIBDIR:PATH='lib' \
+    -DCMAKE_INSTALL_PREFIX:PATH='/usr' \
+    -Wno-dev -Wno-deprecated
+
+cmake --build   build
+cmake --install build
+
+mkdir -p "$1/usr/share/pixmaps"
+mkdir -p "$1/usr/share/applications"
+mkdir -p "$1/usr/share/emulationstation/gamelists"
+mkdir -p "$1/usr/share/emulationstation/themes"
+
+install -Dm644 emulationstation.png     "$1/usr/share/pixmaps/"
+install -Dm644 emulationstation.desktop "$1/usr/share/applications/"
