@@ -1,4 +1,4 @@
-# KISSlinux compatible game repository
+# KISS Linux compatible game repository
 
 **Racing:**  
 `Extreme Tux Racer`  `SRB2Kart` `SuperTuxKart`   
