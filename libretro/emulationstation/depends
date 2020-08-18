@@ -15,9 +15,9 @@ libXxf86vm
 libdrm
 libpng
 libressl
+libvlc
 libxcb
 libxshmfence
 mesa
 sdl2
-libvlc
 zlib
