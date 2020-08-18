@@ -19,5 +19,5 @@ libxcb
 libxshmfence
 mesa
 sdl2
-vlc
+libvlc
 zlib
