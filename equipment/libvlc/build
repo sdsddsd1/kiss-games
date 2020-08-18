@@ -1,0 +1,165 @@
+#!/bin/sh -e
+
+./configure \
+    --prefix=/usr \
+    --disable-nls \
+    --disable-aa \
+    --disable-optimizations \
+    --disable-rpath \
+    --disable-update-check \
+    --enable-fast-install \
+    --enable-screen \
+    --enable-vcd \
+    --enable-vlc \
+    --disable-a52 \
+    --enable-alsa \
+    --disable-aom \
+    --disable-archive \
+    --disable-aribsub \
+    --disable-fribidi \
+    --disable-harfbuzz \
+    --disable-bluray \
+    --disable-libcddb \
+    --disable-chromaprint \
+    --disable-chromecast \
+    --disable-microdns \
+    --disable-neon \
+    --disable-altivec \
+    --disable-mmx \
+    --disable-sse \
+    --disable-dav1d \
+    --disable-dbus \
+    --disable-kwallet \
+    --disable-dc1394 \
+    --disable-debug \
+    --disable-directx \
+    --disable-d3d11va \
+    --disable-dxva2 \
+    --disable-dca \
+    --disable-dvbpsi \
+    --disable-dvdnav \
+    --disable-dvdread \
+    --disable-sout \
+    --disable-vlm \
+    --disable-faad \
+    --disable-fdkaac \
+    --disable-avcodec \
+    --disable-avformat \
+    --disable-postproc \
+    --disable-swscale \
+    --disable-flac \
+    --disable-fluidsynth \
+    --disable-fontconfig \
+    --disable-libgcrypt \
+    --disable-gme \
+    --disable-secret \
+    --disable-gst-decode \
+    --disable-dv1394 \
+    --disable-jack \
+    --disable-jpeg \
+    --disable-kate \
+    --disable-libass \
+    --disable-caca \
+    --disable-notify \
+    --disable-samplerate \
+    --disable-libtar \
+    --disable-tiger \
+    --disable-linsys \
+    --disable-lirc \
+    --disable-live555 \
+    --disable-lua \
+    --disable-osx-notifications \
+    --disable-mad \
+    --disable-matroska \
+    --disable-mod \
+    --disable-mpg123 \
+    --disable-libmpeg2 \
+    --disable-mtp \
+    --disable-mpc \
+    --disable-ncurses \
+    --disable-nfs \
+    --disable-ogg \
+    --disable-omxil \
+    --disable-omxil-vout \
+    --disable-optimize-memory \
+    --disable-opus \
+    --disable-png \
+    --disable-projectm \
+    --disable-pulse \
+    --disable-qt \
+    --disable-freerdp \
+    --disable-run-as-root \
+    --disable-smbclient \
+    --disable-sdl-image \
+    --disable-sftp \
+    --disable-shout \
+    --disable-sid \
+    --disable-skins2 \
+    --disable-soxr \
+    --disable-speex \
+    --disable-srt \
+    --disable-gnutls \
+    --disable-svg \
+    --disable-svgdec \
+    --disable-taglib \
+    --disable-theora \
+    --disable-tremor \
+    --disable-twolame \
+    --disable-udev \
+    --disable-upnp \
+    --disable-v4l2 \
+    --disable-libva \
+    --disable-vdpau \
+    --disable-vnc \
+    --disable-vorbis \
+    --disable-vpx \
+    --disable-wayland \
+    --without-x \
+    --disable-xcb \
+    --disable-xvideo \
+    --disable-x264 \
+    --disable-x26410b \
+    --disable-x265 \
+    --disable-libxml2 \
+    --disable-avahi \
+    --disable-zvbi \
+    --disable-telx \
+    --without-kde-solid \
+    --disable-asdcp \
+    --disable-coverage \
+    --disable-cprof \
+    --disable-crystalhd \
+    --disable-decklink \
+    --disable-gles2 \
+    --disable-goom \
+    --disable-kai \
+    --disable-kva \
+    --disable-libplacebo \
+    --disable-maintainer-mode \
+    --disable-merge-ffmpeg \
+    --disable-mfx \
+    --disable-mmal \
+    --disable-opencv \
+    --disable-opensles \
+    --disable-oss \
+    --disable-rpi-omxil \
+    --disable-schroedinger \
+    --disable-shine \
+    --disable-sndio \
+    --disable-spatialaudio \
+    --disable-vsxu \
+    --disable-wasapi \
+    --disable-wma-fixed
+
+make -C src fourcc_tables.h
+make libvlccore libvlc
+
+install -d "$1/usr/lib"
+
+install -Dm755 src/.libs/libvlccore.so.9.0.0 "$1/usr/lib/libvlccore.so.9.0.0"
+ln -sf /usr/lib/libvlccore.so.9.0.0 "$1/usr/lib/libvlccore.so.9"
+ln -sf /usr/lib/libvlccore.so.9.0.0 "$1/usr/lib/libvlccore.so"
+
+install -Dm755 lib/.libs/libvlc.so.5.6.0 "$1/usr/lib/libvlc.so.5.6.0"
+ln -sf /usr/lib/libvlc.so.5.6.0 "$1/usr/lib/libvlc.so.5"
+ln -sf /usr/lib/libvlc.so.5.6.0 "$1/usr/lib/libvlc.so"
