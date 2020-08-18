@@ -153,8 +153,11 @@
 
 make -C src fourcc_tables.h
 make libvlccore libvlc
+make -C bin vlc-cache-gen
+make DESTDIR="$1" -C lib install-pkgincludeHEADERS install-pkgconfigDATA
+make DESTDIR="$1" -C src install-pkgconfigDATA
 
-install -d "$1/usr/lib"
+install -d "$1/usr/lib/vlc"
 
 install -Dm755 src/.libs/libvlccore.so.9.0.0 "$1/usr/lib/libvlccore.so.9.0.0"
 ln -sf /usr/lib/libvlccore.so.9.0.0 "$1/usr/lib/libvlccore.so.9"
@@ -163,3 +166,5 @@ ln -sf /usr/lib/libvlccore.so.9.0.0 "$1/usr/lib/libvlccore.so"
 install -Dm755 lib/.libs/libvlc.so.5.6.0 "$1/usr/lib/libvlc.so.5.6.0"
 ln -sf /usr/lib/libvlc.so.5.6.0 "$1/usr/lib/libvlc.so.5"
 ln -sf /usr/lib/libvlc.so.5.6.0 "$1/usr/lib/libvlc.so"
+
+install -Dm755 bin/vlc-cache-gen "$1/usr/lib/vlc/vlc-cache-gen"
