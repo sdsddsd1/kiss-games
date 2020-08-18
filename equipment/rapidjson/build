@@ -1,0 +1,22 @@
+#!/bin/sh -e
+
+export DESTDIR="$1"
+
+for patch in *.patch; do
+    patch -Np1 -i "$patch"
+done
+
+cmake -B build \
+    -DCMAKE_BUILD_TYPE=None \
+    -DCMAKE_INSTALL_PREFIX=/usr \
+    -DCMAKE_VERBOSE_MAKEFILE=ON \
+    -DRAPIDJSON_BUILD_DOC=OFF \
+    -DRAPIDJSON_BUILD_EXAMPLES=OFF \
+    -DGTESTSRC_FOUND=ON \
+    -DGTEST_SOURCE_DIR=.
+
+cmake --build   build
+cmake --install build
+
+# Remove examples and readme.
+rm -rf "$1/usr/share"
