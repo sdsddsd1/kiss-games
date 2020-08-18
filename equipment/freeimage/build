@@ -1,0 +1,10 @@
+#!/bin/sh -e
+
+cd FreeImage
+
+for patch in ../*.patch; do
+    patch -Np1 -i "$patch"
+done
+
+make
+make DESTDIR="$1" install

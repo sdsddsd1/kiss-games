@@ -1,0 +1,5 @@
+https://downloads.sourceforge.net/freeimage/FreeImage3180.zip
+patches/0001-no-root-install.patch
+patches/0002-fix-cpuid-x86.patch
+patches/0005-makefile-gnu.patch
+patches/CVE-2019-12211_3.patch
