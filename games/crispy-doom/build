@@ -1,8 +1,5 @@
 #!/bin/sh -e
 
-#GCC10 fix
-export CFLAGS="$CFLAGS -fcommon"
-
 cmake -B build \
     -DCMAKE_BUILD_TYPE=Release
 
