@@ -5,77 +5,68 @@
 ##  ##    ##        ##       ## 
 ##   ##   ##  ##    ## ##    ## 
 ##    ## ####  ######   ######  
- ######      ###    ##     ## ########  ######      #######        ##
-##    ##    ## ##   ###   ### ##       ##    ##    ##     ##      ##
-##         ##   ##  #### #### ##       ##          ##     ##     ##
-##   #### ##     ## ## ### ## ######    ######     ##     ##    ##
-##    ##  ######### ##     ## ##             ##    ##     ##   ##
-##    ##  ##     ## ##     ## ##       ##    ##    ##     ##  ##
- ######   ##     ## ##     ## ########  ######      #######  ##
+ ######      ###    ##     ## ########  ######
+##    ##    ## ##   ###   ### ##       ##    ##
+##         ##   ##  #### #### ##       ##      
+##   #### ##     ## ## ### ## ######    ###### 
+##    ##  ######### ##     ## ##             ##
+##    ##  ##     ## ##     ## ##       ##    ##
+ ######   ##     ## ##     ## ########  ###### 
+________________________________________________________________________________
 If you want to see your beloved gem on this repo, submit a package and take care
 of its maintenance!
 
 
-Racing:  
+Racing
 ________________________________________________________________________________
-
 /Extreme Tux Racer/ /SRB2Kart/ /SuperTuxKart/
 
 
-Doom:
+Doom
 ________________________________________________________________________________
-
 /Crispy Doom/ /DOOM Retro/ /GZDoom/ /PrBoom+/
 
  
-FPS:
+FPS
 ________________________________________________________________________________
-
 /AssaultCube/ /BetterSpades/ /NBlood|PCExhumed|RedNukem/ /OpenArena/
 /QuakeSpasm/ /Redeclipse/ /Sauerbraten/ /Urban Terror/ /Xonotic/
 /Yamagi Quake 2/ /ZGloom/
  
  
-Shoot'em *:
+Shoot'em *
 ________________________________________________________________________________
-
 /Astromenace/ /C-Dogs/ /OpenTyrian/ /Taisei/
   
 
-Emulator, engine:
+Emulator, engine
 ________________________________________________________________________________
-
 /Godot/ /Irrlicht/ /LÖVE/ /Mednafen/ /mGBA/ /RetroArch/ /Solarus/ /Stockfish/
 
 
-Rogue-like, RPG:
+Rogue-like, RPG
 ________________________________________________________________________________
-
 /Brogue CE/ /Cataclysm-DDA/ /Flare/ /HyperRogue/
 
 
-Strategic:
+Strategic
 ________________________________________________________________________________
-
 /OpenTTD/ /Warzone 2100/ /Wesnoth/
 
 
-Jump'n *:
+Jump'n *
 ________________________________________________________________________________
-
 /Cave Story(NXEngine-evo)/ /Dave Gnukem/ /Hurrican/ /Jazz JackRabbit/ /SDLPoP/
 /Teeworlds/ /VVVVVV/ /waterCloset/
  
  
-Other stuff:
+Other stuff
 ________________________________________________________________________________
-
 /Ace of Penguins/ /Blobby Volley 2/ /dopewars/ /Minetest/ /Mr. Boom/ /oshu!/
 /Pingus/ /Xmahjongg/ /Zatacka X/
 
 
-Terminalgames:
+Terminalgames
 ________________________________________________________________________________
-
 /2048/ /Aop/ /cNibbles/ /CurseofWar/ /greed/ /nPush/ /nSnake/ /solVItaire/
 /terminal-pong/ /vitetris/
