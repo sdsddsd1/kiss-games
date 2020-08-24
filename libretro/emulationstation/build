@@ -15,10 +15,5 @@ cmake -B build \
 cmake --build   build
 cmake --install build
 
-mkdir -p "$1/usr/share/pixmaps"
-mkdir -p "$1/usr/share/applications"
 mkdir -p "$1/usr/share/emulationstation/gamelists"
 mkdir -p "$1/usr/share/emulationstation/themes"
-
-install -Dm644 emulationstation.png     "$1/usr/share/pixmaps/"
-install -Dm644 emulationstation.desktop "$1/usr/share/applications/"
