@@ -1,0 +1,72 @@
+--- old/CMakeLists.txt
++++ new/CMakeLists.txt
+@@ -7,6 +7,10 @@
+ 
+ project(emulationstation-all)
+ 
++# program name to be used as a reference when looking up resources
++set(AppDataName "emulationstation" CACHE STRING "Internal program name passed to compiler")
++add_definitions(-DAPPDATANAME="${AppDataName}")
++
+ #-------------------------------------------------------------------------------
+ #add local find scripts to CMAKE path
+ LIST(APPEND CMAKE_MODULE_PATH
+@@ -251,6 +255,9 @@
+ set(EXECUTABLE_OUTPUT_PATH ${dir} CACHE PATH "Build directory" FORCE)
+ set(LIBRARY_OUTPUT_PATH ${dir} CACHE PATH "Build directory" FORCE)
+ 
++# install rules for resources
++include(GNUInstallDirs)
++install(DIRECTORY resources DESTINATION "${CMAKE_INSTALL_DATAROOTDIR}/${AppDataName}")
+ 
+ #-------------------------------------------------------------------------------
+ # add each component
+--- old/es-app/CMakeLists.txt
++++ new/es-app/CMakeLists.txt
+@@ -142,10 +142,10 @@
+ 
+ #-------------------------------------------------------------------------------
+ # set up CPack install stuff so `make install` does something useful
+-
++include(GNUInstallDirs)
+ install(TARGETS emulationstation
+     RUNTIME
+-    DESTINATION bin)
++    DESTINATION "${CMAKE_INSTALL_BINDIR}")
+ 
+ INCLUDE(InstallRequiredSystemLibraries)
+ 
+--- old/es-core/src/resources/ResourceManager.cpp
++++ new/es-core/src/resources/ResourceManager.cpp
+@@ -3,6 +3,10 @@
+ #include "utils/FileSystemUtil.h"
+ #include <fstream>
+ 
++#ifndef APPDATANAME
++#define APPDATANAME "emulationstation"
++#endif
++
+ auto array_deleter = [](unsigned char* p) { delete[] p; };
+ auto nop_deleter = [](unsigned char* /*p*/) { };
+ 
+@@ -27,6 +31,20 @@
+ 	{
+ 		std::string test;
+ 
++        // check in standard AppData locations
++    #if defined(__linux__)
++        test = Utils::FileSystem::getHomePath() + "/.local/share/" + APPDATANAME + "/resources/" + &path[2];
++        if (Utils::FileSystem::exists(test))
++            return test;
++
++        test = std::string("/usr/local/share/") + APPDATANAME + "/resources/" + &path[2];
++        if (Utils::FileSystem::exists(test))
++            return test;
++
++        test = std::string("/usr/share/") + APPDATANAME + "/resources/" + &path[2];
++        if (Utils::FileSystem::exists(test))
++            return test;
++    #endif
+ 		// check in homepath
+ 		test = Utils::FileSystem::getHomePath() + "/.emulationstation/resources/" + &path[2];
+ 		if(Utils::FileSystem::exists(test))

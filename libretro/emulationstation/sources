@@ -1,0 +1,4 @@
+https://github.com/RetroPie/EmulationStation/archive/v2.9.3.tar.gz
+https://github.com/zeux/pugixml/archive/22401bafaff996baecfb694ddc754855e184d377.tar.gz external/pugixml
+patches/default-paths.patch
+patches/add-resources.patch
