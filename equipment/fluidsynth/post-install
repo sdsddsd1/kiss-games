@@ -1,0 +1,10 @@
+#!/bin/sh
+
+cat <<EOF
+#### IMPORTANT ####
+#### IMPORTANT ####
+In order for sdl to pick up the right soundfont.
+-> export SDL_SOUNDFONTS=/usr/share/soundfonts/default.sf2
+#### IMPORTANT ####
+#### IMPORTANT ####
+EOF
