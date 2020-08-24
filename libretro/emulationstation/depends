@@ -19,5 +19,6 @@ libvlc
 libxcb
 libxshmfence
 mesa
+retroarch
 sdl2
 zlib
