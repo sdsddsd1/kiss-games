@@ -1,5 +1,7 @@
 #!/bin/sh -e
 
+patch -p1 < ns_name_ntop.patch
+
 export DESTDIR="$1"
 
 cmake -B build \
