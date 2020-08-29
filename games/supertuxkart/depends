@@ -6,4 +6,5 @@ libogg
 libvorbis
 mesa make
 openal-soft
+sdl2
 sqlite
