@@ -1,0 +1,12 @@
+#!/bin/sh -e
+
+for patch in *.patch; do
+    patch -Np1 < "$patch"
+done
+
+# Fix main executable installation directory
+sed -i 's/\$PREFIX\/games/\$PREFIX\/bin/g' SConstruct
+
+scons -j "$(($(nproc)-1))"
+scons DESTDIR=$1 PREFIX=/usr install
+
