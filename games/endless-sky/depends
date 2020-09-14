@@ -1,0 +1,18 @@
+expat
+glew
+libX11
+libXau
+libXdamage
+libXext
+libXfixes
+libXxf86vm
+libdrm
+libjpeg-turbo
+libmad
+libpng
+libxcb
+libxshmfence
+mesa
+scons make
+sdl2
+zlib
