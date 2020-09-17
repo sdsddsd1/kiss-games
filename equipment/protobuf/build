@@ -1,0 +1,30 @@
+#!/bin/sh -e
+
+autoreconf -vfi
+
+./configure \
+    --prefix=/usr
+
+make
+make DESTDIR="$1" install
+
+
+# Build protobuf python bindings.
+(
+cd python
+python setup.py build --cpp_implementation
+python setup.py install --skip-build \
+                        --cpp_implementation \
+                        --optimize=1 \
+                        --prefix=/usr \
+                        --root="$1"
+)
+
+
+# Build pyhton-six inside this package as both are solely
+# needed for cdogs-sdl
+(
+cd python-six
+python setup.py build
+python setup.py install --prefix=/usr --root="$1"
+)
