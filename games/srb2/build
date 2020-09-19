@@ -1,0 +1,12 @@
+#!/bin/sh -e
+
+export DESTDIR="$1"
+
+cmake -B build \
+    -DCMAKE_INSTALL_PREFIX=/usr/share/srb2 \
+    -DCMAKE_BUILD_TYPE=INSTALL
+
+cmake --build   build
+cmake --install build
+
+install -Dm755  srb2launcher    "$1/usr/bin/srb2"

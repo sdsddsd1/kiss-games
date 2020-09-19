@@ -1,0 +1,6 @@
+cmake make
+libgme
+libpng
+mesa make
+sdl2
+sdl2-mixer
