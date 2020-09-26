@@ -1,0 +1,14 @@
+#!/bin/sh -e
+
+export LDFLAGS="-z muldefs $LDFLAGS"
+
+make ENABLE_NLS=0 DATADIR=/usr/share/neverball
+
+# Install executables
+install -Dm755 neverball "$1/usr/bin/neverball"
+install -Dm755 neverputt "$1/usr/bin/neverputt"
+
+# Install data files
+mkdir -p $1/usr/share/neverball
+cp -a data/* $1/usr/share/neverball
+find $1/usr/share/neverball -type f -exec chmod 0644 {} \;
