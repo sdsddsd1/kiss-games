@@ -1,0 +1,18 @@
+#!/bin/sh -e
+
+export DESTDIR="$1"
+
+# Fix utfcpp include dirs.
+sed -i 's|utf8.h|utf8cpp/utf8.h|g' source/code/ReadKeyboard.cpp
+sed -i 's|utf8.h|utf8cpp/utf8.h|g' source/code/DialogBox.cpp
+sed -i 's|utf8.h|utf8cpp/utf8.h|g' source/code/sago/SagoTextBox.cpp
+
+
+cmake -B build \
+    -DCMAKE_INSTALL_PREFIX=/usr
+
+cmake --build   build
+
+install -Dm755 launcher               "$1/usr/bin/blockattack"
+install -Dm755 build/Game/blockattack "$1/usr/share/blockattack/blockattack"
+cp -r Game/data                       "$1/usr/share/blockattack"
