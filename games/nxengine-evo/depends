@@ -1,6 +1,5 @@
 cmake make
 libpng
-sdl-mixer
 sdl2
 sdl2-mixer
 sdl2-ttf
