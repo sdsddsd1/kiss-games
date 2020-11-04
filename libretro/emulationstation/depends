@@ -19,6 +19,7 @@ libvlc
 libxcb
 libxshmfence
 mesa
+rapidjson
 retroarch
 sdl2
 zlib
