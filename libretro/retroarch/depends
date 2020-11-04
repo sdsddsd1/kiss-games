@@ -1,6 +1,5 @@
 alsa-lib
 bzip2
-eudev
 expat
 ffmpeg
 flac
@@ -25,6 +24,7 @@ libpng
 libressl
 libretro-core-info
 libretro-database
+libudev-zero
 libusb
 libvorbis
 libvpx
