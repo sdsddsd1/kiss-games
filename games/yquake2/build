@@ -1,6 +1,6 @@
 #!/bin/sh -e
 
-patch -p0 < musl.patch
+export LDFLAGS="$LDFLAGS -lexecinfo"
 
 make WITH_SYSTEMWIDE=yes WITH_SYSTEMDIR=/usr/lib/yquake2
 
