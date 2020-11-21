@@ -1,0 +1,17 @@
+#!/bin/sh -e
+
+export DESTDIR="$1"
+mv musl-fix2.patch simgear/
+mv musl-fix3.patch simgear/
+cd simgear
+patch -p1 < musl-fix2.patch
+patch -p1 < musl-fix3.patch
+cd ..
+cmake -B build \
+-DCMAKE_INSTALL_PREFIX=/usr \
+    -DCMAKE_INSTALL_LIBDIR=lib \
+    -DCMAKE_BUILD_TYPE=Release \
+    -DENABLE_TESTS=off \
+
+cmake --build   build
+cmake --install build

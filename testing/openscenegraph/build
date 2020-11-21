@@ -1,0 +1,13 @@
+#!/bin/sh -e
+
+patch -p1 < musl-pthread.patch
+
+export DESTDIR="$1"
+
+cmake -B build \
+    -DCMAKE_INSTALL_PREFIX=/usr \
+    -DCMAKE_INSTALL_LIBDIR=lib \
+    -DCMAKE_BUILD_TYPE=Release
+
+cmake --build   build
+cmake --install build

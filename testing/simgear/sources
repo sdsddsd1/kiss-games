@@ -1,0 +1,4 @@
+https://downloads.sourceforge.net/project/flightgear/release-2020.3/simgear-2020.3.2.tar.bz2
+patches/musl-fix.patch
+patches/musl-fix2.patch
+patches/musl-fix3.patch

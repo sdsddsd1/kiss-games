@@ -1,0 +1,23 @@
+#!/bin/sh -e
+
+# Does not yet build in the latest version.
+# Patches need adjustment. But also manually
+# applied it does no pass.
+
+patch -p1 < musl-fix_feenableexcept.patch src/FDM/JSBSim/JSBSim.cpp
+patch -p1 < musl-fix_error_h.patch 3rdparty/iaxclient/lib/libiax2/src/iax.c
+#patch -p1 < musl-fix_fpos_t.patch 3rdparty/hts_engine_API/lib/HTS_misc.c
+#patch -p1 < musl-fenv.patch src/Main/bootstrap.cxx
+
+
+cmake -B build \
+    -DCMAKE_INSTALL_PREFIX=/usr \
+    -DCMAKE_INSTALL_LIBDIR=lib \
+    -DFG_DATA_DIR:STRING="/usr/share/flightgear/data" \
+    -D SimGear_DIR=/usr/lib/cmake/SimGear \
+    -DCMAKE_BUILD_TYPE=Release \
+    -DFG_BUILD_TYPE=Release \
+    -DCMAKE_EXE_LINKER_FLAGS=-lexecinfo
+
+cmake --build     build
+cmake --install   build

@@ -1,0 +1,9 @@
+#!/bin/sh -e
+
+patch -p1 < musl-ushort.patch src/ssg/ssgLoadFLT.cxx
+
+./configure \
+    --prefix=/usr
+
+make
+make DESTDIR="$1" install
