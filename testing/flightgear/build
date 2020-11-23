@@ -3,7 +3,10 @@
 # Does not yet build in the latest version.
 # Patches need adjustment. But also manually
 # applied it does no pass.
-export CXXFLAGS="$CXXFLAGS -Wno-deprecated-declarations"
+# Something with the fix-error.h seems not yet correct
+
+#export CXXFLAGS="$CXXFLAGS -Wno-deprecated-declarations"
+
 patch -p1 < musl-fix_feenableexcept.patch src/FDM/JSBSim/JSBSim.cpp
 patch -p1 < musl-fix_error_h.patch 3rdparty/iaxclient/lib/libiax2/src/iax.c
 patch -p1 < musl-fix_fpos_t.patch 3rdparty/hts_engine_API/lib/HTS_misc.c
