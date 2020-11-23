@@ -1,5 +1,5 @@
-http://downloads.sourceforge.net/project/flightgear/release-2020.3/flightgear-2020.3.2.tar.bz2
+http://downloads.sourceforge.net/project/flightgear/release-2020.3/flightgear-2020.3.3.tar.bz2
 patches/musl-fix_feenableexcept.patch
 patches/musl-fix_error_h.patch
 patches/musl-fix_fpos_t.patch
-patches/musl-fenv.patch
+patches/musl-fenv1.patch

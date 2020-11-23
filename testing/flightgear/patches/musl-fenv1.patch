@@ -1,0 +1,19 @@
+--- bootstrap.cxx2
++++ bootstrap.cxx1
+@@ -91,12 +91,16 @@
+ static void
+ initFPE (bool fpeAbort)
+ {
++#if defined(__GLIBC__)
+     if (fpeAbort) {
+         int except = fegetexcept();
+         feenableexcept(except | FE_DIVBYZERO | FE_INVALID);
+     } else {
+         signal(SIGFPE, handleFPE);
+     }
++#else
++    signal(SIGFPE, handleFPE);
++#endif
+ }
+ 
+ static void handleFPE(int)

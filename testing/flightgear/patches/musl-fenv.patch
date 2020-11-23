@@ -4,7 +4,7 @@ non-posix functions fegetexcept(3) and feenableexcept(3).
 
 --- src/Main/bootstrap.cxx	2015-02-18 21:10:05.000000000 +0100
 +++ src/Main/bootstrap.cxx	2015-11-01 01:25:56.665212195 +0100
-@@ -96,8 +96,12 @@
+@@ -92,9 +92,13 @@
  initFPE (bool fpeAbort)
  {
 +#if defined(__GLIBC__)
@@ -17,3 +17,4 @@ non-posix functions fegetexcept(3) and feenableexcept(3).
 +#else
 +    signal(SIGFPE, handleFPE);
 +#endif
+ }
