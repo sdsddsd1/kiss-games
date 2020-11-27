@@ -1,8 +1,10 @@
 cmake make
+flac
 freetype-harfbuzz
 glew
 libX11
 libXrandr
 libsndfile
+libvorbis
 mesa make
 openal-soft
