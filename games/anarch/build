@@ -1,0 +1,7 @@
+#!/bin/sh -e
+
+./make.sh csfml
+
+install -Dm755 anarch "$1/usr/bin/anarch"
+mkdir -p              "$1/usr/share/anarch"
+cp -r assets/         "$1/usr/share/anarch"
