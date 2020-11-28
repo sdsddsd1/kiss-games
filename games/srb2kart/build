@@ -3,9 +3,11 @@
 #GCC10 fix
 export CFLAGS="$CFLAGS -fcommon"
 
-mkdir -p                  assets/installer
-mv srb2kart-v101/*.kart   assets/installer/
-mv srb2kart-v101/srb2.srb assets/installer/
+7z x srb2kart-v13-Installer.exe
+
+mkdir -p    assets/installer
+mv *.kart   assets/installer/
+mv srb2.srb assets/installer/
 
 export DESTDIR="$1"
 
