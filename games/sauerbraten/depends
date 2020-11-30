@@ -1,4 +1,4 @@
-glu
-sdl
-sdl-image
-sdl-mixer
+glu make
+sdl2
+sdl2-image
+sdl2-mixer

@@ -4,7 +4,7 @@ make -C src/ PREFIX=/usr client
 
 make -C src/ DESTDIR="$1" install
 
+install -Dm755 sauerbraten-client       "$1/usr/bin/sauerbraten-client"
 install -Dm755 bin_unix/native_client   "$1/usr/share/sauerbraten/bin/linux_client"
 cp -r data/                             "$1/usr/share/sauerbraten"
 cp -r packages/                         "$1/usr/share/sauerbraten"
-install -Dm755 sauerbraten-client       "$1/usr/bin/sauerbraten-client"
