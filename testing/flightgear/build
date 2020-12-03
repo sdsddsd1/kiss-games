@@ -12,6 +12,7 @@ patch -p1 < musl-fix_error_h.patch 3rdparty/iaxclient/lib/libiax2/src/iax.c
 patch -p1 < musl-fix_fpos_t.patch 3rdparty/hts_engine_API/lib/HTS_misc.c
 patch -p1 < musl-fenv1.patch src/Main/bootstrap.cxx
 
+export DESTDIR="$1"
 
 cmake -B build \
     -DCMAKE_INSTALL_PREFIX=/usr \
@@ -20,7 +21,9 @@ cmake -B build \
     -D SimGear_DIR=/usr/lib/cmake/SimGear \
     -DCMAKE_BUILD_TYPE=Release \
     -DFG_BUILD_TYPE=Release \
-    -DCMAKE_EXE_LINKER_FLAGS=-lexecinfo
+    -DCMAKE_EXE_LINKER_FLAGS=-lexecinfo \
+    -DENABLE_JSBSIM=OFF \
+    -DENABLE_QT=OFF
 
 cmake --build     build
 cmake --install   build

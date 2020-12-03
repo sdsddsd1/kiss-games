@@ -1,4 +1,4 @@
 #!/bin/sh -e
 
-mkdir -p "$1"/usr/share/flightgear
-mv fgdata/ "$1"/usr/share/flightgear/data
+mkdir -p   "$1"/usr/share/flightgear
+cp -r *    "$1"/usr/share/flightgear/data
