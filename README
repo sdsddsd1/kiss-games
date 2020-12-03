@@ -79,3 +79,5 @@ ________________________________________________________________________________
 
 /2048/ /Aop/ /cNibbles/ /CurseofWar/ /greed/ /nPush/ /nSnake/ /solVItaire/
 /terminal-pong/ /vitetris/
+
+* For Qt related dependencies, have a look at https://github.com/dilyn-corner/KISS-kde .
