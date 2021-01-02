@@ -1,0 +1,9 @@
+#!/bin/sh -e
+
+# Remove gettext.
+sed -i 's/$(LOCALE_MO)//g' makefile
+sed -i 's/$(PO_PROG)//g' makefile
+sed -e 's|$(PREFIX)/share/games/edgar/|$(PREFIX)/share/edgar/|' -i makefile
+
+make
+make DESTDIR="$1" BIN_DIR="$1/usr/bin/" DATA_DIR="$1/usr/share/edgar/" install
