@@ -1,7 +1,5 @@
 #!/bin/sh -e
 
-sed -i 's/$(TARGET_NAME).out/$(TARGET_NAME)/g' Makefile
-
 make PREFIX=/usr mrboom LIBSDL2=1
 
 make PREFIX=/usr DESTDIR="$1" install
