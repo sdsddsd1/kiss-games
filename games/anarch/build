@@ -1,6 +1,6 @@
 #!/bin/sh -e
 
-./make.sh csfml
+./make.sh sdl
 
 install -Dm755 anarch "$1/usr/bin/anarch"
 mkdir -p              "$1/usr/share/anarch"
