@@ -1,0 +1,15 @@
+#!/bin/sh -e
+
+patch -p1 < mono-try-catch.patch
+
+ ./configure \
+    --prefix=/usr \
+    --disable-system-aot\
+    --disable-boehm \
+    --without-sigaltstack \
+    --with-mcs-docs=no 
+
+make
+make DESTDIR="$1" install
+
+
