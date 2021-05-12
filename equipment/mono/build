@@ -11,5 +11,3 @@ patch -p1 < mono-try-catch.patch
 
 make
 make DESTDIR="$1" install
-
-
