@@ -1,0 +1,7 @@
+#!/bin/sh -e
+
+ar vx *.deb
+tar xf data.tar.xz
+
+mkdir -p   "$1/usr"
+cp -r usr/ "$1/"
