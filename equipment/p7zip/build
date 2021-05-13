@@ -7,7 +7,7 @@ done
 cp makefile.linux_amd64 makefile.machine
 
 sed -e "s,g++,${CXX:-g++}," -i makefile.machine
-	sed -e "s,gcc,${CC:-gcc}," -i makefile.machine
+sed -e "s,gcc,${CC:-gcc}," -i makefile.machine
 
 make all3
 

@@ -3,3 +3,4 @@ patches/gcc10-fix.patch
 patches/CVE-2016-9296.patch
 patches/CVE-2017-17969.patch
 patches/CVE-2018-5996.patch
+patches/g++-warning.patch
