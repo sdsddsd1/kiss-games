@@ -1,2 +1,1 @@
-http://ftp.debian.org/debian/pool/main/p/prboom-plus/prboom-plus_2.5.1.5+svn4539+dfsg1.orig.tar.xz
-patches/prboom-plus-2.5.1.4-Remove-nonstandard-gamesdir-variable.patch
+https://github.com/coelckers/prboom-plus/archive/refs/tags/v2.6um.tar.gz

@@ -1,8 +1,6 @@
-autoconf make
-automake make
+cmake make
 fluidsynth
 glu
-sdl
 sdl2-image
 sdl2-mixer
 sdl2-net
