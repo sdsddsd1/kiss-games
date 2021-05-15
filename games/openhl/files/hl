@@ -1,0 +1,20 @@
+#!/bin/sh
+
+PREFIX="$(cd "$(dirname "$(which "$0")")" && cd .. && pwd)"
+
+if [ ! -f "$HOME/.config/openhl/notfirstrun" ]; then
+    mkdir -p                        "$HOME/.config/openhl/valve"
+    touch                           "$HOME/.config/openhl/notfirstrun"
+    ln -s /usr/share/xash3d/valve/* "$HOME/.config/openhl/valve"
+fi
+
+if [ -z "$XASH3D_BASEDIR" ]; then
+    export XASH3D_BASEDIR="$HOME/.config/openhl/"
+fi
+
+XASH_BIN_PATH="$PREFIX/lib/xash3d"
+HL_CLIENT_LIB="$PREFIX/lib/xash3d/valve/client.so"
+HL_SERVER_LIB="$PREFIX/lib/xash3d/valve/hl.so"
+
+LD_LIBRARY_PATH="$XASH_BIN_PATH:$LD_LIBRARY_PATH" "$XASH_BIN_PATH/xash3d" \
+ -clientlib "$HL_CLIENT_LIB" -dll "$HL_SERVER_LIB" -console "$@"
