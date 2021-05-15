@@ -1,7 +1,5 @@
 #!/bin/sh -e
 
-autoreconf -vfi
-
 ./configure \
     --prefix=/usr
 
