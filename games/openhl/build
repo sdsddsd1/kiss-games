@@ -8,13 +8,12 @@ sed -i 's|libserver|hl|g' system/bin/hl
 sed -i 's|libclient|client64|g' system/bin/hl
 sed -i 's|libserver|hl64|g' system/bin/hl
 
-mkdir -p       "$1/usr/bin"
-mkdir -p       "$1/usr/share"
-mkdir -p       "$1/usr/lib"
-
 sh build.sh
+
+mkdir -p                  "$1/usr/bin"
+mkdir -p                  "$1/usr/share"
+mkdir -p                  "$1/usr/lib"
 cp -r export/bin/*        "$1/usr/bin"
 cp -r export/lib/xash3d   "$1/usr/lib"
 cp -r export/share/xash3d "$1/usr/share"
-
-install -Dm755 hl "$1/usr/bin/hl"
+install -Dm755 hl         "$1/usr/bin/hl"
