@@ -1,0 +1,22 @@
+#!/bin/sh -e
+
+# Fix Half Life launcher on Linux. 
+sed -i 's|libclient|client|g' system/bin/hl
+sed -i 's|libserver|hl|g' system/bin/hl
+
+# Fix Opposing Force launcher on Linux.
+sed -i 's|libclient|client64|g' system/bin/hl
+sed -i 's|libserver|hl64|g' system/bin/hl
+
+mkdir -p       "$1/usr/bin"
+mkdir -p       "$1/usr/share"
+mkdir -p       "$1/usr/lib"
+
+sh build.sh
+cp -r export/bin/*        "$1/usr/bin"
+cp -r export/lib/xash3d   "$1/usr/lib"
+cp -r export/share/xash3d "$1/usr/share"
+
+#This file is needed for the game to work. Somehow copying by the
+#pkgmgr does not work. By hand it does.
+#install -Dm644 gameinfo.txt "$1/usr/share/xash3d/valve/gameinfo.txt"

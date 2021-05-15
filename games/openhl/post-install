@@ -1,0 +1,9 @@
+#!/bin/sh
+
+cat <<EOF
+
+NOTE: The game needs to write some files to /usr/share/xash3d on the 
+      first start to actually work. Just start as the root user once.
+      >.>
+
+EOF

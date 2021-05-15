@@ -1,0 +1,4 @@
+cmake make
+mono make
+python make
+sdl2
