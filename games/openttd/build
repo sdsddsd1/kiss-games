@@ -1,9 +1,12 @@
 #!/bin/sh -e
 
-./configure \
-    --prefix-dir=/usr \
-    --binary-dir=bin \
-    --install-dir=$1
+export DESTDIR="$1"
 
-make
-make DESTDIR="$1" install
+cmake -B build \
+    -DCMAKE_INSTALL_PREFIX=/usr \
+    -DGLOBAL_DIR=/usr/share/openttd \
+    -DCMAKE_INSTALL_DATADIR=share \
+    -DCMAKE_INSTALL_BINDIR=bin
+
+cmake --build   build
+cmake --install build

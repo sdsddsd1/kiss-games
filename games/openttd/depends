@@ -1,5 +1,5 @@
 fontconfig
 icu
 libpng
-lzo
-sdl
+#lzo
+sdl2
