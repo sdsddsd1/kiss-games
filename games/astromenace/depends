@@ -9,7 +9,7 @@ libXdamage
 libXext
 libXfixes
 libXxf86vm
-libalut
+freealut
 libdrm
 libogg
 libpng
