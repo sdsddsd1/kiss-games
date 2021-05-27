@@ -1,0 +1,15 @@
+diff --git a/home/claudia/C-api.cpp b/src/modules/simu/simuv2.1/SOLID-2.0/src/C-api.cpp
+index 984ec31..912363a 100644
+--- a/src/modules/simu/simuv2.1/SOLID-2.0/src/C-api.cpp
++++ b/src/modules/simu/simuv2.1/SOLID-2.0/src/C-api.cpp
+@@ -64,6 +64,10 @@ typedef set<Encounter> ProxList;
+ #define uint unsigned int
+ #endif
+ 
++#if !defined(__GLIBC__)
++typedef unsigned int uint;
++#endif
++
+ PointBuf pointBuf;
+ IndexBuf indexBuf;
+ PolyList polyList; 

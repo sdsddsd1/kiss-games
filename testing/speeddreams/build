@@ -1,0 +1,24 @@
+#!/bin/sh -e
+
+# For unknown reason, kiss' pkg_extract messes up the 
+# file structure of the base source. Just extract this
+# ourselves.
+tar xf speed-dreams-src-base-2.2.3-r7523.tar.xz?no-extract
+
+patch -p1 < fix-musl-uint.patch
+
+export DESTDIR="$1"
+
+cmake -B build \
+        -Wno-dev \
+        -DCMAKE_PREFIX_PATH=/usr \
+        -DCMAKE_BUILD_TYPE=MinSizeRel \
+        -DCMAKE_INSTALL_PREFIX=/usr \
+        -DSD_BINDIR=/usr/bin \
+        -DSD_LIBDIR=/usr/lib/speed_dreams-2 \
+        -DSD_DATADIR=/usr/share/speed-dreams-2 \
+        -DSD_LOCALDIR=~/.config/speed-dreams-2 \
+        -DOPTION_TRACE_LEVEL=2
+
+cmake --build   build
+cmake --install build
