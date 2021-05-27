@@ -1,5 +1,11 @@
 #!/bin/sh -e
 
+export CXXFLAGS="$CXXFLAGS -fPIC"
+export CFLAGS="$CFLAGS -fPIC"
+export LDFLAGS="$LDFLAGS -fPIC"
+
+patch -p1 < CVE-2011-4620.diff src/util/ulError.cxx
+patch -p1 < CVE-2012-4552.diff src/ssg/ssgParser.cxx
 patch -p1 < musl-ushort.patch src/ssg/ssgLoadFLT.cxx
 
 ./configure \

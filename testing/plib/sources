@@ -1,2 +1,4 @@
 http://plib.sourceforge.net/dist/plib-1.8.5.tar.gz
+patches/CVE-2011-4620.diff
+patches/CVE-2012-4552.diff
 patches/musl-ushort.patch
