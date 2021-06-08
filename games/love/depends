@@ -1,3 +1,4 @@
+cmake make
 hicolor-icon-theme
 libmodplug
 libtheora
