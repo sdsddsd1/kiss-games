@@ -1,0 +1,5 @@
+#!/bin/sh -e
+
+cc $CFLAGS -Wall -o bin2iso bin2iso19b_linux.c
+
+install -Dm755 bin2iso "$1/usr/bin/bin2iso"
