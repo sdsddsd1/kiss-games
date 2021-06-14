@@ -1,0 +1,8 @@
+automake make
+libxml2
+physfs
+sdl2
+sdl2-gfx
+sdl2-image
+sdl2-mixer
+sdl2-ttf

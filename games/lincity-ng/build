@@ -1,0 +1,12 @@
+#!/bin/sh -e
+
+./autogen.sh
+
+./configure \
+    --prefix=/usr
+
+jam
+
+mkdir -p                  "$1/usr/share/lincity-ng"
+cp -r data/*              "$1/usr/share/lincity-ng"
+install -Dm755 lincity-ng "$1/usr/bin/lincity-ng"
