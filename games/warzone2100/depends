@@ -1,13 +1,12 @@
 freetype-harfbuzz
 fribidi
 glew
-libvorbis
 libpng
 libsodium
 libtheora
+libvorbis
 openal-soft
 physfs
 qt5-script
-qt5
 sdl2
 zip

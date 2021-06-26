@@ -2,19 +2,14 @@
 
 export DESTDIR="$1"
 
-# Submit a pullrequest if you put this in a nice patch or sed. (:
-# qt5-script can be found in KISS-kde
-
-cp debug.cpp   lib/framework/debug.cpp
-cp netplay.cpp lib/netplay/netplay.cpp
-
 cmake -B build \
     -DCMAKE_INSTALL_PREFIX=/usr \
     -DCMAKE_BUILD_TYPE=Release \
     -DENABLE_NLS=OFF \
     -DENABLE_DOCS=OFF \
     -DENABLE_DISCORD=OFF \
-    -DWZ_ENABLE_WARNINGS_AS_ERRORS=OFF 
+    -DWZ_ENABLE_WARNINGS_AS_ERRORS=OFF \
+    -GNinja
 
 cmake --build   build
 cmake --install build
