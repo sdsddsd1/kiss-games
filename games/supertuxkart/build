@@ -1,6 +1,7 @@
 #!/bin/sh -e
 
 patch -p1 < ns_name_ntop.patch
+patch -p1 < fix-compilation-with-latest-sdl.patch
 
 export DESTDIR="$1"
 

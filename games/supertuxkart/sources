@@ -1,2 +1,3 @@
 https://sourceforge.net/projects/supertuxkart/files/SuperTuxKart/1.2/SuperTuxKart-1.2-src.tar.xz
 patches/ns_name_ntop.patch
+patches/fix-compilation-with-latest-sdl.patch
