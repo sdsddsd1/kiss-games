@@ -1,0 +1,10 @@
+#!/bin/sh -e
+
+# Gcc11 fails to build. Just clang it.
+export CXX=clang++
+
+./configure \
+    --prefix=/usr
+
+make
+make DESTDIR="$1" install
