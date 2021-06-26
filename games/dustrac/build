@@ -1,10 +1,10 @@
 #!/bin/sh -e
 
-./configure
+export DESTDIR="$1"
 
-make
+cmake -B build \
+    -DReleaseBuild=ON \
+    -DCMAKE_INSTALL_PREFIX=/usr
 
-install -Dm755 launcher.sh    "$1/usr/bin/dustracing"
-install -Dm755 dustrac-game   "$1/usr/share/dustracing/dustrac-game"
-install -Dm755 dustrac-editor "$1/usr/share/dustracing/dustrac-editor"
-cp -r data/                   "$1/usr/share/dustracing/"
+cmake --build   build
+cmake --install build
