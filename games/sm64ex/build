@@ -1,0 +1,14 @@
+#!/bin/sh -e
+
+# The rom must be available at buildtime. If you find a
+# cleaner solution let me know.
+if [ ! -f /tmp/baserom.us.z64 ]; then
+    printf 'Copy your US version of Mario64 to /tmp/baserom.us.z64\n'
+    exit 1
+fi
+
+cp /tmp/baserom.us.z64 baserom.us.z64
+
+make BETTERCAMERA=1 -j4
+
+install -Dm755 build/us_pc/sm64.us.f3dex2e "$1/usr/bin/sm64ex"
