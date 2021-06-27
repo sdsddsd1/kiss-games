@@ -16,7 +16,6 @@ cp http.h                src/
 cp stb_truetype.h        src/
 cp log.*                 src/
 cp parson.*              src/
-cp -r fonts/             build/bin/
 cp -r png/               build/bin/
 cp -r kv6/               build/bin/
 cp -r wav/               build/bin
