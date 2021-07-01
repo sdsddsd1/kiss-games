@@ -1,6 +1,6 @@
 cmake make
 curl
-glu
+glew
 libjpeg-turbo
 libogg
 libvorbis
