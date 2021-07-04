@@ -1,9 +1,14 @@
 #!/bin/sh -e
 
-autoreconf -vfi
-
-./configure \
-    --prefix=/usr
+export EXTRA_CXXFLAGS="-DFHS -I/usr/include/SDL -DHYPERPATH='\"/usr/share/hyperrogue/\"' -DRESOURCEDESTDIR='\"/usr/share/hyperrogue/\"'"
+export HYPERROGUE_USE_GLEW=1
+export HYPERROGUE_USE_PNG=1
 
 make
-make DESTDIR="$1" install
+
+mkdir -p             "$1/usr/bin"
+mkdir -p             "$1/usr/share/hyperrogue"
+cp hyperrogue        "$1/usr/bin/hyperrogue"
+cp -r sounds         "$1/usr/share/hyperrogue"
+cp -r music          "$1/usr/share/hyperrogue"
+cp *.ttf *.txt *.dat "$1/usr/share/hyperrogue"

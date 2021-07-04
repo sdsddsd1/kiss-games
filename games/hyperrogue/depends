@@ -1,6 +1,4 @@
-automake make
-glu make
-libtool make
+glew
 sdl
 sdl-gfx
 sdl-ttf
