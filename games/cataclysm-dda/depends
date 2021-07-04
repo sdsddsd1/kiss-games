@@ -1,8 +1,8 @@
 bzip2
 cmake make
 freetype-harfbuzz
-libpng
 libexecinfo
+libpng
 sdl2
 sdl2-image
 sdl2-mixer
