@@ -12,72 +12,136 @@ of its maintenance!
 Racing
 ________________________________________________________________________________
 
-/Dust Racing 2D/ /Extreme Tux Racer/ /SRB2Kart/ /SuperTuxKart/
+Dust Racing 2D
+Extreme Tux Racer
+Sonic Robo Blast 2 Kart (SRB2Kart)
+SuperTuxKart
 
 
 Doom
 ________________________________________________________________________________
 
-/Crispy Doom/ /DOOM Retro/ /GZDoom/ /PrBoom+/
+Crispy Doom
+DOOM Retro
+GZDoom
+PrBoom+
 
  
 FPS
 ________________________________________________________________________________
 
-/Anarch/ /AssaultCube/ /BetterSpades/ /NBlood|PCExhumed|RedNukem/ /OpenArena/
-/openhl/ /QuakeSpasm/ /Redeclipse/ /Sauerbraten/ /Urban Terror/ /Xonotic/
-/Yamagi Quake 2/ /ZGloom/
+Anarch
+AssaultCube
+BetterSpades
+NBlood (PCExhumed,RedNukem)
+OpenArena
+openhl
+QuakeSpasm
+Redeclipse
+Sauerbraten
+Urban Terror
+Xonotic
+Yamagi Quake 2
+ZGloom
  
  
 Shoot'em *
 ________________________________________________________________________________
 
-/Astromenace/ /C-Dogs/ /OpenTyrian/ /Taisei/
+Astromenace
+C-Dogs SDL
+OpenTyrian
+Taisei
 
 
 Emulator, engine, editor
 ________________________________________________________________________________
 
-/Eureka/ /Godot/ /Irrlicht/ /LÖVE/ /Mednafen/ /mGBA/ /RetroArch/ /Solarus/
-/Stockfish/ /Vinox/
+Eureka
+Godot
+Irrlicht
+LOVE
+Mednafen
+mGBA
+RetroArch
+Solarus
+Stockfish
+Vinox
 
 
 Rogue-like, RPG
 ________________________________________________________________________________
 
-/Brogue CE/ /Cataclysm-DDA/ /DevilutionX/ /Flare/ /HyperRogue/
+Brogue CE
+Cataclysm-DDA
+DevilutionX
+Flare
+HyperRogue
 
 
 Strategic
 ________________________________________________________________________________
 
-/Endless Sky/ /OpenTTD/ /Warzone 2100/ /Wesnoth/
+Endless Sky
+OpenTTD
+Warzone 2100
+Wesnoth
 
 
 Jump'n *
 ________________________________________________________________________________
 
-/Cave Story(NXEngine-evo)/ /Dave Gnukem/ /The Legend of Edgar/ /Hurrican/
-/Jazz JackRabbit/ /SDLPoP/ /sm64ex/ /SRB2/ /Teeworlds/ /VVVVVV/ /waterCloset/
+Cave Story (NXEngine-evo)
+Dave Gnukem
+The Legend of Edgar
+Hurrican
+Jazz JackRabbit
+SDLPoP
+sm64ex
+Sonic Robo Blast (SRB2)
+Teeworlds
+VVVVVV
+waterCloset
  
  
 Other stuff
 ________________________________________________________________________________
 
-/Ace of Penguins/ /Blobby Volley 2/ /Block Attack/ /dopewars/ /Mr. Boom/
-/Neverball/ /oshu!/ /Pingus/ /sgt-puzzles/ /Xmahjongg/ /Zatacka X/
+Ace of Penguins
+Blobby Volley 2
+Block Attack
+dopewars
+Mr. Boom
+Neverball
+oshu!
+Pingus
+sgt-puzzles
+Xmahjongg
+Zatacka X
 
 
 Sandbox
 ________________________________________________________________________________
 
-/Minetest/ /Numpty Physics/ /The Powder Toy/
+Minetest
+Numpty Physics
+The Powder Toy
 
 
 Terminalgames
 ________________________________________________________________________________
 
-/2048/ /Aop/ /cNibbles/ /CurseofWar/ /greed/ /nPush/ /nSnake/ /solVItaire/
-/terminal-pong/ /vitetris/
+2048
+Aop
+cNibbles
+CurseofWar
+greed
+nPush
+nSnake
+solVItaire
+terminal-pong
+vitetris
 
-* For Qt related dependencies, have a look at https://github.com/dilyn-corner/KISS-kde .
+
+* For Qt related dependencies, have a look at 
+  https://github.com/dilyn-corner/KISS-kde .
