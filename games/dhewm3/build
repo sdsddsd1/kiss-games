@@ -1,0 +1,14 @@
+#!/bin/sh -e
+
+export DESTDIR="$1"
+
+cd neo
+cmake -B build \
+    -DCMAKE_INSTALL_PREFIX=/usr \
+    -DCMAKE_INSTALL_LIBDIR=lib \
+    -DREPRODUCIBLE_BUILD=1 \
+    -DD3XP=1 \
+    -DDEDICATED=1
+
+cmake --build   build
+cmake --install build
