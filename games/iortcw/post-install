@@ -1,0 +1,8 @@
+#!/bin/sh
+
+cat <<EOF
+
+Refer to https://github.com/iortcw/iortcw#quick-start-guide
+on how to insert your game data.
+
+EOF

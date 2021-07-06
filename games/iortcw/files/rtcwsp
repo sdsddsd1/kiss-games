@@ -1,0 +1,4 @@
+#!/bin/sh
+
+cd /usr/share/iortcw
+./iowolfsp.x86_64

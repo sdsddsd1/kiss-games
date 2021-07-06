@@ -1,0 +1,4 @@
+#!/bin/sh
+
+cd /usr/share/iortcw
+./iowolfmp.x86_64

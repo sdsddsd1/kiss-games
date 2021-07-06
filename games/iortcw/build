@@ -1,0 +1,26 @@
+#!/bin/sh -e
+
+(
+cd MP
+make
+)
+
+(
+cd SP
+make
+)
+
+mkdir -p                                                   "$1/usr/share/iortcw/main/vm/"
+mkdir -p                                                   "$1/usr/bin"
+install -Dm644 SP/build/release-linux-x86_64/*.so          "$1/usr/share/iortcw/"
+install -Dm644 SP/build/release-linux-x86_64/main/*.so     "$1/usr/share/iortcw/main/"
+install -Dm644 MP/build/release-linux-x86_64/*.so          "$1/usr/share/iortcw/"
+install -Dm644 MP/build/release-linux-x86_64/main/*.so     "$1/usr/share/iortcw/main/"
+install -Dm644 MP/build/release-linux-x86_64/main/vm/*.qvm "$1/usr/share/iortcw/main/vm/"
+
+# install rtcw executables
+install -Dm755 SP/build/release-linux-x86_64/*.x86_64      "$1/usr/share/iortcw/"
+install -Dm755 MP/build/release-linux-x86_64/*.x86_64      "$1/usr/share/iortcw/"
+
+install -Dm755 rtcwsp                                      "$1/usr/bin/rtcwsp"
+install -Dm755 rtcwmp                                      "$1/usr/bin/rtcwmp"
