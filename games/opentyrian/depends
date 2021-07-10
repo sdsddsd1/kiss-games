@@ -1,2 +1,3 @@
-sdl
-sdl-net
+sdl12-compat-git
+sdl2
+sdl2-net
