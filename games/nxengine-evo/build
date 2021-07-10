@@ -1,18 +1,17 @@
 #!/bin/sh -e
 
-mv nx*/* ./
-
 cmake -B build \
-    -DCMAKE_BUILD_TYPE=Release
+    -DCMAKE_BUILD_TYPE=Release \
+    -DCMAKE_INSTALL_PREFIX=/usr
 
-cmake --build   build
+cmake --build build
 
-mv bin/* CaveStory/
-mv data/* CaveStory/data/
+mv build/nx* CaveStory/
+mv data/*    CaveStory/data/
 
 (cd CaveStory; ./extract)
 
-install -d                          "$1/usr/share/cavestory"
-install -d                          "$1/usr/bin"
-cp -r CaveStory/.                   "$1/usr/share/cavestory"
-ln -s /usr/share/cavestory/nx       "$1/usr/bin/cavestory"
+mkdir -p                               "$1/usr/share/cavestory"
+mkdir -p                               "$1/usr/bin"
+cp -r CaveStory/.                      "$1/usr/share/nxengine"
+ln -s /usr/share/nxengine/nxengine-evo "$1/usr/bin/cavestory"
