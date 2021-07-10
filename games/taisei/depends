@@ -3,13 +3,12 @@ freetype-harfbuzz
 glib
 libogg
 libpng
-libressl
 libvorbis
 libwebp
 meson make
+openssl
 opus
 opusfile
-samurai make
 sdl2
 sdl2-mixer
 zlib
