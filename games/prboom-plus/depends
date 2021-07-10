@@ -1,6 +1,5 @@
 cmake make
 fluidsynth
-glu
 sdl2-image
 sdl2-mixer
 sdl2-net
