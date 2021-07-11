@@ -1,0 +1,12 @@
+#!/bin/sh -e
+
+export DESTDIR="$1"
+
+meson \
+    --prefix=/usr \
+    -Dgles1=false \
+    -Dtls=disabled \
+     . output
+
+ninja -C output
+ninja -C output install

@@ -1,0 +1,3 @@
+meson make
+python make
+xorg-libs
