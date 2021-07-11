@@ -1,4 +1,5 @@
 automake make
+ftjam make
 libxml2
 physfs
 sdl2
