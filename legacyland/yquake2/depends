@@ -1,14 +1,6 @@
 expat
-libX11
-libXau
-libXdamage
-libXext
-libXfixes
-libXxf86vm
 libdrm
 libexecinfo
-libxcb
-libxshmfence
 mesa
 openal-soft
 sdl2
