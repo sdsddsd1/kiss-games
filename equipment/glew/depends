@@ -1,4 +1,4 @@
 flex make
 glu
-libXi
-libXmu
+libglvnd
+xorg-libs
