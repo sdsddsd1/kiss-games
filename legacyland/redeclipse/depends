@@ -3,4 +3,5 @@ mesa
 sdl2
 sdl2-image
 sdl2-mixer
+xorg-libs
 zlib
