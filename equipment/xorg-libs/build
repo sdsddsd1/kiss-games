@@ -1,0 +1,61 @@
+#!/bin/sh -e
+
+# Add install directory to default search paths.
+export CFLAGS="$CFLAGS -L$1/usr/lib -I$1/usr/include"
+export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:$1/usr/lib/pkgconfig
+export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:$1/usr/share/pkgconfig
+
+
+sed -i 's/pthread-stubs //' \
+    libxcb/configure
+
+sed -i "/^XCBPROTO_XCBINCLUDEDIR/s|=.*|= $1/usr/share/xcb|" \
+    libxcb/Makefile.in \
+    libxcb/src/Makefile.in
+
+sed -i "/^XCBPROTO_XCBPYTHONDIR/s|=.*|= $1/usr/lib/python3.9/site-packages|" \
+    libxcb/Makefile.in \
+    libxcb/src/Makefile.in
+
+#for pkg in xorgproto xcb-proto xorg-util-macros libXau xtrans libxcb libX11 libXext; do
+#    cd "$pkg"
+
+while read -r _ pkg; do
+    [ -d "$pkg" ] && (
+        cd "$pkg"
+
+        ./configure \
+            --prefix=/usr \
+            --with-keysymdefdir="$1/usr/include/X11" \
+            --disable-static \
+            --disable-nls
+
+        make
+        make DESTDIR="$1" install
+
+        # Delete libtool files or it'll get mad.
+        find "$1" -name \*.la -delete
+    )
+done < sources
+
+cd "$1"
+
+# Fix xorgproto location.
+mv -f \
+    usr/share/pkgconfig/*.pc \
+    usr/lib/pkgconfig
+
+rm -fr \
+    usr/share/pkgconfig
+
+# Remove unneeded stuff.
+rm -fr \
+    usr/include/X11/extensions/apple* \
+    usr/include/X11/extensions/windows* \
+    usr/lib/pkgconfig/apple* \
+    usr/lib/pkgconfig/windows* \
+    usr/share/doc \
+    usr/share/locale \
+    usr/share/X11/locale \
+    usr/share/man \
+    usr/share/util-macros
