@@ -1,9 +1,10 @@
-clang make
+#clang make
 curl
 libogg
 libvorbis
-libX11
 openal-soft
-sdl
+sdl12-compat-git
 sdl-image
+sdl2
+sdl2-image
 zlib
