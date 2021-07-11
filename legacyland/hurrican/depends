@@ -2,6 +2,9 @@ cmake make
 glm make
 libepoxy
 libmodplug
-sdl
+sdl12-compat-git
+sdl2
 sdl-image
 sdl-mixer
+sdl2-image
+sdl2-mixer

@@ -1,5 +1,8 @@
 #!/bin/sh -e
 
+#sdl-* needs to available at build and 
+#runtime.
+
 export DESTDIR="$1"
 
 cd Hurrican
