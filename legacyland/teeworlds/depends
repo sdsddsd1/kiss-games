@@ -5,3 +5,4 @@ libpng
 python make
 sdl2
 wavpack
+xorg-libs
