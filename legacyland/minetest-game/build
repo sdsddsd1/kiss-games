@@ -1,4 +1,0 @@
-#!/bin/sh -e
-
-mkdir -p    "$1/usr/share/minetest/games/minetest_game"
-mv ./*      "$1/usr/share/minetest/games/minetest_game"
