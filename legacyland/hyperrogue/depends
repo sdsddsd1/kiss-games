@@ -1,4 +1,5 @@
 glew
+sdl12-compat-git
 sdl
 sdl-gfx
 sdl-ttf
