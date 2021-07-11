@@ -1,7 +1,5 @@
 #!/bin/sh -e
 
-tar -xvjf cNibbles-2.0.1.tbz --strip-components 1
-
 patch -p1 < Makefile_lncursesw.patch
 
 make
