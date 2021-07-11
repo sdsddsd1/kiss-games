@@ -1,5 +1,0 @@
-#!/bin/sh -e
-
-patch -p1 < install-fix.patch
-
-make PREFIX="$1/usr" install
