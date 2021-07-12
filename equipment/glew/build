@@ -1,7 +1,7 @@
 #!/bin/sh -e
 
-sed -i 's|lib64|lib|' config/Makefile.linux
+# We have to edit make files to change install dir
+sed -i "s/lib64/lib/g" config/Makefile.linux
 
-make CFLAGS.EXTRA="$CFLAGS -fpic"
-
-make GLEW_DEST="$1/usr" install
+make
+make DESTDIR="$1" install
