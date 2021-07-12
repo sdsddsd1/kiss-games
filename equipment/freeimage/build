@@ -1,5 +1,9 @@
 #!/bin/sh -e
 
+# I have other solution than forcing clang.
+export CC=clang
+export CXX=clang++
+
 cd FreeImage
 
 for patch in ../*.patch; do
