@@ -8,8 +8,7 @@ cmake -B build \
     -DENABLE_NLS=OFF \
     -DENABLE_DOCS=OFF \
     -DENABLE_DISCORD=OFF \
-    -DWZ_ENABLE_WARNINGS_AS_ERRORS=OFF \
-    -GNinja
+    -DWZ_ENABLE_WARNINGS_AS_ERRORS=OFF
 
 cmake --build   build
 cmake --install build
