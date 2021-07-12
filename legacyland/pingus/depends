@@ -1,6 +1,10 @@
+boost
 libpng
 scons     make
 sdl
 sdl-image
 sdl-mixer
+sdl12-compat-git
+sdl2-image
+sdl2-mixer
 zlib
