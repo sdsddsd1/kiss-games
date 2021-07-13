@@ -132,3 +132,9 @@ vitetris
 
 * For Qt related dependencies, have a look at 
   https://github.com/dilyn-corner/KISS-kde .
+
+* Packages in legacyworld need libglvnd and xorg-libs to be installed.
+For now:
+1. I choose to separate them to easily pick games for wayland only.
+2. xorg-libs and libglvnd are not listed as dependencies to provide
+   legacy support for Xorg folks.
