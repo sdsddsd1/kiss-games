@@ -52,6 +52,8 @@ rm -fr \
 rm -fr \
     usr/include/X11/extensions/apple* \
     usr/include/X11/extensions/windows* \
+    usr/share/X11/XErrorDB \
+    usr/share/X11/Xcms.txt \
     usr/lib/pkgconfig/apple* \
     usr/lib/pkgconfig/windows* \
     usr/share/doc \

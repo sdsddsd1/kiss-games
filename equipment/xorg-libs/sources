@@ -1,9 +1,22 @@
 sources
 https://xorg.freedesktop.org/archive/individual/proto/xorgproto-2021.4.99.2.tar.bz2 xorgproto
 https://xorg.freedesktop.org/archive/individual/proto/xcb-proto-1.14.1.tar.xz xcb-proto
-https://x.org/releases/individual/util/util-macros-1.19.3.tar.bz2 xorg-util-macros
+https://x.org/releases/individual/util/util-macros-1.19.2.tar.bz2 util-macros
 https://x.org/releases/individual/lib/libXau-1.0.9.tar.bz2 libXau
 https://x.org/releases/individual/lib/xtrans-1.4.0.tar.bz2 xtrans
 https://x.org/releases/individual/lib/libxcb-1.14.tar.xz libxcb
-https://x.org/releases/individual/lib/libX11-1.7.2.tar.bz2 libX11
+https://x.org/releases/individual/lib/libX11-1.6.12.tar.bz2 libX11
+https://x.org/releases/individual/lib/libxshmfence-1.3.tar.bz2 libxshmfence
+https://x.org/releases/individual/lib/libICE-1.0.10.tar.bz2 libICE
+https://x.org/releases/individual/lib/libSM-1.2.3.tar.bz2 libSM
+https://x.org/releases/individual/lib/libXt-1.2.0.tar.bz2 libXt
 https://x.org/releases/individual/lib/libXext-1.3.4.tar.bz2 libXext
+https://x.org/releases/individual/lib/libXxf86vm-1.1.4.tar.bz2 libXxf86vm
+https://x.org/releases/individual/lib/libXrender-0.9.10.tar.bz2 libXrender
+https://x.org/releases/individual/lib/libXrandr-1.5.2.tar.bz2 libXrandr
+https://x.org/releases/individual/lib/libXfixes-5.0.3.tar.bz2 libXfixes
+https://x.org/releases/individual/lib/libXcursor-1.2.0.tar.bz2 libXcursor
+https://x.org/releases/individual/lib/libXdamage-1.1.5.tar.bz2 libXdamage
+https://x.org/releases/individual/lib/libXinerama-1.1.4.tar.bz2 libXinerama
+https://x.org/releases/individual/lib/libXi-1.7.10.tar.bz2 libXi
+https://x.org/releases/individual/lib/libXcomposite-0.4.5.tar.bz2 libXcomposite
