@@ -1,4 +1,5 @@
 cmake make
+libexecinfo
 libgme
 libpng
 mesa make
