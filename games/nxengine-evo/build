@@ -1,5 +1,7 @@
 #!/bin/sh -e
 
+unzip cavestoryen.zip
+
 cmake -B build \
     -DCMAKE_BUILD_TYPE=Release \
     -DCMAKE_INSTALL_PREFIX=/usr
@@ -9,7 +11,7 @@ cmake --build build
 mv build/nx* CaveStory/
 mv data/*    CaveStory/data/
 
-(cd CaveStory; ./extract)
+(cd CaveStory; ./nxextract)
 
 mkdir -p                               "$1/usr/share/cavestory"
 mkdir -p                               "$1/usr/bin"
