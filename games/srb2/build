@@ -1,5 +1,8 @@
 #!/bin/sh -e
 
+mkdir -p assets/installer
+unzip SRB2-v229-Full.zip -d assets/installer
+
 export LDFLAGS="$LDFLAGS -lexecinfo"
 
 
