@@ -1,4 +1,5 @@
 cmake make
+gtk+3
 protobuf make
 sdl2
 sdl2-image
