@@ -1,4 +1,5 @@
 alsa-lib
+flac
 libsndfile
 sdl2
 zlib
