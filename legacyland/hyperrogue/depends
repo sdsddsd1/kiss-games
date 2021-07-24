@@ -1,4 +1,6 @@
+clang make
 glew
+glu
 sdl12-compat-git
 sdl
 sdl-gfx

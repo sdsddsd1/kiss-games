@@ -2,7 +2,9 @@
 
 #Currently sdl1-* is needed, otherwise the build-
 #system fails to detect them.
+#Build fails with gcc11.
 
+export CXX=clang++
 export EXTRA_CXXFLAGS="-DFHS -I/usr/include/SDL -DHYPERPATH='\"/usr/share/hyperrogue/\"' -DRESOURCEDESTDIR='\"/usr/share/hyperrogue/\"'"
 export HYPERROGUE_USE_GLEW=1
 export HYPERROGUE_USE_PNG=1
