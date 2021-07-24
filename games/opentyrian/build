@@ -1,5 +1,7 @@
 #!/bin/sh -e
 
+unzip tyrian21.zip
+
 make CFLAGS=-fcommon
 
 install -d                         "$1/usr/share/opentyrian"
