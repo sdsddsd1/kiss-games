@@ -1,5 +1,7 @@
 #!/bin/sh -e
 
+unzip xonotic-0.8.2.zip
+
 # gcc11 does currently not build.
 export CC=clang
 export CXX=clang++
