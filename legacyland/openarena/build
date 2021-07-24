@@ -1,5 +1,7 @@
 #!/bin/sh -e
 
+unzip openarena-0.8.8.zip
+
 make -C engine/
 
 mkdir -p                                                          "$1/usr/share/openarena/baseoa"
