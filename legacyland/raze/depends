@@ -1,0 +1,6 @@
+cmake make
+libexecinfo
+libvpx
+musl-fts
+sdl2
+zmusic

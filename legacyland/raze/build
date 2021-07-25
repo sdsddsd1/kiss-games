@@ -1,0 +1,18 @@
+#!/bin/sh -e
+
+patch -p1 < 0001-Fix-file-paths.patch
+
+cmake -B build \
+    -DCMAKE_INSTALL_PREFIX=/usr \
+    -DINSTALL_PK3_PATH=/usr/share/raze \
+    -DCMAKE_CXX_FLAGS="${CXXFLAGS} -ffile-prefix-map=\"$PWD\"=." \
+    -DCMAKE_BUILD_TYPE=Release \
+    -DDYN_GTK=OFF \
+    -DNO_GTK=OFF \
+    -DDYN_OPENAL=OFF
+
+cmake --build   build
+cmake --install build
+
+mkdir -p                     "$1/usr/share/raze/soundfonts"
+cp build/soundfonts/raze.sf2 "$1/usr/share/raze/soundfonts"
