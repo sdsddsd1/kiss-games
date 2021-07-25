@@ -1,0 +1,12 @@
+#!/bin/sh
+
+cat <<EOF
+#### IMPORTANT ####
+
+Refer to https://github.com/nukeykt/NBlood
+to which game data is requiered.
+
+#### IMPORTANT ####
+
+
+EOF
