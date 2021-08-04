@@ -1,0 +1,5 @@
+cmake make
+glfw
+premake make
+openal-soft
+mpg123

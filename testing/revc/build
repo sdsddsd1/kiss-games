@@ -1,0 +1,13 @@
+#!/bin/sh -e
+
+patch -p0 < glfw_wayland.patch
+patch -p0 < premake.patch
+
+premake5 --with-librw gmake2
+./printHash.sh src/extras/GitSHA1.cpp
+
+make -C build config=release_linux-amd64-librw_gl3_glfw-oal
+
+mkdir -p                                           "$1/usr/share/revc"
+cp bin/linux-amd64-librw_gl3_glfw-oal/Release/reVC "$1/usr/share/revc/reVC"
+cp -r gamefiles/*                                  "$1/usr/share/revc"

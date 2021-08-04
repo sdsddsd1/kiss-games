@@ -1,0 +1,11 @@
+--- src/skel/glfw/glfw.cpp
++++ src/skel/glfw/glfw.cpp
+@@ -52,7 +52,7 @@
+ 
+ // We found out that GLFW's keyboard input handling is still pretty delayed/not stable, so now we fetch input from X11 directly on Linux.
+ #if !defined _WIN32 && !defined __APPLE__ && !defined __SWITCH__ // && !defined WAYLAND
+-#define GET_KEYBOARD_INPUT_FROM_X11
++//#define GET_KEYBOARD_INPUT_FROM_X11
+ #endif
+ 
+ #ifdef GET_KEYBOARD_INPUT_FROM_X11

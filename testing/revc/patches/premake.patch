@@ -1,0 +1,11 @@
+--- premake5.lua
++++ premake5.lua
+@@ -381,7 +381,7 @@
+ 		libdirs { "vendor/openal-soft/libs/Win64" }
+ 
+ 	filter "platforms:linux*oal"
+-		links { "openal", "mpg123", "sndfile", "pthread", "X11" }
++		links { "openal", "mpg123", "pthread" }
+ 
+ 	filter "platforms:bsd*oal"
+ 		links { "openal", "mpg123", "sndfile", "pthread", "X11" }
