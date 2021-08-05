@@ -1,0 +1,13 @@
+#!/bin/sh -e
+
+unzip premake-5.0.0-alpha16-src.zip
+
+(
+cd premake-5.0.0-alpha16-src/build/gmake2.unix
+make config=release
+)
+
+(
+mkdir -p                                          "$1/usr/bin"
+cp premake-5.0.0-alpha16-src/bin/release/premake5 "$1/usr/bin/premake5"
+)
