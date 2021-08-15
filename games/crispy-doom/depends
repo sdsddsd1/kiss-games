@@ -1,4 +1,4 @@
-cmake make
+automake make
 sdl2
 sdl2-mixer
 sdl2-net
