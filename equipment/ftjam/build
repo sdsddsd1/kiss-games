@@ -1,5 +1,7 @@
 #!/bin/sh -e
 
+unset AR
+
 ./configure \
     --prefix=/usr
 
