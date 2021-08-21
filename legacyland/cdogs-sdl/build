@@ -1,8 +1,6 @@
 #!/bin/sh -e
 
-#Since GCC11
 sed -i CMakeLists.txt -e "s; -Werror;;"
-export CFLAGS="$CFLAGS -fcommon"
 
 export DESTDIR="$1"
 
