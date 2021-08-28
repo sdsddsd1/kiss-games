@@ -1,0 +1,3 @@
+cmake make
+extra-cmake-modules make
+wayland

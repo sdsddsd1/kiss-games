@@ -1,0 +1,10 @@
+#!/bin/sh -e
+
+cmake -B build \
+    -DCMAKE_INSTALL_PREFIX=/usr \
+    -DCMAKE_INSTALL_LIBDIR=lib \
+    -DBUILD_SHARED_LIBS=ON \
+    -DGLFW_USE_WAYLAND=ON
+
+cmake --build   build
+cmake --install build
