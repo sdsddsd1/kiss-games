@@ -1,8 +1,5 @@
 #!/bin/sh -e
 
-patch -p0 < glfw_wayland.patch
-patch -p0 < premake.patch
-
 premake5 --with-librw gmake2
 ./printHash.sh src/extras/GitSHA1.cpp
 

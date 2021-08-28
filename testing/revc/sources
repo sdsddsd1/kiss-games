@@ -1,4 +1,4 @@
-https://github.com/GTAmodding/re3/archive/bec1cbc1cb8de15ebd056ed35b6d91b7f397e530.tar.gz
+https://github.com/GTAmodding/re3/archive/8ef1e29a5ca389f56e942b25e7ad8062beb56cac.tar.gz
 git+https://github.com/aap/librw vendor/librw
 patches/glfw_wayland.patch
 patches/premake.patch
